@@ -87,20 +87,19 @@ wechat路径协议不带协议返回
 - 微信协议DUMP
 
 ## 贡献
-
 欢迎贡献！请提出issue或提交pull request。
 
-##捐赠 （USDT-TRC20）
+## 捐赠 （USDT-TRC20）
 TB7ReYEVZcNLDcKL71gu7aqMQ3h8CyYkMM
 
 ## 许可证
 
 本项目使用MIT许可证。详情请参阅LICENSE文件。
 
-##声明
+## 声明
 本软件仅供教育和研究用途。请自行承担使用风险。作者不对任何滥用本软件的行为负责。
 
-##加入电报群
+## 加入电报群
 为了获得更多支持和交流机会，请加入电报群：[Telegram群链接](https://t.me/wechatopensource)
 
 
