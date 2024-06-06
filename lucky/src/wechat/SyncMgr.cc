@@ -60,7 +60,7 @@ namespace lucky {
 				addMsg.ParseFromArray((void*)v21, *(unsigned int*)(v20 + 0x10));
 				std::string message;
 				google::protobuf::util::MessageToJsonString(addMsg, &message);
-				OutputDebugString(message.c_str());
+				//OutputDebugString(message.c_str());
 				std::lock_guard<std::mutex> lock(mutex_);
 				if (!this->message_notify_url_.empty()) {
 					common::ThreadPool::GetInstance().Submit(new NotifyWork(this->message_notify_url_,std::move( message)));
