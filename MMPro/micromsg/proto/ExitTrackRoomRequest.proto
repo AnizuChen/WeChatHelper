@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message ExitTrackRoomRequest {
+	required BaseRequest _BaseRequest = 1;
+	optional string _TrackRoomID = 2;
+	optional uint32 _Scene = 3;
+}

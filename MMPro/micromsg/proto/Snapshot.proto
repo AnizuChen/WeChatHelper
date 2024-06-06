@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "Production.proto";
+import "Express.proto";
+import "Address.proto";
+import "Receipt.proto";
+
+message Snapshot {
+	required uint32 _ProductCount = 1;
+	repeated Production _Productions = 2;
+	optional Express _Express = 3;
+	optional Address _Address = 4;
+	repeated Receipt _Receipt = 5;
+	optional uint32 _ReceiptCount = 6;
+	optional string _LockId = 7;
+}

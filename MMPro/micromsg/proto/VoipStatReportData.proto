@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SKBuiltinString_t.proto";
+
+message VoipStatReportData {
+	required SKBuiltinString_t _StatReport = 1;
+}

@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BackupStartGeneralInfo.proto";
+
+message DataConfigInf {
+	required string _UserName = 1;
+	optional string _Deviceid = 2;
+	optional uint32 _CreateTime = 3;
+	optional uint32 _LastModifyTime = 4;
+	optional BackupStartGeneralInfo _DeviceInfo = 5;
+}

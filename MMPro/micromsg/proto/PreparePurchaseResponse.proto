@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+
+message PreparePurchaseResponse {
+	required BaseResponse _BaseResponse = 1;
+	optional string _BillNo = 2;
+	optional string _TradeToken4TenPay = 3;
+	optional string _Partner4TenPay = 4;
+	optional string _Sign4TenPay = 5;
+}

@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+
+message ModifyHeadImgResponse {
+	required BaseResponse _BaseResponse = 1;
+}

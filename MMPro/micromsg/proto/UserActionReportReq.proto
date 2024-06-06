@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "UserActionItem.proto";
+
+message UserActionReportReq {
+	required BaseRequest _BaseRequest = 1;
+	optional string _DeviceModel = 2;
+	optional string _DeviceBrand = 3;
+	optional string _OsName = 4;
+	optional string _OsVersion = 5;
+	optional string _LanguageVer = 6;
+	required uint32 _ActionCnt = 7;
+	repeated UserActionItem _List = 8;
+}

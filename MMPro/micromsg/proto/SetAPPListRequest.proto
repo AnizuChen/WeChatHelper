@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "APPItem.proto";
+
+message SetAPPListRequest {
+	required BaseRequest _BaseRequest = 1;
+	required uint32 _Count = 2;
+	repeated APPItem _List = 3;
+}

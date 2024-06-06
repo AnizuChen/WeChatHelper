@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message LoginDevice {
+	optional string _Devicename = 2;
+	optional string _Devicetype = 3;
+	optional string _Uuid = 1;
+	required uint32 _Lasttime = 4;
+}

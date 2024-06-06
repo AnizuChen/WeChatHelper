@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SKBuiltinBuffer_t.proto";
+
+message HardDeviceMsg {
+	required uint64 _SessionID = 1;
+	required uint32 _CreateTime = 2;
+	required SKBuiltinBuffer_t _Buffer = 3;
+	optional uint32 _Type = 4;
+}

@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "VoiceAttr.proto";
+import "UploadVoiceCtx.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message UploadVoiceForTransRequest {
+	required BaseRequest _BaseRequest = 1;
+	optional string _VoiceId = 2;
+	required VoiceAttr _VoiceAttr = 3;
+	required UploadVoiceCtx _UploadCtx = 4;
+	required SKBuiltinBuffer_t _Data = 5;
+}

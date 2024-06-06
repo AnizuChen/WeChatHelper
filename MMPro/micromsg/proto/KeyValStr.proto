@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message KeyValStr {
+	required uint32 _Key = 1;
+	optional string _Val = 2;
+}

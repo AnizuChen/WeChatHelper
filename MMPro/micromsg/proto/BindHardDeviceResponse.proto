@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "HardDevice.proto";
+import "HardDeviceAttr.proto";
+
+message BindHardDeviceResponse {
+	required BaseResponse _BaseResponse = 1;
+	required HardDevice _HardDevice = 2;
+	required HardDeviceAttr _HardDeviceAttr = 3;
+	optional uint32 _Flag = 4;
+}

@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message SnsUserInfo {
+	required uint32 _SnsFlag = 1;
+	optional string _SnsBGImgID = 2;
+	optional uint64 _SnsBGObjectID = 3;
+	optional uint32 _SnsFlagEx = 4;
+}

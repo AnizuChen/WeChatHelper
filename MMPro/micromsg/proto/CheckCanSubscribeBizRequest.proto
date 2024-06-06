@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SKBuiltinString_t.proto";
+
+message CheckCanSubscribeBizRequest {
+	required BaseRequest _BaseRequest = 1;
+	required uint32 _Source = 2;
+	optional string _ToUserName = 3;
+	optional string _ExtInfo = 4;
+	optional string _AppID = 5;
+	required uint32 _PackNum = 6;
+	repeated SKBuiltinString_t _AndroidPackNameList = 7;
+	optional string _IosBunddleID = 8;
+	optional string _FromURL = 9;
+	optional uint32 _Scene = 10;
+}

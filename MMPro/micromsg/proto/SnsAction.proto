@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message SnsAction {
+	optional string _FromUsername = 1;
+	optional string _ToUsername = 2;
+	optional string _FromNickname = 3;
+	optional string _ToNickname = 4;
+	required uint32 _Type = 5;
+	required uint32 _Source = 6;
+	optional uint32 _CreateTime = 7;
+	optional string _Content = 8;
+	optional int32 _ReplyCommentId = 9;
+	optional int32 _CommentId = 10;
+	optional uint32 _IsNotRichText = 11;
+	optional uint64 _ReplyCommentId2 = 12;
+	optional uint64 _CommentId2 = 13;
+}

@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "GameConsumeProps.proto";
+
+message GameStartReq {
+	required BaseRequest _BaseRequest = 1;
+	optional string _AppID = 2;
+	required uint32 _LocalLifeNum = 3;
+	optional string _Token = 4;
+	required uint32 _NeedClearWishList = 5;
+	optional int32 _GameConsumePropsCount = 6;
+	repeated GameConsumeProps _GameConsumePropsList = 7;
+}

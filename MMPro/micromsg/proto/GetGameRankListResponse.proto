@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "UserGameRankInfo.proto";
+import "YYBStruct.proto";
+
+message GetGameRankListResponse {
+	required BaseResponse _BaseResponse = 1;
+	required uint32 _Count = 2;
+	repeated UserGameRankInfo _RankList = 3;
+	optional uint32 _FriendsCount = 4;
+	optional uint32 _HasReportScore = 5;
+	optional YYBStruct _SYYB = 6;
+}

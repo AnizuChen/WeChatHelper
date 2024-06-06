@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message NBSInfo {
+	required uint32 _NBSId = 1;
+	optional string _Summary = 2;
+	required uint32 _CardFlag = 3;
+	required float _Distance = 4;
+	optional string _Category = 5;
+	required uint32 _Rank = 6;
+	required uint32 _Status = 7;
+}

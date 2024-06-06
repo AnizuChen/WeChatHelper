@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message UserActionItem {
+	required uint32 _EventID = 1;
+	required uint32 _ClickCnt = 2;
+	optional string _ActionPath = 3;
+	required uint32 _StartTime = 4;
+	required uint32 _EndTime = 5;
+}

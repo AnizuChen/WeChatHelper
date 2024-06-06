@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "Express.proto";
+
+message GetLastestExpressInfoResponse {
+	required BaseResponse _BaseResponse = 1;
+	repeated Express _ExpressList = 2;
+	optional uint32 _ExpressCount = 3;
+	optional int32 _RetCode = 4;
+	optional string _RetMsg = 5;
+}

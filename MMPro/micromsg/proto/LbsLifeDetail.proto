@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "LbsLife.proto";
+import "SKBuiltinString_t.proto";
+import "LBSLifeActionList.proto";
+
+message LbsLifeDetail {
+	required LbsLife _Life = 1;
+	required uint32 _CICount = 2;
+	repeated SKBuiltinString_t _CIList = 3;
+	optional string _ThumbUrl = 4;
+	optional string _PhotoLink = 5;
+	required uint32 _ActionCount = 6;
+	repeated LBSLifeActionList _ActionList = 7;
+}

@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SKBuiltinBuffer_t.proto";
+import "ECDHKey.proto";
+
+message ManualAuthRsaReqData {
+	required SKBuiltinBuffer_t _RandomEncryKey = 1;
+	required ECDHKey _CliPubECDHKey = 2;
+	optional string _UserName = 3;
+	optional string _Pwd = 4;
+	optional string _Pwd2 = 5;
+}

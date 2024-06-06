@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "SnsObject.proto";
+
+message SnsObjectDetailResponse {
+	required BaseResponse _BaseResponse = 1;
+	required SnsObject _Object = 2;
+}

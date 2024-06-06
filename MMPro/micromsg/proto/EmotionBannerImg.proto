@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message EmotionBannerImg {
+	optional string _ImgUrl = 1;
+	required uint32 _Width = 2;
+	required uint32 _Height = 3;
+	optional string _StripUrl = 4;
+}

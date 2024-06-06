@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+
+message GetFavInfoResponse {
+	required BaseResponse _BaseResponse = 1;
+	required uint64 _UsedSize = 2;
+	required uint64 _TotalSize = 3;
+	required uint32 _MxFavFileSize = 4;
+	required uint32 _MxAutoUploadSize = 5;
+	required uint32 _MxAutoDownloadSize = 6;
+}

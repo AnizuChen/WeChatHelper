@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+
+message TalkMicActionResp {
+	required BaseResponse _BaseResponse = 1;
+	required int32 _MicSeq = 2;
+	optional uint32 _ChannelId = 3;
+}

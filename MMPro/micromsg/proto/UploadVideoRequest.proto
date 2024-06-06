@@ -1,0 +1,48 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message UploadVideoRequest {
+	required BaseRequest _BaseRequest = 1;
+	optional string _ClientMsgId = 2;
+	optional string _FromUserName = 3;
+	optional string _ToUserName = 4;
+	required uint32 _ThumbTotalLen = 5;
+	required uint32 _ThumbStartPos = 6;
+	required SKBuiltinBuffer_t _ThumbData = 7;
+	required uint32 _VideoTotalLen = 8;
+	required uint32 _VideoStartPos = 9;
+	required SKBuiltinBuffer_t _VideoData = 10;
+	required uint32 _PlayLength = 11;
+	optional uint32 _NetworkEnv = 12;
+	optional uint32 _CameraType = 13;
+	optional uint32 _FuncFlag = 14;
+	optional string _MsgSource = 15;
+	optional string _CDNVideoUrl = 16;
+	optional string _AESKey = 17;
+	optional int32 _EncryVer = 18;
+	optional string _CDNThumbUrl = 19;
+	optional int32 _CDNThumbImgSize = 20;
+	optional int32 _CDNThumbImgHeight = 21;
+	optional int32 _CDNThumbImgWidth = 22;
+	optional string _CDNThumbAESKey = 23;
+	optional int32 _VideoFrom = 24;
+	optional uint32 _ReqTime = 25;
+	optional string _VideoMd5 = 26;
+	optional string _StreamVideoUrl = 27;
+	optional uint32 _StreamVideoTotalTime = 28;
+	optional string _StreamVideoTitle = 29;
+	optional string _StreamVideoWording = 30;
+	optional string _StreamVideoWebUrl = 31;
+	optional string _StreamVideoThumbUrl = 32;
+	optional string _StreamVideoPublishId = 33;
+	optional string _StreamVideoAdUxInfo = 34;
+	optional string _StatExtStr = 35;
+	optional uint32 _HitMd5 = 36;
+	optional string _VideoNewMd5 = 37;
+	optional uint32 _CRC32 = 38;
+	optional uint32 _MsgForwardType = 39;
+}

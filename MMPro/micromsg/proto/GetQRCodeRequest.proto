@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SKBuiltinString_t.proto";
+
+message GetQRCodeRequest {
+	required BaseRequest _BaseRequest = 1;
+	required SKBuiltinString_t _UserName = 2;
+	required uint32 _Style = 3;
+}

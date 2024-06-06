@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "PropertySurveyInfo.proto";
+
+message PropertySurveyRequest {
+	required BaseRequest _BaseRequest = 1;
+	required PropertySurveyInfo _Info = 2;
+}

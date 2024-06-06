@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message GetCardConfigInfoRequest {
+	required BaseRequest _BaseRequest = 1;
+}

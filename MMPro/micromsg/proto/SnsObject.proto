@@ -1,0 +1,38 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SKBuiltinBuffer_t.proto";
+import "SnsCommentInfo.proto";
+import "SnsGroup.proto";
+import "SKBuiltinString_t.proto";
+
+message SnsObject {
+	required uint64 _Id = 1;
+	optional string _Username = 2;
+	optional string _Nickname = 3;
+	required uint32 _CreateTime = 4;
+	required SKBuiltinBuffer_t _ObjectDesc = 5;
+	required uint32 _LikeFlag = 6;
+	required uint32 _LikeCount = 7;
+	required uint32 _LikeUserListCount = 8;
+	repeated SnsCommentInfo _LikeUserList = 9;
+	required uint32 _CommentCount = 10;
+	required uint32 _CommentUserListCount = 11;
+	repeated SnsCommentInfo _CommentUserList = 12;
+	required uint32 _WithUserCount = 13;
+	required uint32 _WithUserListCount = 14;
+	repeated SnsCommentInfo _WithUserList = 15;
+	optional uint32 _ExtFlag = 16;
+	optional uint32 _NoChange = 17;
+	optional uint32 _GroupCount = 18;
+	repeated SnsGroup _GroupList = 19;
+	optional uint32 _IsNotRichText = 20;
+	optional string _ReferUsername = 21;
+	optional uint64 _ReferId = 22;
+	optional uint32 _BlackListCount = 23;
+	repeated SKBuiltinString_t _BlackList = 24;
+	optional uint32 _DeleteFlag = 25;
+	optional uint32 _GroupUserCount = 26;
+	repeated SKBuiltinString_t _GroupUser = 27;
+}

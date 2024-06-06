@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SKBuiltinString_t.proto";
+
+message SnsTagMemberOptionRequest {
+	required BaseRequest _BaseRequest = 1;
+	required uint32 _OpCode = 2;
+	required uint64 _TagId = 3;
+	optional string _TagName = 4;
+	required uint32 _Count = 5;
+	repeated SKBuiltinString_t _List = 6;
+	optional uint32 _Scene = 7;
+}

@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "Whatsnew61.proto";
+
+message SnsWhatsnewResponse {
+	required BaseResponse _BaseResponse = 1;
+	optional Whatsnew61 _Whatsnew61 = 2;
+}

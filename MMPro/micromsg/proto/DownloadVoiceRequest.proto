@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message DownloadVoiceRequest {
+	required uint32 _MsgId = 1;
+	required uint32 _Offset = 2;
+	required uint32 _Length = 3;
+	optional string _ClientMsgId = 4;
+	required BaseRequest _BaseRequest = 5;
+	optional uint64 _NewMsgId = 6;
+	optional string _ChatRoomName = 7;
+	optional uint64 _MasterBufId = 8;
+}

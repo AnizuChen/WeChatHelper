@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message EmotionCell {
+	optional string _CellTitle = 1;
+	required uint32 _ReqType = 2;
+	required uint32 _Position = 3;
+	optional string _IconUrl = 4;
+	optional string _TagUrl = 5;
+}

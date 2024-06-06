@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SKBuiltinBuffer_t.proto";
+
+message PatternLockInfo {
+	optional uint32 _PatternVersion = 1;
+	optional SKBuiltinBuffer_t _Sign = 2;
+	optional uint32 _LockStatus = 3;
+}

@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message StatReportExtInfo {
+	required uint32 _BeginTime = 1;
+	required uint32 _EndTime = 2;
+	required uint32 _ClientReportTime = 3;
+	required uint32 _TotalUploadSize = 4;
+	required uint32 _TotalDownloadSize = 5;
+	required uint32 _SyncCount = 6;
+	required uint32 _SyncFailCount = 7;
+	required uint32 _NotifyCount = 8;
+	required uint32 _CGICount = 9;
+	required uint32 _CGIFailCount = 10;
+	optional uint32 _PushSyncCount = 11;
+}

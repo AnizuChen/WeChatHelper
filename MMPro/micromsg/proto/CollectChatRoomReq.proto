@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "GroupCardReq.proto";
+
+message CollectChatRoomReq {
+	required BaseRequest _BaseRequest = 1;
+	required uint32 _GroupCardCount = 2;
+	repeated GroupCardReq _GroupCardList = 3;
+}

@@ -1,0 +1,32 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SnsUserInfo.proto";
+import "CustomizedInfo.proto";
+
+message LbsContactInfo {
+	optional string _UserName = 1;
+	optional string _NickName = 2;
+	optional string _Province = 3;
+	optional string _City = 4;
+	optional string _Signature = 5;
+	optional string _Distance = 6;
+	required int32 _Sex = 7;
+	required uint32 _ImgStatus = 8;
+	optional uint32 _VerifyFlag = 9;
+	optional string _VerifyInfo = 10;
+	optional string _VerifyContent = 11;
+	optional string _Alias = 12;
+	optional string _Weibo = 13;
+	optional string _WeiboNickname = 14;
+	optional uint32 _WeiboFlag = 15;
+	optional int32 _HeadImgVersion = 19;
+	optional SnsUserInfo _SnsUserInfo = 20;
+	optional string _Country = 21;
+	optional string _BigHeadImgUrl = 22;
+	optional string _SmallHeadImgUrl = 23;
+	optional string _MyBrandList = 24;
+	optional CustomizedInfo _CustomizedInfo = 25;
+	optional string _AntispamTicket = 26;
+}

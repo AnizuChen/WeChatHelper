@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message FacingMember {
+	optional string _UserName = 1;
+	optional string _EncodeUserName = 2;
+	optional string _NickName = 3;
+	optional string _SmallImgUrl = 4;
+	required uint32 _Status = 5;
+}

@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "TVTopicCommentItem.proto";
+
+message GetTVTopicCommentResponse {
+	required BaseResponse _BaseResponse = 1;
+	required uint32 _Count = 2;
+	repeated TVTopicCommentItem _List = 3;
+	required uint32 _LastCommentId = 4;
+	required uint32 _TotalCommentCount = 5;
+	required uint32 _LeftCommentCount = 6;
+}

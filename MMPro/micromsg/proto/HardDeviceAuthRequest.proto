@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "HardDevice.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message HardDeviceAuthRequest {
+	required BaseRequest _BaseRequest = 1;
+	required HardDevice _HardDevice = 2;
+	required uint32 _AuthVer = 3;
+	required SKBuiltinBuffer_t _AuthBuffer = 4;
+}

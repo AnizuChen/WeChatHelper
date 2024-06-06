@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "SearchOrRecommendItem.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message SearchOrRecommendBizResp {
+	required BaseResponse _BaseResponse = 1;
+	required uint32 _BizCount = 2;
+	repeated SearchOrRecommendItem _BizList = 3;
+	required uint32 _ShowFlag = 4;
+	required uint32 _IsEnd = 5;
+	required SKBuiltinBuffer_t _ResBuf = 6;
+}

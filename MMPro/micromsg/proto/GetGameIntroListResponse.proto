@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "GameIntro.proto";
+
+message GetGameIntroListResponse {
+	required BaseResponse _BaseResponse = 1;
+	required uint32 _Count = 2;
+	repeated GameIntro _GameIntroList = 3;
+}

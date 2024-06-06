@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SKBuiltinString_t.proto";
+import "SearchOrRecommendItem.proto";
+
+message RecommendGroup {
+	required SKBuiltinString_t _GroupName = 1;
+	required uint32 _MemCount = 2;
+	repeated SearchOrRecommendItem _Members = 3;
+}

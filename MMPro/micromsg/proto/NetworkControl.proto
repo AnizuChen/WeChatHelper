@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message NetworkControl {
+	optional string _PortList = 1;
+	optional string _TimeoutList = 2;
+	optional uint32 _MinNoopInterval = 3;
+	optional uint32 _MaxNoopInterval = 4;
+	optional int32 _TypingInterval = 5;
+	optional int32 _NoopIntervalTime = 7;
+}

@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "MemberReq.proto";
+import "SKBuiltinString_t.proto";
+
+message AddTalkRoomMemberRequest {
+	required BaseRequest _BaseRequest = 1;
+	required uint32 _MemberCount = 2;
+	repeated MemberReq _MemberList = 3;
+	required SKBuiltinString_t _TalkRoomName = 4;
+	optional uint32 _Scene = 5;
+}

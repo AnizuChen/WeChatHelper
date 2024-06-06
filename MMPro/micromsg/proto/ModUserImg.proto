@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message ModUserImg {
+	required uint32 _ImgType = 1;
+	required uint32 _ImgLen = 2;
+	optional bytes _ImgBuf = 3;
+	optional string _ImgMd5 = 4;
+	optional string _BigHeadImgUrl = 5;
+	optional string _SmallHeadImgUrl = 6;
+}

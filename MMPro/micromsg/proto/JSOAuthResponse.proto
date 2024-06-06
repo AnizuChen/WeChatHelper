@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "BizScopeInfo.proto";
+
+message JSOAuthResponse {
+	required BaseResponse _BaseResponse = 1;
+	required uint32 _ScopeCount = 2;
+	repeated BizScopeInfo _ScopeList = 3;
+	optional string _OAuthTitle = 4;
+}

@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SKBuiltinString_t.proto";
+import "SpeedResult.proto";
+
+message VoipSpeedResultReq {
+	required BaseRequest _BaseRequest = 1;
+	required uint64 _TestId = 2;
+	required uint64 _RoomKey = 3;
+	required uint32 _NetType = 4;
+	required SKBuiltinString_t _NetName = 5;
+	required SKBuiltinString_t _WifiName = 6;
+	required double _Longitude = 7;
+	required double _Latitude = 8;
+	required uint32 _RoomId = 9;
+	required uint32 _ResultCnt = 10;
+	repeated SpeedResult _Result = 11;
+}

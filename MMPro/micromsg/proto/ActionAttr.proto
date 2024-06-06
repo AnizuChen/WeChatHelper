@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message ActionAttr {
+	optional string _Name = 1;
+	optional string _Tips = 2;
+	optional uint32 _Type = 3;
+	optional string _Content = 4;
+	optional string _IconUrl = 5;
+}

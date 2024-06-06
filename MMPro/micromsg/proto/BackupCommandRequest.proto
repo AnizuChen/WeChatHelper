@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message BackupCommandRequest {
+	required int32 _Command = 1;
+	optional bytes _Data = 2;
+}

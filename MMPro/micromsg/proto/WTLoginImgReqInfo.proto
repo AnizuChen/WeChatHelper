@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SKBuiltinBuffer_t.proto";
+
+message WTLoginImgReqInfo {
+	optional string _ImgSid = 1;
+	optional string _ImgCode = 2;
+	optional string _ImgEncryptKey = 3;
+	required SKBuiltinBuffer_t _KSid = 4;
+}

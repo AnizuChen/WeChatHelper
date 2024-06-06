@@ -1,0 +1,24 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message ShakeMusicResponse {
+	required BaseResponse _BaseResponse = 1;
+	required uint32 _EndFlag = 2;
+	required uint32 _MusicId = 3;
+	required float _Offset = 4;
+	required SKBuiltinBuffer_t _SongName = 5;
+	required SKBuiltinBuffer_t _SongSinger = 6;
+	required SKBuiltinBuffer_t _SongAlbum = 7;
+	required SKBuiltinBuffer_t _SongAlbumUrl = 8;
+	required SKBuiltinBuffer_t _SongWifiUrl = 9;
+	required SKBuiltinBuffer_t _SongWapLinkUrl = 10;
+	required SKBuiltinBuffer_t _SongWebUrl = 11;
+	required SKBuiltinBuffer_t _SongLyric = 12;
+	optional uint32 _ResultType = 13;
+	optional uint32 _TVType = 14;
+	optional string _TVDescriptionXML = 15;
+}

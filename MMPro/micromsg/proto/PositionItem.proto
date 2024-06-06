@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message PositionItem {
+	required double _Latitude = 1;
+	required double _Longitude = 2;
+	required double _Heading = 3;
+}

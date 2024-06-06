@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message Donor {
+	required uint32 _Time = 1;
+	optional string _UserName = 2;
+	optional string _NickName = 3;
+	optional string _DonateTitle = 4;
+	optional string _DonateUrl = 5;
+}

@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message DeleteSnsOldGroup {
+	required uint32 _GroupCount = 1;
+	repeated uint64 _GroupIds = 2;
+}

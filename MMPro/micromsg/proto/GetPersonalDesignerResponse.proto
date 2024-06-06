@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "EmotionSummary.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message GetPersonalDesignerResponse {
+	required BaseResponse _BaseResponse = 1;
+	required string _BannerUrl = 2;
+	required string _Name = 3;
+	required string _Desc = 4;
+	required string _HeadUrl = 5;
+	required string _BizName = 6;
+	repeated EmotionSummary _EmotionList = 7;
+	required SKBuiltinBuffer_t _ReqBuf = 8;
+}

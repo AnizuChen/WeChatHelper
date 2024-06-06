@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message ShakeSyncRequest {
+	required BaseRequest _BaseRequest = 1;
+	required float _Longitude = 2;
+	required float _Latitude = 3;
+	required int32 _Precision = 4;
+	optional string _MacAddr = 5;
+	optional string _CellId = 6;
+	required uint32 _ImgId = 7;
+	required uint32 _Times = 8;
+}

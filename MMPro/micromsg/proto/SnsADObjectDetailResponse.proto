@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "SnsADObject.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message SnsADObjectDetailResponse {
+	required BaseResponse _BaseResponse = 1;
+	required SnsADObject _Object = 2;
+	optional SKBuiltinBuffer_t _Session = 3;
+}

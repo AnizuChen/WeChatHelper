@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "RadarSearchMember.proto";
+
+message RadarSearchResponse {
+	required BaseResponse _BaseResponse = 1;
+	optional string _Ticket = 2;
+	required uint32 _OpCode = 3;
+	required uint32 _MemberCount = 4;
+	repeated RadarSearchMember _MemberList = 5;
+}

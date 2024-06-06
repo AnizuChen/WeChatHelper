@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message PluginInstall {
+	required uint32 _PluginFlag = 1;
+	required uint32 _IsUnInstall = 2;
+}

@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message UpdateSafeDeviceRequest {
+	required BaseRequest _BaseRequest = 1;
+	optional string _Uuid = 2;
+	optional string _Name = 3;
+	optional string _DeviceType = 4;
+}

@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "ChatRoomMemberInfo.proto";
+
+message ChatRoomMemberData {
+	required uint32 _MemberCount = 1;
+	repeated ChatRoomMemberInfo _ChatRoomMember = 2;
+	optional uint32 _InfoMask = 3;
+}

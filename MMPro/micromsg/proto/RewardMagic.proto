@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message RewardMagic {
+	required string _MagicWord = 1;
+	required string _MagicUrl = 2;
+	optional uint32 _MagicExpire = 3;
+	optional uint32 _MagicLimit = 4;
+	required string _ProductID = 5;
+	optional string _Md5 = 6;
+}

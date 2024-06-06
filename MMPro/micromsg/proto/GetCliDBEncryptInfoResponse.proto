@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message GetCliDBEncryptInfoResponse {
+	required BaseResponse _BaseResponse = 1;
+	required SKBuiltinBuffer_t _CliDBEncryptKey = 2;
+	required SKBuiltinBuffer_t _CliDBEncryptInfo = 3;
+}

@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message ShowcaseInfo {
+	required uint32 _ObjectId = 1;
+	optional string _Summary = 2;
+}

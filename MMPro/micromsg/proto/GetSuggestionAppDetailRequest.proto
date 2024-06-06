@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message GetSuggestionAppDetailRequest {
+	required BaseRequest _BaseRequest = 1;
+	optional string _AppID = 2;
+	optional string _Lang = 3;
+}

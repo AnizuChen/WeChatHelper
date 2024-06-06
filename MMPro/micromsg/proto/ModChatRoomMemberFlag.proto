@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message ModChatRoomMemberFlag {
+	optional string _ChatRoomName = 1;
+	optional string _UserName = 2;
+	required uint32 _FlagSwitch = 3;
+	required uint32 _Value = 4;
+}

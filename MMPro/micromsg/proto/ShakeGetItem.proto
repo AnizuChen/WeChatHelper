@@ -1,0 +1,35 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SKBuiltinBuffer_t.proto";
+import "SnsUserInfo.proto";
+import "CustomizedInfo.proto";
+
+message ShakeGetItem {
+	optional string _UserName = 1;
+	optional string _NickName = 2;
+	optional string _Province = 3;
+	optional string _City = 4;
+	optional string _Signature = 5;
+	optional string _Distance = 6;
+	required int32 _Sex = 7;
+	required uint32 _ImgStatus = 8;
+	required uint32 _HasHDImg = 9;
+	required SKBuiltinBuffer_t _ImgBuffer = 10;
+	required uint32 _NumDistance = 11;
+	optional string _Weibo = 12;
+	optional string _WeiboNickname = 13;
+	optional uint32 _WeiboFlag = 14;
+	optional uint32 _VerifyFlag = 15;
+	optional string _VerifyInfo = 16;
+	optional string _VerifyContent = 17;
+	optional int32 _HeadImgVersion = 21;
+	optional SnsUserInfo _SnsUserInfo = 22;
+	optional string _Country = 23;
+	optional string _BigHeadImgUrl = 24;
+	optional string _SmallHeadImgUrl = 25;
+	optional string _MyBrandList = 26;
+	optional CustomizedInfo _CustomizedInfo = 27;
+	optional string _AntispamTicket = 28;
+}

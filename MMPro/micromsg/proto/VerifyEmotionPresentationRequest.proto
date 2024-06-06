@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "EmotionMember.proto";
+
+message VerifyEmotionPresentationRequest {
+	required BaseRequest _BaseRequest = 1;
+	optional string _ProductID = 2;
+	required uint32 _MemberCount = 3;
+	repeated EmotionMember _MemberList = 4;
+}

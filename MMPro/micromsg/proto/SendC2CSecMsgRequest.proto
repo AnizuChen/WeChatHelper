@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message SendC2CSecMsgRequest {
+	required BaseRequest _BaseRequest = 1;
+	optional string _ToUser = 2;
+	optional int32 _MsgType = 3;
+	optional string _TempId = 4;
+	optional string _Title = 5;
+	optional string _Des = 6;
+	optional string _Url = 7;
+	optional int32 _Scene = 8;
+}

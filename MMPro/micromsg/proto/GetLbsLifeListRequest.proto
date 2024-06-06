@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SKBuiltinBuffer_t.proto";
+import "LbsLocation.proto";
+
+message GetLbsLifeListRequest {
+	required BaseRequest _BaseRequest = 1;
+	required uint32 _Opcode = 2;
+	required uint32 _Scene = 3;
+	optional SKBuiltinBuffer_t _Buff = 4;
+	required LbsLocation _Loc = 5;
+	optional string _Keyword = 6;
+	optional uint32 _EntryTime = 7;
+}

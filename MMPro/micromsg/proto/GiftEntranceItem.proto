@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message GiftEntranceItem {
+	optional string _CellTitle = 1;
+	optional string _EnranceWording = 2;
+	optional string _AllGiftUrl = 3;
+}

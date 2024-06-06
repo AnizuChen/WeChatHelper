@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "ShowStyleKey.proto";
+
+message GetRegStyleResponse {
+	required BaseResponse _BaseResponse = 1;
+	required ShowStyleKey _RegStyle = 2;
+}

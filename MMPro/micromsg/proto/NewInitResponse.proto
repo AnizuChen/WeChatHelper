@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "SKBuiltinBuffer_t.proto";
+import "CmdItem.proto";
+
+message NewInitResponse {
+	required BaseResponse _BaseResponse = 1;
+	required SKBuiltinBuffer_t _CurrentSynckey = 2;
+	required SKBuiltinBuffer_t _MaxSynckey = 3;
+	required uint32 _ContinueFlag = 4;
+	required uint32 _SelectBitmap = 5;
+	required uint32 _CmdCount = 6;
+	repeated CmdItem _CmdList = 7;
+	required uint32 _Ratio = 8;
+}

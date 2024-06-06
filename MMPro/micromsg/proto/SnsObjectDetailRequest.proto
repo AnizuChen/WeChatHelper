@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message SnsObjectDetailRequest {
+	required BaseRequest _BaseRequest = 1;
+	required uint64 _Id = 2;
+	optional uint32 _GroupDetail = 3;
+}

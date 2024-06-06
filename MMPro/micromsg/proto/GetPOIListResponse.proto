@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "POIItem.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message GetPOIListResponse {
+	required BaseResponse _BaseResponse = 1;
+	required uint32 _ListCount = 2;
+	repeated POIItem _POIList = 3;
+	required uint32 _OpCode = 4;
+	required uint32 _IsEnd = 5;
+	required SKBuiltinBuffer_t _Buff = 6;
+	optional string _Url = 7;
+	optional string _LogoUrl = 8;
+	optional string _Text = 9;
+	optional string _OpenId = 10;
+}

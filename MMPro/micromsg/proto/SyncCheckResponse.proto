@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message SyncCheckResponse {
+	optional string _ErrMsg = 1;
+	optional string _Signature = 2;
+}

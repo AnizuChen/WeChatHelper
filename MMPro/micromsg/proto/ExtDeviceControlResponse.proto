@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+
+message ExtDeviceControlResponse {
+	required BaseResponse _BaseResponse = 1;
+}

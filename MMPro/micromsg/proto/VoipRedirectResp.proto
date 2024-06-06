@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "VoipAddr.proto";
+
+message VoipRedirectResp {
+	required BaseResponse _BaseResponse = 1;
+	required int32 _RoomId = 2;
+	required int32 _RelayAddrCount = 3;
+	repeated VoipAddr _RelayAddrList = 4;
+	required int32 _PunchAddrCount = 5;
+	repeated VoipAddr _PunchAddrList = 6;
+	required int64 _RoomKey = 7;
+	required int32 _RoomMemberId = 8;
+	optional int32 _TcpAddrCount = 9;
+	repeated VoipAddr _TcpAddrList = 10;
+}

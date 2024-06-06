@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+
+message UploadHDHeadImgResponse {
+	required BaseResponse _BaseResponse = 1;
+	required uint32 _TotalLen = 2;
+	required uint32 _StartPos = 3;
+	optional string _FinalImgMd5sum = 4;
+	optional string _BigHeadImgUrl = 5;
+	optional string _SmallHeadImgUrl = 6;
+}

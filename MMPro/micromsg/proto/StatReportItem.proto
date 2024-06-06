@@ -1,0 +1,62 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message StatReportItem {
+	required uint32 _ActionID = 1;
+	required uint32 _Time = 2;
+	required uint32 _IP = 3;
+	required uint32 _Port = 4;
+	required uint32 _IPType = 5;
+	required uint32 _NetType = 6;
+	required uint32 _IfSuc = 7;
+	required uint32 _FunID = 8;
+	required uint32 _Cost = 9;
+	required uint32 _AliveTime = 10;
+	required uint32 _UploadSize = 11;
+	required uint32 _DownloadSize = 12;
+	optional uint32 _Count = 13;
+	optional uint32 _IsWifiFirstConnect = 14;
+	optional uint64 _BeginTimeMS = 15;
+	optional uint64 _EndTimeMS = 16;
+	optional uint32 _NotifySyncCount = 17;
+	optional uint32 _PushSyncCount = 18;
+	optional uint32 _SyncCount = 19;
+	optional uint32 _IsDNS = 20;
+	optional uint32 _IsSocket = 21;
+	optional int32 _ErrCode = 22;
+	optional uint32 _SignalStrength = 23;
+	optional uint32 _ISPCode = 24;
+	optional string _ISPName = 25;
+	optional uint32 _RetryCount = 26;
+	optional string _Host = 27;
+	optional uint32 _IPCnt = 28;
+	optional uint64 _Reserved1 = 29;
+	optional uint64 _Reserved2 = 30;
+	optional uint64 _Reserved3 = 31;
+	optional uint32 _ClientIP = 32;
+	optional uint32 _NetworkCost = 33;
+	optional uint32 _DnsCount = 34;
+	optional uint32 _DnsCost = 35;
+	optional uint32 _ConnCount = 36;
+	optional uint32 _ConnCost = 37;
+	optional uint32 _NewDnsCostTime = 38;
+	optional uint32 _NewDnsErrType = 39;
+	optional uint32 _NewDnsErrCode = 40;
+	optional uint32 _NewDnsSvrIp = 41;
+	optional uint32 _FirstPkgTime = 42;
+	optional uint32 _EndFlag = 43;
+	optional uint32 _TotalTime = 44;
+	optional uint32 _Conncosttime = 45;
+	optional uint32 _Endstep = 46;
+	optional uint32 _Dnscosttime = 47;
+	optional uint32 _Dnserrtype = 48;
+	optional int32 _NewNetType = 49;
+	optional int32 _SubNetType = 50;
+	optional string _NetExtraInfo = 51;
+	optional string _StatReportExtraInfo = 52;
+	optional int32 _TotalConnCost = 53;
+	optional int32 _IpIndex = 54;
+	optional int32 _InnerIp = 55;
+}

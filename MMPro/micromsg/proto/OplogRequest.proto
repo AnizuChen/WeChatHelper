@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "CmdList.proto";
+
+message OplogRequest {
+	required CmdList _Oplog = 1;
+}

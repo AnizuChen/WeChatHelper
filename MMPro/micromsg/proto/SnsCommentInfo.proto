@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message SnsCommentInfo {
+	optional string _Username = 1;
+	optional string _Nickname = 2;
+	required uint32 _Source = 3;
+	required uint32 _Type = 4;
+	optional string _Content = 5;
+	required uint32 _CreateTime = 6;
+	optional int32 _CommentId = 7;
+	optional int32 _ReplyCommentId = 8;
+	optional string _ReplyUsername = 9;
+	optional uint32 _IsNotRichText = 10;
+	optional uint64 _ReplyCommentId2 = 11;
+	optional uint64 _CommentId2 = 12;
+	optional uint32 _DeleteFlag = 13;
+}

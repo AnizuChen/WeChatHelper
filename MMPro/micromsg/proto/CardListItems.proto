@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "CardListItem.proto";
+
+message CardListItems {
+	repeated CardListItem _CardList = 1;
+}

@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message BuiltinIP {
+	required uint32 _type = 1;
+	required uint32 _port = 2;
+	optional bytes _IP = 3;
+	optional bytes _Domain = 4;
+}

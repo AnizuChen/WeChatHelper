@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message PushLoginURLRequest {
+	required BaseRequest _BaseRequest = 1;
+	optional string _UserName = 2;
+	optional string _AutoAuthTicket = 3;
+	optional string _ClientID = 4;
+	required SKBuiltinBuffer_t _RandomEncryKey = 5;
+	required uint32 _OPCode = 6;
+	optional string _DeviceName = 7;
+	optional SKBuiltinBuffer_t _AutoAuthKey = 8;
+}

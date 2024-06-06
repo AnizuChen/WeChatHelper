@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SKBuiltinBuffer_t.proto";
+
+message BakChatCreateQRcodeResponse {
+	required uint32 _Ret = 1;
+	required SKBuiltinBuffer_t _QRCodeBuffer = 2;
+	optional string _QRCodeUrl = 3;
+	required SKBuiltinBuffer_t _Key = 4;
+	optional string _Hello = 5;
+	optional string _OK = 6;
+	required uint32 _EncryFlag = 7;
+	optional string _ID = 8;
+	optional string _Tickit = 9;
+}

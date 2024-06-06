@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message ShakeReportResponse {
+	required BaseResponse _BaseResponse = 1;
+	required SKBuiltinBuffer_t _Buffer = 2;
+	required int32 _Ret = 3;
+	required uint32 _ImgId = 4;
+	optional uint32 _ImgTotoalLen = 5;
+}

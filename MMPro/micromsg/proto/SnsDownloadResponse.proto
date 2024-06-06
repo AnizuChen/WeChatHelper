@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message SnsDownloadResponse {
+	required BaseResponse _BaseResponse = 1;
+	required int32 _StartPos = 2;
+	required int32 _TotalLen = 3;
+	required SKBuiltinBuffer_t _Buffer = 4;
+	optional string _BufferId = 5;
+	required uint32 _Type = 6;
+}

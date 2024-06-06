@@ -1,0 +1,23 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "SnsObject.proto";
+import "SnsServerConfig.proto";
+import "AdvertiseObject.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message SnsTimeLineResponse {
+	required BaseResponse _BaseResponse = 1;
+	optional string _FirstPageMd5 = 2;
+	required uint32 _ObjectCount = 3;
+	repeated SnsObject _ObjectList = 4;
+	optional uint32 _NewRequestTime = 5;
+	optional uint32 _ObjectCountForSameMd5 = 6;
+	optional uint32 _ControlFlag = 7;
+	optional SnsServerConfig _ServerConfig = 8;
+	optional uint32 _AdvertiseCount = 9;
+	repeated AdvertiseObject _AdvertiseList = 10;
+	optional SKBuiltinBuffer_t _Session = 11;
+}

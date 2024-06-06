@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "Snapshot.proto";
+
+message SubmitMallOrderRequest {
+	required BaseRequest _BaseRequest = 1;
+	optional Snapshot _Snapshot = 2;
+	optional string _PayAppid = 3;
+}

@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "VoipCmdItem.proto";
+
+message VoipCmdList {
+	required uint32 _Count = 1;
+	repeated VoipCmdItem _List = 2;
+}

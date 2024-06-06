@@ -1,0 +1,40 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SKBuiltinBuffer_t.proto";
+import "ECDHKey.proto";
+
+message NewRegRequest {
+	required BaseRequest _BaseRequest = 1;
+	optional string _UserName = 2;
+	optional string _Pwd = 3;
+	optional string _NickName = 4;
+	optional uint32 _BindUin = 5;
+	optional string _BindEmail = 6;
+	optional string _BindMobile = 7;
+	optional string _Ticket = 8;
+	optional uint32 _BuiltinIPSeq = 12;
+	optional uint32 _DLSrc = 13;
+	optional uint32 _RegMode = 14;
+	optional string _TimeZone = 15;
+	optional string _Language = 16;
+	optional uint32 _ForceReg = 17;
+	optional string _RealCountry = 18;
+	optional SKBuiltinBuffer_t _RandomEncryKey = 19;
+	optional string _Alias = 20;
+	optional string _VerifySignature = 21;
+	optional string _VerifyContent = 22;
+	optional uint32 _HasHeadImg = 23;
+	optional uint32 _SuggestRet = 24;
+	optional string _ClientSeqID = 31;
+	optional string _AdSource = 32;
+	optional string _AndroidID = 33;
+	optional string _MacAddr = 34;
+	optional string _AndroidInstallRef = 35;
+	optional string _ClientFingerprint = 36;
+	optional ECDHKey _CliPubECDHKey = 37;
+	optional string _GoogleAid = 38;
+	optional string _BundleID = 39;
+}

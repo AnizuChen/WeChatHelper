@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SKBuiltinString_t.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message AddMsg {
+	required int32 _MsgId = 1;
+	required SKBuiltinString_t _FromUserName = 2;
+	required SKBuiltinString_t _ToUserName = 3;
+	required int32 _MsgType = 4;
+	required SKBuiltinString_t _Content = 5;
+	required uint32 _Status = 6;
+	required uint32 _ImgStatus = 7;
+	required SKBuiltinBuffer_t _ImgBuf = 8;
+	required uint32 _CreateTime = 9;
+	optional string _MsgSource = 10;
+	optional string _PushContent = 11;
+	optional int64 _NewMsgId = 12;
+}

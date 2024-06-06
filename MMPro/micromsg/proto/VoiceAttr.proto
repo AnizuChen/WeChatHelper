@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message VoiceAttr {
+	required int32 _FileType = 1;
+	required int32 _EncodeType = 2;
+	required int32 _SampleRate = 3;
+	required int32 _BitsPerSample = 4;
+}

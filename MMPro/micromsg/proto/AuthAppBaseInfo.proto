@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message AuthAppBaseInfo {
+	optional string _AppID = 1;
+	optional string _AppType = 2;
+	optional string _IconUrl = 3;
+	optional string _AppName = 4;
+	required uint32 _AppFlag = 5;
+	optional string _ExternInfo = 6;
+	optional string _AuthInfo = 7;
+	optional string _DevInfo = 8;
+}

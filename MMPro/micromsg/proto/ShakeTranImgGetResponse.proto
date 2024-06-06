@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "ShakeTranImgGetItem.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message ShakeTranImgGetResponse {
+	required BaseResponse _BaseResponse = 1;
+	optional string _PageUrl = 2;
+	required uint32 _Count = 3;
+	repeated ShakeTranImgGetItem _ImgUrlList = 4;
+	optional SKBuiltinBuffer_t _Buffer = 5;
+	optional string _Title = 6;
+}

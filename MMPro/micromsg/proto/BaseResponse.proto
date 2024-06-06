@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SKBuiltinString_t.proto";
+
+message BaseResponse {
+	required int32 _Ret = 1;
+	required SKBuiltinString_t _ErrMsg = 2;
+}

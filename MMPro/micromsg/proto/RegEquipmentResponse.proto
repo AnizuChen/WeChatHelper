@@ -1,0 +1,34 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "BuiltinIPList.proto";
+import "NetworkControl.proto";
+import "PluginKeyList.proto";
+import "HostList.proto";
+
+message RegEquipmentResponse {
+	required BaseResponse _BaseResponse = 1;
+	required uint32 _Uin = 2;
+	optional string _SessionKey = 3;
+	optional string _OfficialUserName = 4;
+	optional string _OfficialNickName = 5;
+	optional string _QQMicroBlogUserName = 6;
+	optional string _BindEmail = 7;
+	required uint32 _PushMailStatus = 8;
+	required uint32 _SendCardBitFlag = 9;
+	optional string _PushMailSettingTicket = 10;
+	required BuiltinIPList _BuiltinIPList = 14;
+	optional string _FSURL = 15;
+	optional string _UserName = 16;
+	required uint32 _Status = 17;
+	required NetworkControl _NetworkControl = 18;
+	required uint32 _ReturnFlag = 19;
+	required uint32 _RegType = 20;
+	optional string _AuthKey = 21;
+	required PluginKeyList _PluginKeyList = 22;
+	optional string _Password = 23;
+	required uint32 _ProfileFlag = 24;
+	required HostList _NewHostList = 25;
+}

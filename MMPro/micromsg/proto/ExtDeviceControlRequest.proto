@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message ExtDeviceControlRequest {
+	optional uint32 _OpType = 1;
+	optional uint32 _LockDevice = 2;
+}

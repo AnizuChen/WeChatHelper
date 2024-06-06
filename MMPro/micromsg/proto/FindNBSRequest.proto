@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "PositionInfo.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message FindNBSRequest {
+	required BaseRequest _BaseRequest = 1;
+	required uint32 _NBSType = 2;
+	required PositionInfo _UserPos = 3;
+	required SKBuiltinBuffer_t _PageBuff = 4;
+}

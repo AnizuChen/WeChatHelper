@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message VerifyPersonalInfoReq {
+	required BaseRequest _BaseRequest = 1;
+	optional string _UserRealName = 2;
+	required uint32 _UserIDCardType = 3;
+	optional string _UserIDCardNum = 4;
+}

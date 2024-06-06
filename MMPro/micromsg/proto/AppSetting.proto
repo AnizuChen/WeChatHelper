@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message AppSetting {
+	optional string _AppID = 1;
+	required uint32 _AppFlag = 2;
+	optional string _OpenID = 3;
+}

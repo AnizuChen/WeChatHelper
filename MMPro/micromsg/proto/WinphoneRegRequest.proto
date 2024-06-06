@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message WinphoneRegRequest {
+	required BaseRequest _BaseRequest = 1;
+	optional string _Uri = 2;
+}

@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message ExposeRequest {
+	required BaseRequest _BaseRequest = 1;
+	optional string _UserName = 2;
+	required uint32 _Scene = 3;
+	required uint32 _Type = 4;
+	optional string _AlbumPhotoId = 5;
+	optional uint32 _AlbumType = 6;
+	optional uint64 _SnsId = 7;
+	optional string _ExposeContent = 8;
+}

@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "SKBuiltinString_t.proto";
+import "MemberResp.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message CreateChatRoomResponse {
+	required BaseResponse _BaseResponse = 1;
+	required SKBuiltinString_t _Topic = 2;
+	required SKBuiltinString_t _PYInitial = 3;
+	required SKBuiltinString_t _QuanPin = 4;
+	required uint32 _MemberCount = 5;
+	repeated MemberResp _MemberList = 6;
+	required SKBuiltinString_t _ChatRoomName = 7;
+	required SKBuiltinBuffer_t _ImgBuf = 8;
+	optional string _BigHeadImgUrl = 9;
+	optional string _SmallHeadImgUrl = 10;
+}

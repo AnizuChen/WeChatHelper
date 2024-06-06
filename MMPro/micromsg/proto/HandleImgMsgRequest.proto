@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SKBuiltinString_t.proto";
+
+message HandleImgMsgRequest {
+	required BaseRequest _BaseRequest = 1;
+	required SKBuiltinString_t _ClientImgId = 2;
+	optional string _MediaId = 3;
+	required SKBuiltinString_t _FromUserName = 4;
+	required SKBuiltinString_t _ToUserName = 5;
+	required uint32 _ImgLen = 6;
+	required uint32 _MsgType = 7;
+	optional string _MsgSource = 8;
+	required uint32 _CompressType = 9;
+}

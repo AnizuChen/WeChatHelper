@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message TalkMicActionReq {
+	required BaseRequest _BaseRequest = 1;
+	required int32 _RoomId = 2;
+	required int64 _RoomKey = 3;
+	required uint32 _ActionType = 4;
+	optional uint32 _UpdateTime = 5;
+	optional uint32 _Scene = 6;
+}

@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "SKBuiltinString_t.proto";
+
+message GetUpdateInfoResponse {
+	required BaseResponse _BaseResponse = 1;
+	required uint32 _PackVersion = 2;
+	optional string _PackMd5 = 3;
+	required uint32 _PackSize = 4;
+	optional string _PackDescription = 5;
+	optional uint32 _UrlCount = 6;
+	repeated SKBuiltinString_t _DownLoadUrl = 7;
+	optional string _PatchInfo = 8;
+}

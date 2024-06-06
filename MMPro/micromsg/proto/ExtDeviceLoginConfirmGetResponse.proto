@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "ExtDeviceLoginConfirmOKRet.proto";
+import "ExtDeviceLoginConfirmErrorRet.proto";
+import "ExtDeviceLoginConfirmExpiredRet.proto";
+
+message ExtDeviceLoginConfirmGetResponse {
+	required BaseResponse _BaseResponse = 1;
+	optional ExtDeviceLoginConfirmOKRet _OKRet = 2;
+	optional ExtDeviceLoginConfirmErrorRet _ErrorRet = 3;
+	optional ExtDeviceLoginConfirmExpiredRet _ExpiredRet = 4;
+	optional string _DeviceNameStr = 5;
+}

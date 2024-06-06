@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+
+message CancelPreOrderResponse {
+	required BaseResponse _BaseResponse = 1;
+	optional int32 _RetCode = 2;
+	optional string _RetMsg = 3;
+}

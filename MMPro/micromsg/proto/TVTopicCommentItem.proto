@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message TVTopicCommentItem {
+	optional string _UserName = 1;
+	optional string _NickName = 2;
+	optional string _BigHeadUrl = 3;
+	optional string _SmallHeadUrl = 4;
+	required uint32 _TimeStamp = 5;
+	optional string _Content = 6;
+	required uint32 _CommentId = 7;
+}

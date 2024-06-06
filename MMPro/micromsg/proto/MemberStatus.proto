@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message MemberStatus {
+	optional string _UserName = 1;
+	required int32 _Status = 2;
+}

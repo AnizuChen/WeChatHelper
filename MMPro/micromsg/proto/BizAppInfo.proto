@@ -1,0 +1,29 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message BizAppInfo {
+	optional string _AppId = 1;
+	optional string _Name = 2;
+	optional string _Description = 3;
+	optional string _Name4EnUS = 4;
+	optional string _Description4EnUS = 5;
+	optional string _Name4ZhTW = 6;
+	optional string _Description4ZhTW = 7;
+	optional string _IconUrlSD = 8;
+	optional string _IconUrlHD = 9;
+	optional string _StoreUrl = 10;
+	optional string _WatermarkUrl = 11;
+	optional string _AndroidPackageName = 12;
+	optional string _AndroidSignature = 13;
+	optional string _AppType = 14;
+	optional string _DevInfo = 15;
+	required uint32 _AppInfoFlag = 16;
+	required uint32 _AppVersion = 17;
+	optional uint32 _AppUpdateVersion = 18;
+	optional string _IconUrlMDPI = 19;
+	optional string _DownloadUrl = 20;
+	optional string _DownloadUrlMd5 = 21;
+	optional string _GooglePlayDownloadUrl = 22;
+}

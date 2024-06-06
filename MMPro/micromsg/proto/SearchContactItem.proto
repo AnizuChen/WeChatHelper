@@ -1,0 +1,38 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SKBuiltinString_t.proto";
+import "SKBuiltinBuffer_t.proto";
+import "SnsUserInfo.proto";
+import "CustomizedInfo.proto";
+
+message SearchContactItem {
+	required SKBuiltinString_t _UserName = 1;
+	required SKBuiltinString_t _NickName = 2;
+	required SKBuiltinString_t _PYInitial = 3;
+	required SKBuiltinString_t _QuanPin = 4;
+	required int32 _Sex = 5;
+	required SKBuiltinBuffer_t _ImgBuf = 6;
+	optional string _Province = 7;
+	optional string _City = 8;
+	optional string _Signature = 9;
+	optional uint32 _PersonalCard = 10;
+	optional uint32 _VerifyFlag = 11;
+	optional string _VerifyInfo = 12;
+	optional string _Weibo = 13;
+	optional string _Alias = 14;
+	optional string _WeiboNickname = 15;
+	optional uint32 _WeiboFlag = 16;
+	optional int32 _AlbumStyle = 17;
+	optional int32 _AlbumFlag = 18;
+	optional string _AlbumBGImgID = 19;
+	optional SnsUserInfo _SnsUserInfo = 20;
+	optional string _Country = 21;
+	optional string _MyBrandList = 22;
+	optional CustomizedInfo _CustomizedInfo = 23;
+	optional string _BigHeadImgUrl = 24;
+	optional string _SmallHeadImgUrl = 25;
+	optional string _AntispamTicket = 26;
+	optional uint32 _MatchType = 27;
+}

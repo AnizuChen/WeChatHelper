@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message StatusNotifyFunction {
+	optional string _Name = 1;
+	optional string _Arg = 2;
+}

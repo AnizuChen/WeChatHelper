@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "AppPersonalInfo.proto";
+
+message GetAppPersonalInfoListResponse {
+	required BaseResponse _BaseResponse = 1;
+	required uint32 _Count = 2;
+	repeated AppPersonalInfo _AppPersonalInfoList = 3;
+}

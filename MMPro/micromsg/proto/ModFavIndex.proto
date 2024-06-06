@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message ModFavIndex {
+	required uint32 _ModField = 1;
+	required uint32 _ModValue = 2;
+}

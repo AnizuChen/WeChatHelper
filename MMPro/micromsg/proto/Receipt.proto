@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message Receipt {
+	required uint32 _IsNeed = 1;
+	optional string _Detail = 2;
+}

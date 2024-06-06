@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message GetImUnreadMsgCountRequest {
+	required BaseRequest _BaseRequest = 1;
+}

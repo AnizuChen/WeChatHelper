@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message FacebookInfo {
+	required uint64 _Uid = 1;
+	optional string _Name = 2;
+	optional string _Token = 3;
+}

@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "TranslatedMsg.proto";
+
+message GetTransTextResponse {
+	required BaseResponse _BaseResponse = 1;
+	required uint32 _MsgCount = 2;
+	repeated TranslatedMsg _MsgList = 3;
+	optional string _ToLang = 4;
+}

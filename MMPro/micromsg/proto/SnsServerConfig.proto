@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message SnsServerConfig {
+	optional int32 _PostMentionLimit = 1;
+	optional int32 _CopyAndPasteWordLimit = 2;
+}

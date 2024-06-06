@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message FriendGroup {
+	required uint32 _GroupId = 1;
+	optional string _GroupName = 2;
+}

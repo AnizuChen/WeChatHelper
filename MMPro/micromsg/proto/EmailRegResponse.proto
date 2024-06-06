@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "BuiltinIPList.proto";
+import "HostList.proto";
+import "ShowStyleKey.proto";
+import "NetworkControl.proto";
+
+message EmailRegResponse {
+	required BaseResponse _BaseResponse = 1;
+	optional string _Ticket = 2;
+	optional BuiltinIPList _BuiltinIPList = 3;
+	optional HostList _NewHostList = 4;
+	optional ShowStyleKey _ShowStyle = 5;
+	optional NetworkControl _NetworkControl = 6;
+}

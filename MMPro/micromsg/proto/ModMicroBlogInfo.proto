@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SKBuiltinString_t.proto";
+
+message ModMicroBlogInfo {
+	required SKBuiltinString_t _UserName = 1;
+	required uint32 _MicroBlogType = 2;
+	required uint32 _NotifyStatus = 3;
+	required uint32 _DeleteFlag = 4;
+}

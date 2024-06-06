@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SampleProduct.proto";
+
+message CancelPreOrderRequest {
+	required BaseRequest _BaseRequest = 1;
+	required uint32 _ProductCount = 2;
+	repeated SampleProduct _Product = 3;
+	optional string _LockId = 4;
+}

@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message NBSConfigInfo {
+	required uint32 _ConfId = 1;
+	required uint32 _Type = 2;
+	optional string _Summary = 3;
+}

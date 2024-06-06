@@ -1,0 +1,34 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SKBuiltinString_t.proto";
+import "YYBStruct.proto";
+
+message RcAppList {
+	optional string _AppID = 1;
+	optional string _AppName = 2;
+	optional string _AppIconUrl = 3;
+	optional string _AppDesc = 4;
+	optional string _AppDownloadUrl = 5;
+	optional string _AppCoverUrl = 6;
+	optional string _AppDevInfo = 7;
+	required int32 _AppScreenShotCount = 8;
+	repeated SKBuiltinString_t _AppScreenShotList = 9;
+	optional string _AppSnsDesc = 10;
+	optional string _AppSnapshotUrl = 11;
+	optional string _AppDetailDesc = 12;
+	optional uint32 _FriendCount = 13;
+	optional string _AppType = 14;
+	optional string _AndroidApkMd5 = 15;
+	optional string _AndroidPackageName = 16;
+	optional string _AppNamezhTW = 17;
+	optional string _AppNameEnUS = 18;
+	optional string _GooglePlayDownloadUrl = 19;
+	optional string _AppSuggestionIconUrl = 20;
+	optional string _AppSuggestionIntroUrl = 21;
+	optional YYBStruct _SYYB = 22;
+	optional string _AppLaunchScheme = 23;
+	optional uint32 _GooglePlayDownloadFlag = 24;
+	optional uint32 _AppInfoFlag = 25;
+}

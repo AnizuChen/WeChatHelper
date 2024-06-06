@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+
+message JoinTrackRoomResponse {
+	required BaseResponse _BaseResponse = 1;
+	optional string _TrackRoomID = 2;
+	optional string _RetMsg = 3;
+}

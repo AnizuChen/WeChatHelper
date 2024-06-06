@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SKBuiltinBuffer_t.proto";
+
+message VoicePieceCtx {
+	required uint32 _StartPos = 1;
+	required uint32 _PieceLen = 2;
+	required uint32 _PieceFlag = 3;
+	required SKBuiltinBuffer_t _PieceData = 4;
+}

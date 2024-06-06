@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "SpeedTestSvr.proto";
+
+message VoipSpeedTestRsp {
+	required BaseResponse _BaseResponse = 1;
+	required uint32 _NeedTest = 2;
+	required uint64 _TestId = 3;
+	required uint32 _SvrListCnt = 4;
+	repeated SpeedTestSvr _SvrList = 5;
+}

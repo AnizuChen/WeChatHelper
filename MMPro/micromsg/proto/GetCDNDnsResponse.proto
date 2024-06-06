@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "CDNDnsInfo.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message GetCDNDnsResponse {
+	required BaseResponse _BaseResponse = 1;
+	required CDNDnsInfo _DnsInfo = 2;
+	optional CDNDnsInfo _SnsDnsInfo = 3;
+	optional CDNDnsInfo _AppDnsInfo = 4;
+	optional SKBuiltinBuffer_t _CDNDnsRuleBuf = 5;
+	optional SKBuiltinBuffer_t _FakeCDNDnsRuleBuf = 6;
+	optional CDNDnsInfo _FakeDnsInfo = 7;
+}

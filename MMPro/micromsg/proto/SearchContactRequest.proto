@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SKBuiltinString_t.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message SearchContactRequest {
+	required BaseRequest _BaseRequest = 1;
+	required SKBuiltinString_t _UserName = 2;
+	optional uint32 _OpCode = 3;
+	optional SKBuiltinBuffer_t _ReqBuf = 4;
+	optional uint32 _FromScene = 5;
+	optional uint32 _SearchScene = 6;
+}

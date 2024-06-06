@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "VoipRelayData.proto";
+
+message VoipAnswerReq {
+	required BaseRequest _BaseRequest = 1;
+	optional string _FromUsername = 2;
+	required int32 _RoomId = 3;
+	required int32 _Answer = 4;
+	optional VoipRelayData _PeerId = 5;
+	optional VoipRelayData _CapInfo = 6;
+	required int64 _RoomKey = 7;
+	required int32 _NetType = 8;
+	optional uint64 _Timestamp64 = 9;
+	optional int32 _OnlyAudio = 10;
+}

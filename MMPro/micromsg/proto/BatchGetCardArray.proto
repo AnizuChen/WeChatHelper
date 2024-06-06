@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BatchGetCardItem.proto";
+
+message BatchGetCardArray {
+	repeated BatchGetCardItem _CardArray = 1;
+}

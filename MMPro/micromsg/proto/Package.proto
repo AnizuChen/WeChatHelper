@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SKBuiltinBuffer_t.proto";
+
+message Package {
+	required int32 _Id = 1;
+	required int32 _Version = 2;
+	optional string _Name = 3;
+	optional uint32 _Size = 4;
+	optional SKBuiltinBuffer_t _Thumb = 5;
+	optional string _PackName = 6;
+	optional SKBuiltinBuffer_t _Ext = 7;
+	optional string _Md5 = 8;
+}

@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message LbsLifeExtInfo {
+	required uint32 _Limit = 1;
+	required uint32 _Page = 2;
+	optional string _Sessiontoken = 3;
+}

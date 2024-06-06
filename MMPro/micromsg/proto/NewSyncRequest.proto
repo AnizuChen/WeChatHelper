@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "CmdList.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message NewSyncRequest {
+	required CmdList _Oplog = 1;
+	required uint32 _Selector = 2;
+	required SKBuiltinBuffer_t _KeyBuf = 3;
+	optional uint32 _Scene = 4;
+	optional string _DeviceType = 5;
+}

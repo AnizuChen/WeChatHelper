@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message VoipNetQuality {
+	required int32 _Type = 1;
+	required int32 _Begin = 2;
+	required int32 _End = 3;
+	required int32 _HitCnt = 4;
+}

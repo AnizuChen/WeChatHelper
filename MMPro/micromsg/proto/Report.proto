@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message Report {
+	optional string _Log = 1;
+}

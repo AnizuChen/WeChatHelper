@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "RadarMember.proto";
+
+message RadarCreateChatRoomParameter {
+	optional string _Ticket = 1;
+	optional uint32 _RadarMemberCount = 2;
+	repeated RadarMember _RadarMemberList = 3;
+}

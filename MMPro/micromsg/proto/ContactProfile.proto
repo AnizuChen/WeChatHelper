@@ -1,0 +1,31 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SKBuiltinBuffer_t.proto";
+import "RoomInfo.proto";
+
+message ContactProfile {
+	optional string _UserName = 1;
+	optional string _NickName = 2;
+	optional string _PYInitial = 3;
+	optional string _QuanPin = 4;
+	required int32 _Sex = 5;
+	required SKBuiltinBuffer_t _ImgBuf = 6;
+	required uint32 _BitMask = 7;
+	required uint32 _BitVal = 8;
+	optional string _Remark = 9;
+	required uint32 _ImgRet = 10;
+	optional string _RemarkPYInitial = 11;
+	optional string _RemarkQuanPin = 12;
+	required uint32 _ContactType = 13;
+	required uint32 _RoomInfoCount = 14;
+	repeated RoomInfo _RoomInfoList = 15;
+	optional string _DomainList = 16;
+	required uint32 _ChatRoomNotify = 17;
+	required uint32 _AddContactScene = 18;
+	optional string _ExtInfo = 19;
+	required uint32 _ExtUpdateSeq = 20;
+	required uint32 _ImgUpdateSeq = 21;
+	optional string _Alias = 22;
+}

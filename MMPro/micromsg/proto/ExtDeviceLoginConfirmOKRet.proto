@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message ExtDeviceLoginConfirmOKRet {
+	optional uint32 _IconType = 1;
+	optional string _ContentStr = 2;
+	optional string _ButtonOkStr = 3;
+	optional string _ButtonCancelStr = 4;
+	optional uint32 _ReqSessionLimit = 5;
+	optional uint32 _ConfirmTimeOut = 6;
+	optional string _LoginedDevTip = 7;
+	optional string _TitleStr = 8;
+}

@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+
+message RevokeMsgResponse {
+	required BaseResponse _BaseResponse = 1;
+	optional string _Introduction = 2;
+	optional string _SysWording = 3;
+}

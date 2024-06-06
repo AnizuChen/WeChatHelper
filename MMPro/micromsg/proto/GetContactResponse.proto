@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "ModContact.proto";
+
+message GetContactResponse {
+	required BaseResponse _BaseResponse = 1;
+	required uint32 _ContactCount = 2;
+	repeated ModContact _ContactList = 3;
+	repeated int32 _Ret = 4;
+}

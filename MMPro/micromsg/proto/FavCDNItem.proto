@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message FavCDNItem {
+	optional string _DataId = 1;
+	optional string _FullMd5 = 2;
+	optional string _Head256Md5 = 3;
+	required uint32 _FullSize = 4;
+	optional string _CDNURL = 5;
+	optional string _AESKey = 6;
+	required int32 _EncryVer = 7;
+	optional string _VideoId = 8;
+	required int32 _Status = 9;
+	required int32 _DataStatus = 10;
+}

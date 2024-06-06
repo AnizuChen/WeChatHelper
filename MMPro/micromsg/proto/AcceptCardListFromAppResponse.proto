@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+
+message AcceptCardListFromAppResponse {
+	required BaseResponse _BaseResponse = 1;
+	optional string _JsonRet = 2;
+	optional int32 _RetCode = 3;
+	optional string _RetMsg = 4;
+}

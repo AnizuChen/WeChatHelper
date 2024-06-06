@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+
+message AddChatRoomDonateRecordResp {
+	required BaseResponse _BaseResponse = 1;
+	required uint32 _MaxCount = 2;
+}

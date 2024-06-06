@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message GetQQMusicLyricRequest {
+	required BaseRequest _BaseRequest = 1;
+	required uint32 _SongId = 2;
+	required SKBuiltinBuffer_t _Url = 3;
+}

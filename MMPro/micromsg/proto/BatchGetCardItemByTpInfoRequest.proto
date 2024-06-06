@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "CardTpInfoItem.proto";
+
+message BatchGetCardItemByTpInfoRequest {
+	required BaseRequest _BaseRequest = 1;
+	repeated CardTpInfoItem _Items = 2;
+}

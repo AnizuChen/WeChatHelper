@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message Host {
+	optional string _Origin = 1;
+	optional string _Substitute = 2;
+	optional int32 _Priority = 3;
+}

@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "YYBStruct.proto";
+
+message AdAppList {
+	optional string _AppID = 1;
+	optional string _AppCoverUrl = 2;
+	optional string _AppDownloadUrl = 3;
+	optional string _AndroidApkMd5 = 4;
+	optional string _AppName = 5;
+	optional string _AppIconUrl = 6;
+	optional string _AppSnsDesc = 7;
+	optional string _AndroidPackageName = 8;
+	optional string _GooglePlayDownloadUrl = 9;
+	optional YYBStruct _SYYB = 10;
+	optional string _ExtAsXML = 11;
+}

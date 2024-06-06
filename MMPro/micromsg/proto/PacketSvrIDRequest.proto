@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message PacketSvrIDRequest {
+	repeated uint64 _SvrID = 1;
+	repeated string _MediaID = 2;
+	repeated string _MD5 = 3;
+	required string _BakChatName = 4;
+}

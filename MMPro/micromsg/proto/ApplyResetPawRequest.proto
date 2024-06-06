@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message ApplyResetPawRequest {
+	required BaseRequest _BaseRequest = 1;
+	required int32 _Type = 2;
+	optional string _ResetInfo = 3;
+	optional uint32 _GetMethod = 4;
+	optional SKBuiltinBuffer_t _RandomEncryKey = 5;
+}

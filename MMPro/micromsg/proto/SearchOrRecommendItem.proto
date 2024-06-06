@@ -1,0 +1,26 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SKBuiltinString_t.proto";
+import "CustomizedInfo.proto";
+
+message SearchOrRecommendItem {
+	required SKBuiltinString_t _UserName = 1;
+	required SKBuiltinString_t _NickName = 2;
+	required int32 _Sex = 3;
+	optional string _Province = 4;
+	optional string _City = 5;
+	optional string _Signature = 6;
+	optional uint32 _PersonalCard = 7;
+	optional uint32 _VerifyFlag = 8;
+	optional string _VerifyInfo = 9;
+	optional string _Weibo = 10;
+	optional string _Alias = 11;
+	optional string _WeiboNickname = 12;
+	optional uint32 _WeiboFlag = 13;
+	optional string _Country = 14;
+	optional CustomizedInfo _CustomizedInfo = 15;
+	optional string _BigHeadImgUrl = 16;
+	optional string _SmallHeadImgUrl = 17;
+}

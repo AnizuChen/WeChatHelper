@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message YYBStruct {
+	optional uint32 _AndroidDownloadFlag = 1;
+	optional string _DownloadUrl = 2;
+	optional string _ApkMd5 = 3;
+	optional string _PreemptiveUrl = 4;
+	optional string _ExtInfo = 5;
+	optional string _DownloadTipsWording = 6;
+	optional int32 _SupportedVersionCode = 7;
+}

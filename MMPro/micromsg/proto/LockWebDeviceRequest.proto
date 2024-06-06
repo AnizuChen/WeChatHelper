@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message LockWebDeviceRequest {
+	required BaseRequest _BaseRequest = 1;
+	required uint32 _OPCode = 2;
+	optional string _BlueToothBroadCastUUID = 3;
+	required SKBuiltinBuffer_t _BlueToothBroadCastContent = 4;
+}

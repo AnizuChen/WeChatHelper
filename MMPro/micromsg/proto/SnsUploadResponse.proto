@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "SnsBufferUrl.proto";
+
+message SnsUploadResponse {
+	required BaseResponse _BaseResponse = 1;
+	required uint32 _StartPos = 2;
+	required uint32 _TotalLen = 3;
+	optional string _ClientId = 4;
+	required SnsBufferUrl _BufferUrl = 5;
+	required uint32 _ThumbUrlCount = 6;
+	repeated SnsBufferUrl _ThumbUrls = 7;
+	required uint64 _Id = 8;
+	required uint32 _Type = 9;
+}

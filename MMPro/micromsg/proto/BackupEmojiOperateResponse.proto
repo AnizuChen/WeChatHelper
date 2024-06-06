@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+
+message BackupEmojiOperateResponse {
+	required BaseResponse _BaseResponse = 1;
+	repeated string _NeedUploadMd5List = 2;
+}

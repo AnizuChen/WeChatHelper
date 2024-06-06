@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message SampleProduct {
+	optional string _Pid = 1;
+	optional string _SkuId = 2;
+	optional uint32 _Count = 3;
+	optional string _SafeUrl = 4;
+}

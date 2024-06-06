@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message OpenAppInfo {
+	optional string _AppID = 1;
+	optional string _AppName = 2;
+	optional string _AppDescription = 3;
+	optional string _AppIconUrl = 4;
+	optional string _AppStoreUrl = 5;
+	required uint32 _AppVersion = 6;
+	optional string _AppWatermarkUrl = 7;
+	optional string _AndroidPackageName = 8;
+	optional string _AndroidSignature = 9;
+	optional string _AppName4EnUS = 10;
+	optional string _AppDescription4EnUS = 11;
+	optional string _AppName4ZhTW = 12;
+	optional string _AppDescription4ZhTW = 13;
+	optional uint32 _AppInfoFlag = 14;
+}

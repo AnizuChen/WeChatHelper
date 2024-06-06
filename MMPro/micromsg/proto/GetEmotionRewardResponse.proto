@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "EmotionPrice.proto";
+import "EmotionDonor.proto";
+import "EmotionReward.proto";
+
+message GetEmotionRewardResponse {
+	required BaseResponse _BaseResponse = 1;
+	repeated EmotionPrice _Price = 2;
+	optional uint32 _DonorNum = 3;
+	repeated EmotionDonor _Donors = 4;
+	optional EmotionReward _Reward = 5;
+}

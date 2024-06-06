@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+
+message AskForRewardResponse {
+	required BaseResponse _BaseResponse = 1;
+	required string _ReqKey = 2;
+	required string _AppID = 3;
+}

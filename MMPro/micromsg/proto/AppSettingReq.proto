@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message AppSettingReq {
+	optional string _AppID = 1;
+}

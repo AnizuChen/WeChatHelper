@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message GetRecommendAppListRequest {
+	required BaseRequest _BaseRequest = 1;
+	required uint32 _Start = 2;
+	required uint32 _Count = 3;
+	optional string _InstalledList = 4;
+	required uint32 _IconType = 5;
+}

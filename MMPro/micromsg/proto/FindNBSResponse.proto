@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "NBSInfo.proto";
+import "NBSConfigInfo.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message FindNBSResponse {
+	required BaseResponse _BaseResponse = 1;
+	required uint32 _NBSCount = 2;
+	repeated NBSInfo _NBSList = 3;
+	required uint32 _NBSConfigCount = 4;
+	repeated NBSConfigInfo _NBSConfigList = 5;
+	required SKBuiltinBuffer_t _PageBuff = 6;
+}

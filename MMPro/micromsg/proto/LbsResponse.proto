@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "LbsContactInfo.proto";
+
+message LbsResponse {
+	required BaseResponse _BaseResponse = 1;
+	required uint32 _ContactCount = 2;
+	repeated LbsContactInfo _ContactList = 3;
+	optional uint32 _State = 4;
+	optional uint32 _FlushTime = 5;
+	optional uint32 _IsShowRoom = 6;
+	optional uint32 _RoomMemberCount = 7;
+}

@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message ExposeItem {
+	required uint32 _Count = 1;
+	repeated uint32 _UinList = 2;
+	repeated uint32 _TimeList = 3;
+	repeated uint32 _CountList = 4;
+}

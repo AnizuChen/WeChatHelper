@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "RSACert.proto";
+
+message GetCertResponse {
+	required BaseResponse _BaseResponse = 1;
+	required RSACert _CertValue = 2;
+	required uint32 _CertVersion = 3;
+}

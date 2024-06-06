@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "Address.proto";
+
+message GetLastestExpressInfoRequest {
+	required BaseRequest _BaseRequest = 1;
+	optional string _ProductId = 2;
+	optional string _LockId = 3;
+	required Address _Address = 4;
+}

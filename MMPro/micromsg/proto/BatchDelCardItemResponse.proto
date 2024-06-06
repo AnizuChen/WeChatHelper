@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+
+message BatchDelCardItemResponse {
+	required BaseResponse _BaseResponse = 1;
+	repeated string _SuccCardIds = 2;
+}

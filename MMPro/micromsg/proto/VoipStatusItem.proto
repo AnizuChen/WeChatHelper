@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message VoipStatusItem {
+	optional string _Username = 1;
+	required int32 _Status = 2;
+}

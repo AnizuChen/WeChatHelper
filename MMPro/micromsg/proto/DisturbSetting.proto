@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "DisturbTimeSpan.proto";
+
+message DisturbSetting {
+	required uint32 _NightSetting = 1;
+	required DisturbTimeSpan _NightTime = 2;
+	required uint32 _AllDaySetting = 3;
+	required DisturbTimeSpan _AllDayTime = 4;
+}

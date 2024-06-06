@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "LangDesc.proto";
+
+message EmotionDesc {
+	optional string _Md5 = 1;
+	required uint32 _Count = 2;
+	repeated LangDesc _List = 3;
+}

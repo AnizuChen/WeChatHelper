@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "SKBuiltinString_t.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message GetMsgImgResponse {
+	required BaseResponse _BaseResponse = 1;
+	required uint32 _MsgId = 2;
+	required SKBuiltinString_t _FromUserName = 3;
+	required SKBuiltinString_t _ToUserName = 4;
+	required uint32 _TotalLen = 5;
+	required uint32 _StartPos = 6;
+	required uint32 _DataLen = 7;
+	required SKBuiltinBuffer_t _Data = 8;
+	optional uint64 _NewMsgId = 9;
+}

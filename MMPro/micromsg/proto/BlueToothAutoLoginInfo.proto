@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message BlueToothAutoLoginInfo {
+	required uint32 _Uin = 1;
+	optional string _DeviceType = 2;
+	required uint32 _ClientVersion = 3;
+	optional bytes _DeviceID = 4;
+}

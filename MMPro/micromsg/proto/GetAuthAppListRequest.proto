@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message GetAuthAppListRequest {
+	required BaseRequest _BaseRequest = 1;
+	required uint32 _Type = 2;
+	optional string _Lang = 3;
+}

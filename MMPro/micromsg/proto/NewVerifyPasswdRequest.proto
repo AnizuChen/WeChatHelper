@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SKBuiltinString_t.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message NewVerifyPasswdRequest {
+	required BaseRequest _BaseRequest = 1;
+	required int32 _OpCode = 2;
+	optional string _Pwd1 = 3;
+	optional string _Pwd2 = 4;
+	optional SKBuiltinString_t _ImgSid = 5;
+	optional SKBuiltinString_t _ImgCode = 6;
+	optional SKBuiltinString_t _ImgEncryptKey = 7;
+	optional SKBuiltinBuffer_t _KSid = 8;
+}

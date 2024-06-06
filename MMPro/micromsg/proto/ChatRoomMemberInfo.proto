@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message ChatRoomMemberInfo {
+	optional string _UserName = 1;
+	optional string _NickName = 2;
+	optional string _DisplayName = 3;
+	optional string _BigHeadImgUrl = 4;
+	optional string _SmallHeadImgUrl = 5;
+	required uint32 _ChatroomMemberFlag = 6;
+}

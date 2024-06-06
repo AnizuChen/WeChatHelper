@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "YYBStruct.proto";
+
+message GameIntro {
+	optional string _AppID = 1;
+	optional string _GameIntroPage = 2;
+	optional string _AndroidApkMd5 = 3;
+	optional string _AppDownloadUrl = 4;
+	optional string _GooglePlayDownloadUrl = 5;
+	optional YYBStruct _SYYB = 6;
+}

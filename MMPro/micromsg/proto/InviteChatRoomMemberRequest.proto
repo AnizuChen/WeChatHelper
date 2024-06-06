@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "MemberReq.proto";
+import "SKBuiltinString_t.proto";
+
+message InviteChatRoomMemberRequest {
+	required BaseRequest _BaseRequest = 1;
+	required uint32 _MemberCount = 2;
+	repeated MemberReq _MemberList = 3;
+	required SKBuiltinString_t _ChatRoomName = 4;
+}

@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "OpenAppInfo.proto";
+
+message GetAppInfoResponse {
+	required BaseResponse _BaseResponse = 1;
+	required OpenAppInfo _AppInfo = 2;
+	optional uint32 _NoUse = 3;
+	optional string _DevInfo = 4;
+	optional string _AppType = 5;
+}

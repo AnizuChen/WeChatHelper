@@ -1,0 +1,23 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SKBuiltinBuffer_t.proto";
+
+message AppMsg {
+	optional string _FromUserName = 1;
+	optional string _AppId = 2;
+	required uint32 _SdkVersion = 3;
+	optional string _ToUserName = 4;
+	required uint32 _Type = 5;
+	optional string _Content = 6;
+	required uint32 _CreateTime = 7;
+	optional string _ClientMsgId = 8;
+	optional SKBuiltinBuffer_t _Thumb = 9;
+	optional int32 _Source = 10;
+	optional int32 _RemindId = 11;
+	optional string _MsgSource = 12;
+	optional string _ShareUrlOriginal = 13;
+	optional string _ShareUrlOpen = 14;
+	optional string _JsAppId = 15;
+}

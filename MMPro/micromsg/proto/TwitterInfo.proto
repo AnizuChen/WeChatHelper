@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message TwitterInfo {
+	optional string _OauthToken = 1;
+	optional string _OauthTokenSecret = 2;
+}

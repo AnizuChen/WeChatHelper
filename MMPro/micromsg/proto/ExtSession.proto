@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SKBuiltinBuffer_t.proto";
+
+message ExtSession {
+	required uint32 _SessionType = 1;
+	required SKBuiltinBuffer_t _SessionKey = 2;
+	required SKBuiltinBuffer_t _ServerId = 3;
+}

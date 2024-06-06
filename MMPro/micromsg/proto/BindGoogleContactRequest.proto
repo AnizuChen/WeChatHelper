@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message BindGoogleContactRequest {
+	required BaseRequest _BaseRequest = 1;
+	required uint32 _Opcode = 2;
+	optional string _GoogleContactName = 3;
+	required uint32 _Force = 4;
+}

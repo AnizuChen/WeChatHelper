@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message CustomizedInfo {
+	required uint32 _BrandFlag = 1;
+	optional string _ExternalInfo = 2;
+	optional string _BrandInfo = 3;
+	optional string _BrandIconURL = 4;
+}

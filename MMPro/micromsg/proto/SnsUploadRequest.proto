@@ -1,0 +1,25 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SKBuiltinBuffer_t.proto";
+import "TwitterInfo.proto";
+
+message SnsUploadRequest {
+	required BaseRequest _BaseRequest = 1;
+	required uint32 _Type = 2;
+	required uint32 _StartPos = 3;
+	required uint32 _TotalLen = 4;
+	required SKBuiltinBuffer_t _Buffer = 5;
+	optional string _ClientId = 6;
+	optional uint32 _FilterStype = 7;
+	optional uint32 _SyncFlag = 8;
+	optional string _Description = 9;
+	optional int32 _PhotoFrom = 10;
+	optional int32 _NetType = 11;
+	optional TwitterInfo _TwitterInfo = 12;
+	optional string _AppId = 13;
+	optional uint32 _ExtFlag = 14;
+	optional string _MD5 = 15;
+}

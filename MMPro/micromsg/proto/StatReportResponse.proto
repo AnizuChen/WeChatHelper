@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+
+message StatReportResponse {
+	required BaseResponse _BaseResponse = 1;
+	required uint32 _NextReportTime = 2;
+	required uint32 _ReportFlag = 3;
+}

@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+
+message SnsGetCityResponse {
+	required BaseResponse _BaseResponse = 1;
+	required int32 _Longitude = 2;
+	required int32 _Latitude = 3;
+	optional string _Country = 4;
+	optional string _City = 5;
+}

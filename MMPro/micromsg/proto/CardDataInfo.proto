@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message CardDataInfo {
+	optional string _CardId = 1;
+}

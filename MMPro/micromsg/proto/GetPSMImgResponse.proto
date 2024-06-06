@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message GetPSMImgResponse {
+	required BaseResponse _BaseResponse = 1;
+	required SKBuiltinBuffer_t _Data = 2;
+	required uint32 _TotalLength = 3;
+}

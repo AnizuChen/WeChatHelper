@@ -1,0 +1,48 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SKBuiltinString_t.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message NewAuthRequest {
+	required BaseRequest _BaseRequest = 1;
+	required SKBuiltinString_t _UserName = 2;
+	required SKBuiltinString_t _Pwd = 3;
+	required SKBuiltinString_t _ImgSid = 4;
+	required SKBuiltinString_t _ImgCode = 5;
+	optional string _Pwd2 = 6;
+	optional uint32 _BuiltinIPSeq = 7;
+	optional string _ExtPwd = 8;
+	optional string _ExtPwd2 = 9;
+	optional string _TimeZone = 10;
+	optional string _Language = 11;
+	optional string _IMEI = 12;
+	optional int32 _Channel = 13;
+	optional string _IPhoneVer = 14;
+	optional SKBuiltinString_t _ImgEncryptKey = 15;
+	optional SKBuiltinBuffer_t _KSid = 16;
+	optional uint32 _TimeStamp = 17;
+	optional string _DeviceBrand = 18;
+	optional string _DeviceModel = 19;
+	optional string _OSType = 20;
+	optional string _DeviceType = 21;
+	optional string _SoftType = 22;
+	optional string _AuthTicket = 23;
+	optional string _RealCountry = 24;
+	optional string _Signature = 25;
+	required SKBuiltinBuffer_t _RandomEncryKey = 26;
+	optional string _AutoAuthTicket = 27;
+	optional string _DeviceName = 28;
+	optional SKBuiltinBuffer_t _WTLoginReqBuff = 29;
+	optional uint32 _InputType = 30;
+	optional string _ClientSeqID = 31;
+	optional string _BundleID = 32;
+	optional string _AdSource = 33;
+	optional SKBuiltinBuffer_t _CliDBEncryptKey = 34;
+	optional SKBuiltinBuffer_t _CliDBEncryptInfo = 35;
+	optional string _VerifySignature = 36;
+	optional string _VerifyContent = 37;
+	optional uint32 _SessionMode = 38;
+}

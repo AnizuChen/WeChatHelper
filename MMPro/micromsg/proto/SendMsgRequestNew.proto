@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "MicroMsgRequestNew.proto";
+
+message SendMsgRequestNew {
+	required uint32 _Count = 1;
+	repeated MicroMsgRequestNew _List = 2;
+}

@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message GetProductDetailRequest {
+	required BaseRequest _BaseRequest = 1;
+	optional string _Pid = 2;
+	optional uint32 _Version = 3;
+	optional string _ScanCode = 4;
+}

@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "CardListItem.proto";
+
+message AcceptCardListFromAppRequest {
+	required BaseRequest _BaseRequest = 1;
+	repeated CardListItem _CardList = 2;
+	optional uint32 _FromScene = 3;
+}

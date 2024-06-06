@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "CmdItem.proto";
+import "SKBuiltinString_t.proto";
+
+message InitResponse {
+	required BaseResponse _BaseResponse = 1;
+	required uint32 _NewSyncKey = 2;
+	required int32 _ContinueFlag = 3;
+	required uint32 _CmdCount = 4;
+	repeated CmdItem _CmdList = 5;
+	required SKBuiltinString_t _Buffer = 6;
+	required uint32 _Ratio = 7;
+}

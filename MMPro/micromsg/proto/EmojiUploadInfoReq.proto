@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SKBuiltinBuffer_t.proto";
+
+message EmojiUploadInfoReq {
+	optional string _MD5 = 1;
+	required int32 _StartPos = 2;
+	required int32 _TotalLen = 3;
+	required SKBuiltinBuffer_t _EmojiBuffer = 4;
+	required int32 _Type = 5;
+	optional string _ToUserName = 6;
+	optional string _ExternXML = 7;
+	optional string _Report = 8;
+	optional string _ClientMsgID = 9;
+	optional string _MsgSource = 10;
+	optional int32 _NewXmlFlag = 11;
+}

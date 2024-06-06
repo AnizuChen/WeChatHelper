@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+message PhoneNumber {
+    required string _PhoneNum = 1;
+}
+
+message PhoneNumberList  {
+    optional int32          _PhoneNumberCount      = 1;
+    repeated PhoneNumber    _PhoneNumber           = 2;
+}

@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "Mobile.proto";
+import "MEmail.proto";
+
+message GetMFriendRequest {
+	required BaseRequest _BaseRequest = 1;
+	optional uint32 _OpType = 2;
+	optional string _MD5 = 3;
+	optional int32 _UpdateMobileListSize = 4;
+	repeated Mobile _UpdateMobileList = 5;
+	optional int32 _UpdateEmailListSize = 6;
+	repeated MEmail _UpdateEmailList = 7;
+	optional uint32 _Scene = 8;
+}

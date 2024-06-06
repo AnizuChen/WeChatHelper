@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "ModFavIndex.proto";
+import "ModFavObject.proto";
+
+message ModFavItemRequest {
+	required BaseRequest _BaseRequest = 1;
+	required uint32 _FavId = 2;
+	required uint32 _IndexCount = 3;
+	repeated ModFavIndex _IndexList = 4;
+	required uint32 _ObjectCount = 5;
+	repeated ModFavObject _ObjectList = 6;
+}

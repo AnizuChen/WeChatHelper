@@ -1,0 +1,25 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SKBuiltinString_t.proto";
+
+message MemberResp {
+	required SKBuiltinString_t _MemberName = 1;
+	required uint32 _MemberStatus = 2;
+	required SKBuiltinString_t _NickName = 3;
+	required SKBuiltinString_t _PYInitial = 4;
+	required SKBuiltinString_t _QuanPin = 5;
+	required int32 _Sex = 6;
+	required SKBuiltinString_t _Remark = 9;
+	required SKBuiltinString_t _RemarkPYInitial = 10;
+	required SKBuiltinString_t _RemarkQuanPin = 11;
+	required uint32 _ContactType = 12;
+	optional string _Province = 13;
+	optional string _City = 14;
+	optional string _Signature = 15;
+	optional uint32 _PersonalCard = 16;
+	optional uint32 _VerifyFlag = 17;
+	optional string _VerifyInfo = 18;
+	optional string _Country = 19;
+}

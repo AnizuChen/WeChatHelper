@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message StrategyItem {
+	required uint32 _LogType = 1;
+	required uint32 _Enalbe = 2;
+	required uint32 _Cycle = 3;
+	optional string _ExtInfo = 4;
+}

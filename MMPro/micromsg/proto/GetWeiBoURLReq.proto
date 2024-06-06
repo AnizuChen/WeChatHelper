@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message GetWeiBoURLReq {
+	required BaseRequest _BaseRequest = 1;
+	required SKBuiltinBuffer_t _A2Key = 2;
+	optional string _UserName = 3;
+	optional uint32 _Scene = 4;
+	optional string _BlogUserName = 5;
+	optional SKBuiltinBuffer_t _A2KeyNew = 6;
+}

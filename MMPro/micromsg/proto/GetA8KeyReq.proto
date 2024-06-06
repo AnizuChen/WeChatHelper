@@ -1,0 +1,27 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SKBuiltinBuffer_t.proto";
+import "SKBuiltinString_t.proto";
+
+message GetA8KeyReq {
+	required BaseRequest _BaseRequest = 1;
+	required uint32 _OpCode = 2;
+	optional SKBuiltinBuffer_t _A2Key = 3;
+	optional SKBuiltinString_t _AppID = 4;
+	optional SKBuiltinString_t _Scope = 5;
+	optional SKBuiltinString_t _State = 6;
+	optional SKBuiltinString_t _ReqUrl = 7;
+	optional string _FriendUserName = 8;
+	optional uint32 _FriendQQ = 9;
+	optional uint32 _Scene = 10;
+	optional string _UserName = 11;
+	optional string _BundleID = 12;
+	optional SKBuiltinBuffer_t _A2KeyNew = 13;
+	optional uint32 _Reason = 14;
+	optional uint32 _FontScale = 15;
+	optional uint32 _Flag = 16;
+	optional string _NetType = 17;
+}

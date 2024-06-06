@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message NewInviteFriend {
+	required uint32 _Uin = 1;
+	optional string _NickName = 2;
+	optional string _Email = 3;
+	optional string _Remark = 4;
+	optional string _UserName = 5;
+	required uint32 _FriendType = 6;
+	required uint32 _GroupId = 7;
+	optional string _ImgIdx = 8;
+}

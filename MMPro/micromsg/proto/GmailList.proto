@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "GmailInfo.proto";
+
+message GmailList {
+	required uint32 _Count = 1;
+	repeated GmailInfo _List = 2;
+}

@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "VoipStatReportData.proto";
+
+message VoipStatReportReq {
+	required BaseRequest _BaseRequest = 1;
+	required VoipStatReportData _ReportData = 2;
+	optional VoipStatReportData _ChannelReportData = 3;
+	optional VoipStatReportData _DialReportData = 4;
+	optional VoipStatReportData _EngineReportData = 5;
+	optional uint64 _Timestamp64 = 6;
+	optional VoipStatReportData _EngineExtReportData = 7;
+}

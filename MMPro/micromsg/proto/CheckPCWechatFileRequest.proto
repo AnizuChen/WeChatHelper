@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message CheckPCWechatFileRequest {
+	optional string _FileName = 1;
+	optional string _MD5 = 2;
+	optional string _FileId = 3;
+	optional string _AesKey = 4;
+	optional string _FromUsername = 5;
+	optional string _ToUsername = 6;
+}

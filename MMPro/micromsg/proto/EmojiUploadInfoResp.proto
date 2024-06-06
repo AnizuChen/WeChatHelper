@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message EmojiUploadInfoResp {
+	required int32 _Ret = 1;
+	required int32 _StartPos = 2;
+	required int32 _TotalLen = 3;
+	optional string _MD5 = 4;
+	required uint32 _MsgID = 5;
+	optional uint64 _NewMsgId = 6;
+}

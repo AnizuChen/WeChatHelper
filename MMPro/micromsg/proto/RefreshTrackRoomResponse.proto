@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "UserPositionItem.proto";
+import "TrackPOIItem.proto";
+
+message RefreshTrackRoomResponse {
+	required BaseResponse _BaseResponse = 1;
+	required uint32 _Count = 2;
+	repeated UserPositionItem _Positions = 3;
+	optional string _RetMsg = 4;
+	optional uint32 _RefreshTime = 5;
+	optional TrackPOIItem _RoomPoi = 6;
+}

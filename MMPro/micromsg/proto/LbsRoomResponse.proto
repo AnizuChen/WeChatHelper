@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+
+message LbsRoomResponse {
+	required BaseResponse _BaseResponse = 1;
+	optional string _RoomName = 2;
+	optional string _RoomNickName = 3;
+}

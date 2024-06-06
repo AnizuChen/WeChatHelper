@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+
+message SearchQRCodeResp {
+	required BaseResponse _BaseResponse = 1;
+	required uint32 _Type = 2;
+	optional string _URL = 3;
+}

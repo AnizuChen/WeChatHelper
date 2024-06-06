@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+
+message SendAppMsgResponse {
+	required BaseResponse _BaseResponse = 1;
+	optional string _AppId = 2;
+	optional string _FromUserName = 3;
+	optional string _ToUserName = 4;
+	required uint32 _MsgId = 5;
+	optional string _ClientMsgId = 6;
+	required uint32 _CreateTime = 7;
+	optional uint32 _Type = 8;
+	optional uint64 _NewMsgId = 9;
+	optional string _AESKey = 10;
+}

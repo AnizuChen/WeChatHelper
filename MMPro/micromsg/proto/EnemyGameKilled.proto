@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message EnemyGameKilled {
+	required uint32 _Type = 1;
+	required uint32 _Count = 2;
+	optional uint32 _GeneralCount = 3;
+	optional uint32 _UsedCount = 4;
+}

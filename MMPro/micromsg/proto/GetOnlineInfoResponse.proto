@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "OnlineInfo.proto";
+
+message GetOnlineInfoResponse {
+	required BaseResponse _BaseResponse = 1;
+	required uint32 _OnlineCount = 2;
+	repeated OnlineInfo _OnlineList = 3;
+	optional string _SummaryXML = 4;
+	optional uint32 _Flag = 5;
+	optional uint32 _IConType = 6;
+}

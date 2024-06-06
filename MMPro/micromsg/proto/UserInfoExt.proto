@@ -1,0 +1,39 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SnsUserInfo.proto";
+import "SKBuiltinString_t.proto";
+import "SafeDeviceList.proto";
+import "LinkedinContactItem.proto";
+import "PatternLockInfo.proto";
+
+message UserInfoExt {
+	required SnsUserInfo _SnsUserInfo = 1;
+	optional string _MyBrandList = 2;
+	optional string _MsgPushSound = 3;
+	optional string _VoipPushSound = 4;
+	optional uint32 _BigChatRoomSize = 5;
+	optional uint32 _BigChatRoomQuota = 6;
+	optional uint32 _BigChatRoomInvite = 7;
+	optional string _SafeMobile = 8;
+	optional string _BigHeadImgUrl = 9;
+	optional string _SmallHeadImgUrl = 10;
+	optional uint32 _MainAcctType = 11;
+	optional SKBuiltinString_t _ExtXml = 12;
+	optional SafeDeviceList _SafeDeviceList = 13;
+	optional uint32 _SafeDevice = 14;
+	optional uint32 _GrayscaleFlag = 15;
+	optional string _GoogleContactName = 16;
+	optional string _IDCardNum = 17;
+	optional string _RealName = 18;
+	optional string _RegCountry = 19;
+	optional string _BBPPID = 20;
+	optional string _BBPIN = 21;
+	optional string _BBMNickName = 22;
+	optional LinkedinContactItem _LinkedinContactItem = 23;
+	optional string _KFInfo = 24;
+	optional PatternLockInfo _PatternLockInfo = 25;
+	optional string _SecurityDeviceId = 26;
+	optional uint32 _PayWalletType = 27;
+}

@@ -1,0 +1,26 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "EnemyGameKilled.proto";
+import "GameConsumeProps.proto";
+
+message GameEndReq {
+	required BaseRequest _BaseRequest = 1;
+	optional string _AppID = 2;
+	required int32 _Count = 3;
+	repeated EnemyGameKilled _EnemyKilled = 4;
+	required uint32 _LocalScore = 5;
+	required uint32 _ConsumeTime = 6;
+	optional string _Token = 7;
+	optional uint32 _DeadCount = 8;
+	optional int32 _GameConsumePropsCount = 9;
+	repeated GameConsumeProps _GameConsumePropsList = 10;
+	optional uint32 _GameStartTime = 11;
+	optional uint32 _GameEndTime = 12;
+	optional uint32 _ShieldNum = 13;
+	optional uint32 _TotalShots = 14;
+	optional uint32 _GameCoinCount = 15;
+	optional uint32 _ClientUseReviveNum = 16;
+}

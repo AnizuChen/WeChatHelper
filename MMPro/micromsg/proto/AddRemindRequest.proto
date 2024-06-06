@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "RemindMember.proto";
+
+message AddRemindRequest {
+	required BaseRequest _BaseRequest = 1;
+	optional string _ClientID = 2;
+	required uint64 _RemindTime = 3;
+	required uint32 _ToUserCount = 4;
+	repeated RemindMember _ToUserList = 5;
+	optional string _Content = 6;
+}

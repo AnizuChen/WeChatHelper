@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message PushLoginURLResponse {
+	required BaseResponse _BaseResponse = 1;
+	optional string _UUID = 2;
+	required SKBuiltinBuffer_t _NotifyKey = 3;
+	required uint32 _CheckTime = 4;
+	required uint32 _ExpiredTime = 5;
+	optional string _BlueToothBroadCastUUID = 6;
+	optional SKBuiltinBuffer_t _BlueToothBroadCastContent = 7;
+}

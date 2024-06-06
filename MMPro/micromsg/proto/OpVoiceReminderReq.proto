@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "VoiceRemindInfo.proto";
+
+message OpVoiceReminderReq {
+	required BaseRequest _BaseRequest = 1;
+	required int32 _OpCode = 2;
+	required uint32 _RemindInfoNum = 3;
+	repeated VoiceRemindInfo _RemindInfoList = 4;
+}

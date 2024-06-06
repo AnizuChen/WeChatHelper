@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "HardDevice.proto";
+
+message UnbindHardDeviceRequest {
+	required BaseRequest _BaseRequest = 1;
+	required HardDevice _HardDevice = 2;
+	optional uint32 _Flag = 4;
+}

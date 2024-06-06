@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message VoiceRemindInfo {
+	required uint32 _RemindId = 1;
+}

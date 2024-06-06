@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SKBuiltinBuffer_t.proto";
+
+message VUserResponseItem {
+	required uint32 _ID = 1;
+	optional string _Desc = 2;
+	required SKBuiltinBuffer_t _Icon = 3;
+	required SKBuiltinBuffer_t _HDIcon = 4;
+}

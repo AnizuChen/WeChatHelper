@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message UploadCardImgRequest {
+	required BaseRequest _BaseRequest = 1;
+	optional string _ClientId = 2;
+	required uint32 _TotalLen = 3;
+	required uint32 _StartPos = 4;
+	required uint32 _DataLen = 5;
+	required SKBuiltinBuffer_t _Data = 6;
+	optional string _ContactUserName = 7;
+}

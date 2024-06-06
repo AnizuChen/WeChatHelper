@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message SnsDownloadRequest {
+	required BaseRequest _BaseRequest = 1;
+	required int32 _StartPos = 2;
+	optional int32 _TotalLen = 3;
+	optional string _BufferId = 4;
+	required uint32 _Type = 5;
+	required uint32 _DownBufLen = 6;
+}

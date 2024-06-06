@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message GetLoginQRCodeRequest {
+	required BaseRequest _BaseRequest = 1;
+	required SKBuiltinBuffer_t _RandomEncryKey = 2;
+	optional uint32 _OPCode = 3;
+	optional string _DeviceName = 4;
+	optional string _UserName = 5;
+	optional uint32 _ExtDevLoginType = 6;
+}

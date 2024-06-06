@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message BaseRequest {
+	required bytes _SessionKey = 1;
+	required uint32 _Uin = 2;
+	required bytes _DeviceID = 3;
+	required int32 _ClientVersion = 4;
+	required bytes _DeviceType = 5;
+	optional uint32 _Scene = 6;
+}

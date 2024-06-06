@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message VerifyPurchaseRequest {
+	required BaseRequest _BaseRequest = 1;
+	required SKBuiltinBuffer_t _Receipt = 2;
+	optional string _ProductID = 3;
+	required uint32 _VerifyType = 4;
+	required uint32 _PayType = 5;
+	optional string _Price = 6;
+	optional string _CurrencyType = 7;
+	optional string _BillNo = 8;
+	required uint32 _PayTime = 9;
+	optional string _ReceiptSig = 10;
+	optional uint32 _Quantity = 11;
+}

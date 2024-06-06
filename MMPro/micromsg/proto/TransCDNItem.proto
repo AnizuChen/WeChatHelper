@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message TransCDNItem {
+	required uint32 _ClientId = 1;
+	optional string _FileId = 2;
+	optional string _AesKey = 3;
+	required uint32 _FavDataType = 4;
+	required uint64 _Size = 5;
+}

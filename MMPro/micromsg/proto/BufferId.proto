@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message BufferId {
+	required uint64 _MasterBufId = 1;
+	required uint64 _SlaveBufId = 2;
+}

@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SKBuiltinString_t.proto";
+import "CmdList.proto";
+
+message SyncRequest {
+	required BaseRequest _BaseRequest = 1;
+	required SKBuiltinString_t _UserName = 2;
+	required uint32 _SyncKey = 3;
+	required int32 _Scene = 4;
+	required int32 _Option = 5;
+	required CmdList _Oplog = 6;
+	optional string _KeyBuf = 7;
+}

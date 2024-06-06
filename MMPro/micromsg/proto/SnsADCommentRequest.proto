@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SnsActionGroup.proto";
+
+message SnsADCommentRequest {
+	required BaseRequest _BaseRequest = 1;
+	required SnsActionGroup _Action = 2;
+	optional string _ClientId = 3;
+}

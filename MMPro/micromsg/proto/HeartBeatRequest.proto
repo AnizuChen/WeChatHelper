@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message HeartBeatRequest {
+	required BaseRequest _BaseRequest = 1;
+	required uint32 _TimeStamp = 2;
+	optional SKBuiltinBuffer_t _KeyBuf = 3;
+	optional SKBuiltinBuffer_t _BlueToothBroadCastContent = 4;
+	optional uint32 _Scene = 5;
+}

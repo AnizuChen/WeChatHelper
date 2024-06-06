@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message PacketBackupDataPush {
+	required string _DataID = 1;
+	required int32 _DataType = 2;
+	required int32 _DataSize = 3;
+	required int32 _StartOffset = 4;
+	required int32 _EndOffset = 5;
+	optional int32 _CheckSum = 6;
+	optional bytes _Data = 7;
+	optional int32 _Progress = 8;
+}

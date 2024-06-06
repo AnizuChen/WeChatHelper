@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message BackupEmojiOperateRequest {
+	repeated string _Md5List = 1;
+	required uint32 _Opcode = 2;
+}

@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message SetChatRoomAnnouncementRequest {
+	required BaseRequest _BaseRequest = 1;
+	optional string _ChatRoomName = 2;
+	optional string _Announcement = 3;
+	optional uint32 _SetAnnouncementFlag = 4;
+}

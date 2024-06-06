@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message GetUserNameRequest {
+	required BaseRequest _BaseRequest = 1;
+	required uint32 _BindUin = 2;
+	optional string _NickName = 3;
+	optional string _Ticket = 4;
+	optional string _Pwd = 5;
+	optional string _Mobile = 6;
+	optional uint32 _OpCode = 7;
+}

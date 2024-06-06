@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message GeneralSetRequest {
+	required BaseRequest _BaseRequest = 1;
+	required int32 _SetType = 2;
+	optional string _SetValue = 3;
+}

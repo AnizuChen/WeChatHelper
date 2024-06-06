@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message LbsRoomMember {
+	optional string _UserName = 1;
+	optional string _NickName = 2;
+	optional string _BigHeadImgUrl = 3;
+	optional string _SmallHeadImgUrl = 4;
+	optional string _AntispamTicket = 5;
+}

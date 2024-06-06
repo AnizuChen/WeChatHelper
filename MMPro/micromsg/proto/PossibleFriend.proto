@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message PossibleFriend {
+	optional string _UserName = 1;
+	optional string _NickName = 2;
+	optional string _PYInitial = 3;
+	optional string _QuanPin = 4;
+	required int32 _Sex = 5;
+	required uint32 _ImgFlag = 6;
+	required uint32 _ContactType = 7;
+	optional string _DomainList = 8;
+	optional string _Source = 9;
+	required uint32 _FriendScene = 10;
+	optional string _Mobile = 11;
+}

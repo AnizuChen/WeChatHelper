@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message BackupCancelRequest {
+	required string _ID = 1;
+	optional uint32 _Reason = 2;
+}

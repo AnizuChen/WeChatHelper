@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message ModBrandSetting {
+	required uint32 _BrandFlag = 1;
+	optional string _UserName = 2;
+}

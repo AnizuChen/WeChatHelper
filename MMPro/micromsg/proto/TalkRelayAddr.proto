@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message TalkRelayAddr {
+	required uint32 _Ip = 1;
+	required uint32 _Port = 2;
+}

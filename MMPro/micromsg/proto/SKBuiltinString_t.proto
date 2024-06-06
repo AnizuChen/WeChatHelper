@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message SKBuiltinString_t {
+	optional string _String = 1;
+}

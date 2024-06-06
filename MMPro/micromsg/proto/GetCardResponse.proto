@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message GetCardResponse {
+	required BaseResponse _BaseResponse = 1;
+	required SKBuiltinBuffer_t _Image = 2;
+}

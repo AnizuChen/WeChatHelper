@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message GmailSwitchOplog {
+	optional string _GmailAcct = 1;
+	required uint32 _GmailSwitch = 2;
+}

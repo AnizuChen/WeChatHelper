@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SKBuiltinBuffer_t.proto";
+import "WTLoginImgReqInfo.proto";
+import "WxVerifyCodeReqInfo.proto";
+
+message BaseAuthReqInfo {
+	optional SKBuiltinBuffer_t _WTLoginReqBuff = 1;
+	optional WTLoginImgReqInfo _WTLoginImgReqInfo = 2;
+	optional WxVerifyCodeReqInfo _WxVerifyCodeReqInfo = 3;
+	optional SKBuiltinBuffer_t _CliDBEncryptKey = 4;
+	optional SKBuiltinBuffer_t _CliDBEncryptInfo = 5;
+	optional uint32 _AuthReqFlag = 6;
+	optional string _AuthTicket = 7;
+}

@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message HWTimeInfo {
+	required int64 _DurTimeValue = 1;
+	required int32 _DurTimeScale = 2;
+	required int64 _PresentTimeValue = 3;
+	required int32 _PresentTimeScale = 4;
+	required int64 _DecodeTimeValue = 5;
+	required int32 _DecodeTimeScale = 6;
+}

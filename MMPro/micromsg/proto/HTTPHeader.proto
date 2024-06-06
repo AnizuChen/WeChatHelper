@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message HTTPHeader {
+	optional string _Key = 1;
+	optional string _Value = 2;
+}

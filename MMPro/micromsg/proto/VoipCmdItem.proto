@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SKBuiltinBuffer_t.proto";
+
+message VoipCmdItem {
+	required int32 _CmdId = 1;
+	required SKBuiltinBuffer_t _CmdBuf = 2;
+	optional string _FromUserName = 3;
+}

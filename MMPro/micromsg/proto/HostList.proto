@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "Host.proto";
+
+message HostList {
+	required uint32 _Count = 1;
+	repeated Host _List = 2;
+}

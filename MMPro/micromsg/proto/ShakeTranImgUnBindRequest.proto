@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message ShakeTranImgUnBindRequest {
+	required BaseRequest _BaseRequest = 1;
+	required uint32 _Scene = 2;
+	optional uint32 _OpType = 3;
+}

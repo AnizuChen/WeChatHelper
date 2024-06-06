@@ -1,0 +1,34 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message MassSendRequest {
+	required BaseRequest _BaseRequest = 1;
+	optional string _ToList = 2;
+	optional string _ToListMD5 = 3;
+	optional string _ClientID = 4;
+	required uint32 _MsgType = 5;
+	required uint32 _MediaTime = 6;
+	required SKBuiltinBuffer_t _DataBuffer = 7;
+	required uint32 _DataStartPos = 8;
+	required uint32 _DataTotalLen = 9;
+	required uint32 _ThumbTotalLen = 10;
+	required uint32 _ThumbStartPos = 11;
+	required SKBuiltinBuffer_t _ThumbData = 12;
+	required uint32 _CameraType = 13;
+	required uint32 _VideoSource = 14;
+	required uint32 _ToListCount = 15;
+	required uint32 _IsSendAgain = 16;
+	optional uint32 _CompressType = 17;
+	optional uint32 _VoiceFormat = 18;
+	optional string _VideoUrl = 19;
+	optional string _ThumbUrl = 20;
+	optional uint32 _ThumbWidth = 21;
+	optional uint32 _ThumbHeight = 22;
+	optional string _ThumbAESKey = 23;
+	optional string _VideoAESKey = 24;
+	optional string _MD5 = 25;
+}

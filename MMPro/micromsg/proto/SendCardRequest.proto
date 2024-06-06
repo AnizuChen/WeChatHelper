@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message SendCardRequest {
+	required BaseRequest _BaseRequest = 1;
+	optional string _UserName = 2;
+	optional string _Content = 3;
+	optional uint32 _SendCardBitFlag = 4;
+	optional uint32 _Style = 5;
+	optional string _ContentEx = 6;
+}

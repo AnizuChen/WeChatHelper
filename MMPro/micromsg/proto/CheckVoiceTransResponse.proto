@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "VoiceTransRes.proto";
+import "UploadVoiceCtx.proto";
+import "QueryResCtx.proto";
+
+message CheckVoiceTransResponse {
+	required BaseResponse _BaseResponse = 1;
+	required int32 _Status = 2;
+	required VoiceTransRes _TransRes = 3;
+	required UploadVoiceCtx _UploadCtx = 4;
+	required QueryResCtx _QueryCtx = 5;
+	required uint32 _NotifyId = 6;
+}

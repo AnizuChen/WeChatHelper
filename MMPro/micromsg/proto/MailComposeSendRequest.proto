@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message MailComposeSendRequest {
+	required BaseRequest _BaseRequest = 1;
+	optional string _MailAccount = 2;
+	optional string _OldMailID = 3;
+	optional string _Subject = 4;
+	optional string _RcptTo = 5;
+	optional string _Cc = 6;
+	optional string _Bcc = 7;
+	optional string _From = 8;
+	optional string _MailContent = 9;
+	required int32 _ReplyType = 10;
+}

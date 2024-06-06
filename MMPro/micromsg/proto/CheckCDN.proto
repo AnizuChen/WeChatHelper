@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message CheckCDN {
+	optional string _DataId = 1;
+	optional string _FullMd5 = 2;
+	optional string _Head256Md5 = 3;
+	required uint32 _FullSize = 4;
+	required uint32 _DataSourceType = 5;
+	optional string _DataSourceId = 6;
+	required uint32 _IsThumb = 7;
+}

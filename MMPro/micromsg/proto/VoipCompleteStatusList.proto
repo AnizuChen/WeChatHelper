@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "VoipCompleteStatus.proto";
+
+message VoipCompleteStatusList {
+	required int32 _Count = 1;
+	repeated VoipCompleteStatus _CompleteStatus = 2;
+	required uint32 _Seq = 3;
+}

@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "HardDevice.proto";
+import "HardDeviceMsg.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message SendHardDeviceMsgRequest {
+	required BaseRequest _BaseRequest = 1;
+	required HardDevice _HardDevice = 2;
+	required HardDeviceMsg _HardDeviceMsg = 3;
+	required SKBuiltinBuffer_t _SessionBuffer = 4;
+}

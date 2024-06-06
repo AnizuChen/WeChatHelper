@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SKBuiltinString_t.proto";
+
+message ModMsgStatus {
+	required int32 _MsgId = 1;
+	required SKBuiltinString_t _FromUserName = 2;
+	required SKBuiltinString_t _ToUserName = 3;
+	required uint32 _Status = 4;
+	optional int64 _NewMsgId = 5;
+}

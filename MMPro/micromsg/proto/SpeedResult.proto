@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "VoipAddr.proto";
+
+message SpeedResult {
+	required uint32 _ClientIp = 1;
+	required uint32 _TestPktSize = 2;
+	required uint32 _TestCnt = 3;
+	required VoipAddr _Addr = 4;
+	required uint32 _AvgRtt = 5;
+	required uint32 _MinRtt = 6;
+	required uint32 _MaxRtt = 7;
+	required uint32 _RttCnt = 8;
+	repeated uint32 _Rtt = 9;
+	required uint32 _DownSeqCnt = 10;
+	repeated uint32 _DownSeq = 11;
+	required uint32 _UpSeqCnt = 12;
+	repeated uint32 _UpSeq = 13;
+}

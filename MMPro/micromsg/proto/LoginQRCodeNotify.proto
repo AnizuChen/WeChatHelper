@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message LoginQRCodeNotify {
+	optional string _UUID = 1;
+	required uint32 _Status = 2;
+	optional string _UserName = 3;
+	optional string _Pwd = 4;
+	optional string _HeadImgURL = 5;
+	optional uint32 _PushLoginURLExpiredTime = 6;
+	optional string _NickName = 7;
+	optional uint32 _ExpiredTime = 8;
+	optional string _PairWaitTip = 9;
+	optional uint32 _AuthorClientVersion = 10;
+	optional string _AuthorDeviceType = 11;
+}

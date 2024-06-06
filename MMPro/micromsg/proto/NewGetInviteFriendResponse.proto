@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "NewInviteFriend.proto";
+import "FriendGroup.proto";
+
+message NewGetInviteFriendResponse {
+	required BaseResponse _BaseResponse = 1;
+	required uint32 _FriendCount = 2;
+	repeated NewInviteFriend _FriendList = 3;
+	required uint32 _GroupCount = 4;
+	repeated FriendGroup _GroupList = 5;
+}

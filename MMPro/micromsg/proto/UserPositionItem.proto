@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "PositionItem.proto";
+
+message UserPositionItem {
+	optional string _Username = 1;
+	required PositionItem _Position = 2;
+}

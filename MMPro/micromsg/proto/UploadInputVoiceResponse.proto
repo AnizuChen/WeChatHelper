@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message UploadInputVoiceResponse {
+	required BaseResponse _BaseResponse = 1;
+	required uint32 _EndFlag = 2;
+	required SKBuiltinBuffer_t _Text = 3;
+}

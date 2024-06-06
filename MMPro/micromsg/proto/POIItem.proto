@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message POIItem {
+	optional string _Name = 1;
+	optional string _Addr = 2;
+	required double _Longitude = 3;
+	required double _Latitude = 4;
+	optional string _TypeId = 5;
+	optional string _Link = 6;
+	optional string _Nation = 7;
+	optional string _Province = 8;
+	optional string _City = 9;
+	optional string _District = 10;
+	optional string _Street = 11;
+	optional string _SubAddr = 12;
+}

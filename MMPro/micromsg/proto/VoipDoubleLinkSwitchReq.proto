@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message VoipDoubleLinkSwitchReq {
+	required BaseRequest _BaseRequest = 1;
+	required int32 _RoomId = 2;
+	required int64 _RoomKey = 3;
+	required int32 _RoomMemberId = 4;
+	required int32 _CurLinkType = 5;
+	required int32 _IsRelayConnReady = 6;
+	required int32 _IsDirectConnReady = 7;
+	required int32 _CurStrategy = 8;
+	required int32 _BufferVersion = 9;
+	required SKBuiltinBuffer_t _Buffer = 10;
+}

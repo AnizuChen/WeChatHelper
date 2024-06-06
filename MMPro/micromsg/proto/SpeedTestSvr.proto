@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "VoipAddr.proto";
+
+message SpeedTestSvr {
+	required VoipAddr _Addr = 1;
+	required uint32 _TestCnt = 2;
+	required uint32 _TestGap = 3;
+	required uint32 _Timeout = 4;
+	required uint32 _PktSize = 5;
+}

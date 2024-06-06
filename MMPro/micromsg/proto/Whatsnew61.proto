@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message Whatsnew61 {
+	optional uint32 _Like = 1;
+	optional uint32 _Liked = 2;
+}

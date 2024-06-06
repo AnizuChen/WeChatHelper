@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message BatchEmojiDownLoadRequest {
+	required uint32 _Index = 1;
+}

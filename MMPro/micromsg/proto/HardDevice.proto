@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message HardDevice {
+	optional string _DeviceType = 1;
+	optional string _DeviceID = 2;
+}

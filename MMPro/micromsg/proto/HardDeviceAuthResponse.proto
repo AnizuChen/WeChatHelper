@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message HardDeviceAuthResponse {
+	required BaseResponse _BaseResponse = 1;
+	required SKBuiltinBuffer_t _SessionKey = 2;
+	required SKBuiltinBuffer_t _SessionBuffer = 3;
+	required SKBuiltinBuffer_t _KeyBuffer = 4;
+	required uint32 _CacheTimeout = 5;
+	required uint32 _BlockTimeout = 6;
+	required uint32 _CryptMethod = 7;
+}

@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+
+message CardShopLBSResponse {
+	required BaseResponse _BaseResponse = 1;
+	optional string _JsonRet = 2;
+}

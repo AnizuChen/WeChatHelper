@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "AuthAppBaseInfo.proto";
+
+message GetAuthAppInfoResponse {
+	required BaseResponse _BaseResponse = 1;
+	required AuthAppBaseInfo _BaseInfo = 2;
+	optional string _AuthInfo = 3;
+	optional string _DevInfo = 4;
+	optional string _ExternInfo = 5;
+}

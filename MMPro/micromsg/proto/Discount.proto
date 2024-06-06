@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message Discount {
+	optional string _Title = 1;
+	required uint32 _Price = 2;
+}

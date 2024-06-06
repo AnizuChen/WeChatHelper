@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message RadarSearchMember {
+	optional string _UserName = 1;
+	required uint32 _Distance = 2;
+	optional string _NickName = 3;
+	optional string _SmallImgUrl = 4;
+	optional string _EncodeUserName = 5;
+	optional string _AntispamTicket = 6;
+}

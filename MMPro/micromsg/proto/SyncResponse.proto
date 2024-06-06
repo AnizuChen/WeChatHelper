@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "CmdItem.proto";
+
+message SyncResponse {
+	required BaseResponse _BaseResponse = 1;
+	required uint32 _NewSyncKey = 2;
+	required int32 _ContinueFlag = 3;
+	required uint32 _CmdCount = 4;
+	repeated CmdItem _CmdList = 5;
+	required uint32 _OOBCount = 6;
+	repeated CmdItem _OOBList = 7;
+	optional string _KeyBuf = 8;
+}

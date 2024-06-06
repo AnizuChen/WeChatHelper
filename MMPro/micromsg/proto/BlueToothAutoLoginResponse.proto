@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+
+message BlueToothAutoLoginResponse {
+	required BaseResponse _BaseResponse = 1;
+	optional string _UserName = 2;
+	optional string _Password = 3;
+}

@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "StyleKeyVal.proto";
+
+message ShowStyleKey {
+	required uint32 _KeyCount = 1;
+	repeated StyleKeyVal _Key = 2;
+}

@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message BindBlackberryPPIDRequest {
+	required BaseRequest _BaseRequest = 1;
+	required uint32 _Opcode = 2;
+	optional string _BBPPID = 3;
+	optional string _BBPIN = 4;
+	optional string _BBMNickName = 5;
+	required uint32 _Force = 6;
+}

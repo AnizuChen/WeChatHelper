@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "VoipStatReportData.proto";
+
+message VoipShutDownReq {
+	required BaseRequest _BaseRequest = 1;
+	optional string _FromUsername = 2;
+	required int32 _RoomId = 3;
+	required int64 _RoomKey = 4;
+	required VoipStatReportData _ReportData = 5;
+	optional uint64 _Timestamp64 = 6;
+	optional uint32 _Duration = 7;
+}

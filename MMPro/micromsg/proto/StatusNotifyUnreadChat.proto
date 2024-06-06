@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message StatusNotifyUnreadChat {
+	optional string _UserName = 1;
+	required uint32 _LastReadTime = 2;
+}

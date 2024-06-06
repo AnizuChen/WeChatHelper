@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SnsObject.proto";
+import "SKBuiltinString_t.proto";
+
+message SnsADObject {
+	required SnsObject _SnsObject = 1;
+	optional SKBuiltinString_t _ADXML = 2;
+}

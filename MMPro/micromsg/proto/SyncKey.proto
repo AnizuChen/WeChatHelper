@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "KeyVal.proto";
+
+message SyncKey {
+	required uint32 _KeyCount = 1;
+	repeated KeyVal _Key = 2;
+}

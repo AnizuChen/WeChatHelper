@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+
+message UploadAppAttachResponse {
+	required BaseResponse _BaseResponse = 1;
+	optional string _AppId = 2;
+	optional string _MediaId = 3;
+	optional string _ClientAppDataId = 4;
+	optional string _UserName = 5;
+	required uint32 _TotalLen = 6;
+	required uint32 _StartPos = 7;
+	required uint32 _DataLen = 8;
+	required uint32 _CreateTime = 9;
+}

@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "UserGameInfo.proto";
+
+message UserGameAchieveInfo {
+	required UserGameInfo _UserInfo = 1;
+	required uint32 _Score = 2;
+	required uint32 _Rank = 3;
+}

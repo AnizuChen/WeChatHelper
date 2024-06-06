@@ -1,0 +1,25 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message BindOpMobileRequest {
+	required BaseRequest _BaseRequest = 1;
+	optional string _UserName = 2;
+	optional string _Mobile = 3;
+	required int32 _Opcode = 4;
+	optional string _Verifycode = 5;
+	optional int32 _DialFlag = 6;
+	optional string _DialLang = 7;
+	optional string _AuthTicket = 8;
+	optional uint32 _ForceReg = 9;
+	optional string _SafeDeviceName = 10;
+	optional string _SafeDeviceType = 11;
+	optional SKBuiltinBuffer_t _RandomEncryKey = 12;
+	optional string _Language = 13;
+	optional uint32 _InputMobileRetrys = 14;
+	optional uint32 _AdjustRet = 15;
+	optional string _ClientSeqID = 16;
+}

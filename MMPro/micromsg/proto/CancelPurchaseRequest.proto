@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message CancelPurchaseRequest {
+	required BaseRequest _BaseRequest = 1;
+	optional string _ProductID = 2;
+	required uint32 _VerifyType = 3;
+	required uint32 _PayType = 4;
+	optional string _Price = 5;
+	optional string _CurrencyType = 6;
+	optional string _BillNo = 7;
+	required uint32 _PayTime = 8;
+	required int32 _ErrorCode = 9;
+	optional string _ErrorDescription = 10;
+}

@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message BindSafeMobileRequest {
+	required BaseRequest _BaseRequest = 1;
+	optional string _Mobile = 2;
+	required int32 _Opcode = 3;
+}

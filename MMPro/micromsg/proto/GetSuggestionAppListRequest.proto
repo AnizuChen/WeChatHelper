@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SKBuiltinString_t.proto";
+
+message GetSuggestionAppListRequest {
+	required BaseRequest _BaseRequest = 1;
+	required uint32 _AppType = 2;
+	required uint32 _OffSet = 3;
+	required uint32 _Limit = 4;
+	optional string _Lang = 5;
+	optional uint32 _InstalledAppCount = 6;
+	repeated SKBuiltinString_t _InstalledAppList = 7;
+}

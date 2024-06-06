@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SKBuiltinBuffer_t.proto";
+
+message NewAuthRsaReqData {
+	required SKBuiltinBuffer_t _RandomEncryKey = 1;
+}

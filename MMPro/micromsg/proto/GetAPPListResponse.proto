@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "APPItem.proto";
+
+message GetAPPListResponse {
+	required BaseResponse _BaseResponse = 1;
+	required uint32 _Count = 2;
+	repeated APPItem _List = 3;
+	required uint32 _Hash = 4;
+}

@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "Package.proto";
+
+message GetPackageListResponse {
+	required BaseResponse _BaseResponse = 1;
+	required uint32 _Count = 2;
+	repeated Package _List = 3;
+	required uint32 _ContinueFlag = 4;
+	required uint32 _SvrCount = 5;
+	optional uint32 _Type = 6;
+}

@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "SKBuiltinString_t.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message VerifyPswdResponse {
+	required BaseResponse _BaseResponse = 1;
+	required SKBuiltinString_t _ImgSid = 2;
+	required SKBuiltinBuffer_t _ImgBuf = 3;
+	optional string _Ticket = 4;
+	optional SKBuiltinString_t _ImgEncryptKey = 5;
+	optional SKBuiltinBuffer_t _A2Key = 6;
+	optional SKBuiltinBuffer_t _KSid = 7;
+	optional string _AuthKey = 8;
+	optional SKBuiltinBuffer_t _WTLoginRspBuff = 9;
+}

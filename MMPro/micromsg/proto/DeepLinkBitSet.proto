@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message DeepLinkBitSet {
+	required uint64 _BitValue = 1;
+}

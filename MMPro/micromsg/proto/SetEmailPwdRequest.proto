@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message SetEmailPwdRequest {
+	required BaseRequest _BaseRequest = 1;
+	optional string _Pwd = 2;
+	optional string _Ticket = 3;
+}

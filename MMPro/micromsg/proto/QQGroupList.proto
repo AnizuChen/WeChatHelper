@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "QQGroup.proto";
+
+message QQGroupList {
+	required uint32 _Count = 1;
+	repeated QQGroup _QQGroups = 2;
+}

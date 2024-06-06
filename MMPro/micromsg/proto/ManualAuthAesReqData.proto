@@ -1,0 +1,32 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "BaseAuthReqInfo.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message ManualAuthAesReqData {
+	required BaseRequest _BaseRequest = 1;
+	optional BaseAuthReqInfo _BaseReqInfo = 2;
+	optional string _IMEI = 3;
+	optional string _SoftType = 4;
+	required uint32 _BuiltinIPSeq = 5;
+	optional string _ClientSeqID = 6;
+	optional string _Signature = 7;
+	optional string _DeviceName = 8;
+	optional string _DeviceType = 9;
+	optional string _Language = 10;
+	optional string _TimeZone = 11;
+	optional int32 _Channel = 13;
+	optional uint32 _TimeStamp = 14;
+	optional string _DeviceBrand = 15;
+	optional string _DeviceModel = 16;
+	optional string _OSType = 17;
+	optional string _RealCountry = 18;
+	optional string _BundleID = 19;
+	optional string _AdSource = 20;
+	optional string _IPhoneVer = 21;
+	required uint32 _InputType = 22;
+	optional SKBuiltinBuffer_t _Clientcheckdat = 23;
+}

@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+
+message GetImUnreadMsgCountResponse {
+	required BaseResponse _BaseResponse = 1;
+	optional string _DisplayMsg = 2;
+	optional string _QQScheme = 3;
+	optional string _DownloadUrl = 4;
+}

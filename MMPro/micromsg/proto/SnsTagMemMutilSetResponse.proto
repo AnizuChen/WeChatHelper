@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "SKBuiltinUint64_t.proto";
+
+message SnsTagMemMutilSetResponse {
+	required BaseResponse _BaseResponse = 1;
+	optional string _ModUserName = 2;
+	required uint32 _Count = 3;
+	repeated SKBuiltinUint64_t _TagIdList = 4;
+}

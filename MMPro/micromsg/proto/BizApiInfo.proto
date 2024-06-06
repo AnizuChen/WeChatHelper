@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message BizApiInfo {
+	optional string _ApiName = 1;
+}

@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message RegisterNewPatternLockRequest {
+	required BaseRequest _BaseRequest = 1;
+	optional SKBuiltinBuffer_t _Paytoken = 2;
+	optional SKBuiltinBuffer_t _Patternhash = 3;
+	optional uint32 _Cmd = 4;
+}

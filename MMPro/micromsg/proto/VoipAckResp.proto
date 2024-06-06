@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "VoipMultiRelayData.proto";
+
+message VoipAckResp {
+	required BaseResponse _BaseResponse = 1;
+	required int32 _RoomId = 2;
+	required int64 _RoomKey = 3;
+	optional int32 _RoomMemberID = 4;
+	optional VoipMultiRelayData _RelayData = 5;
+	optional int32 _PreConnect = 6;
+	optional uint32 _TcpCnt = 7;
+	optional int32 _AudioEnableRmioAndS3A = 8;
+}

@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+
+message SnsObjectOpResponse {
+	required BaseResponse _BaseResponse = 1;
+	required uint32 _OpCount = 2;
+	repeated int32 _OpRetList = 3;
+}

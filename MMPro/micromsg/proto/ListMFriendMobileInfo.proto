@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message ListMFriendMobileInfo {
+	optional string _Value = 1;
+	optional string _UserName = 2;
+	required uint32 _Status = 3;
+	optional string _BigHeadImgUrl = 4;
+	optional string _SmallHeadImgUrl = 5;
+	optional string _NickName = 6;
+	optional string _AntispamTicket = 7;
+}

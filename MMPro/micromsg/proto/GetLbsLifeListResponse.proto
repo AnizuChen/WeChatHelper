@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "SKBuiltinBuffer_t.proto";
+import "SKBuiltinString_t.proto";
+import "LbsLife.proto";
+
+message GetLbsLifeListResponse {
+	required BaseResponse _BaseResponse = 1;
+	required SKBuiltinBuffer_t _Buff = 2;
+	required uint32 _IconCount = 3;
+	repeated SKBuiltinString_t _IconList = 4;
+	required uint32 _LifeCount = 5;
+	repeated LbsLife _LifeList = 6;
+	required uint32 _ContinueFlag = 7;
+	optional string _LogoUrl = 8;
+}

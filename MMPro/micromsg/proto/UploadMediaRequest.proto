@@ -1,0 +1,22 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SKBuiltinString_t.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message UploadMediaRequest {
+	required BaseRequest _BaseRequest = 1;
+	required SKBuiltinString_t _ClientMediaId = 2;
+	required SKBuiltinString_t _DataMD5 = 3;
+	required uint32 _TotalLen = 4;
+	required uint32 _StartPos = 5;
+	required uint32 _DataLen = 6;
+	required SKBuiltinBuffer_t _Data = 7;
+	required uint32 _MediaType = 8;
+	optional uint32 _AudioFormat = 9;
+	optional uint32 _AudioSamplingRate = 10;
+	optional uint32 _AudioChannelNum = 11;
+	optional uint32 _AudioBitRate = 12;
+}

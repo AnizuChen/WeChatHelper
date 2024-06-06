@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SKBuiltinString_t.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message UnbindMobileByQQRequest {
+	required BaseRequest _BaseRequest = 1;
+	required SKBuiltinString_t _UserName = 2;
+	optional string _Pwd = 3;
+	optional string _Pwd2 = 4;
+	required SKBuiltinString_t _ImgSid = 5;
+	required SKBuiltinString_t _ImgCode = 6;
+	required SKBuiltinString_t _ImgEncryptKey = 7;
+	required SKBuiltinBuffer_t _KSid = 8;
+}

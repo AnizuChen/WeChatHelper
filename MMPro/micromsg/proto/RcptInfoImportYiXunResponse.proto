@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "RcptInfoList.proto";
+import "BaseResponse.proto";
+
+message RcptInfoImportYiXunResponse {
+	required RcptInfoList _Rcptinfolist = 1;
+	required int32 _Rcptinfoimportstatus = 2;
+	required BaseResponse _BaseResponse = 3;
+}

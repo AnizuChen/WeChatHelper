@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SKBuiltinBuffer_t.proto";
+
+message SnsObjectOp {
+	required uint64 _Id = 1;
+	required uint32 _OpType = 2;
+	optional SKBuiltinBuffer_t _Ext = 3;
+}

@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "LoginDevice.proto";
+
+message SafetyInfo {
+	repeated LoginDevice _Devicelist = 1;
+}

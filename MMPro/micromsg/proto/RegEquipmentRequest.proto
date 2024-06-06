@@ -1,0 +1,23 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message RegEquipmentRequest {
+	required BaseRequest _BaseRequest = 1;
+	required uint32 _Type = 2;
+	optional string _SerialNumber = 3;
+	optional string _IMEI = 4;
+	optional string _MAC = 5;
+	optional string _NickName = 6;
+	required uint32 _BuiltinIPSeq = 7;
+	required uint32 _DLSrc = 8;
+	required uint32 _RegMode = 9;
+	optional string _TimeZone = 10;
+	optional string _Language = 11;
+	required uint32 _ForceReg = 12;
+	optional string _RealCountry = 13;
+	required SKBuiltinBuffer_t _RandomEncryKey = 14;
+}

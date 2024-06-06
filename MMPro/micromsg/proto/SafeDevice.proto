@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message SafeDevice {
+	optional string _Name = 1;
+	optional string _Uuid = 2;
+	optional string _DeviceType = 3;
+	required uint32 _CreateTime = 4;
+}

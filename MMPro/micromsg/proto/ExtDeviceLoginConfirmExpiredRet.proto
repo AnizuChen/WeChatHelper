@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message ExtDeviceLoginConfirmExpiredRet {
+	optional uint32 _IconType = 1;
+	optional string _ContentStr = 2;
+	optional string _ButtonStr = 3;
+	optional string _TitleStr = 4;
+}

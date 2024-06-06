@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message OpPatternLockRequest {
+	required BaseRequest _BaseRequest = 1;
+	optional uint32 _Cmd = 2;
+	optional SKBuiltinBuffer_t _Nowpatternhash = 3;
+	optional SKBuiltinBuffer_t _Newpatternhash = 4;
+}

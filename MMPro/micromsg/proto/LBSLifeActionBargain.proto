@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message LBSLifeActionBargain {
+	optional string _Desc = 1;
+	optional string _Url = 2;
+	optional string _IconUrl = 3;
+}

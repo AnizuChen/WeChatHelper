@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SKBuiltinString_t.proto";
+
+message RcptInfoNode {
+	optional uint32 _Id = 1;
+	optional SKBuiltinString_t _Country = 2;
+	required SKBuiltinString_t _Province = 3;
+	required SKBuiltinString_t _City = 4;
+	required SKBuiltinString_t _District = 5;
+	required SKBuiltinString_t _Zipcode = 6;
+	required SKBuiltinString_t _Detail = 7;
+	required SKBuiltinString_t _Name = 8;
+	required SKBuiltinString_t _Phone = 9;
+	optional SKBuiltinString_t _NationalcodeGbt2260 = 10;
+}

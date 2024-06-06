@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message ShakeBuffer {
+	required uint32 _ReportTime = 1;
+	required uint32 _X = 2;
+	required uint32 _Y = 3;
+}

@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message UploadAppAttachRequest {
+	required BaseRequest _BaseRequest = 1;
+	optional string _AppId = 2;
+	required uint32 _SdkVersion = 3;
+	optional string _ClientAppDataId = 4;
+	optional string _UserName = 5;
+	required uint32 _TotalLen = 6;
+	required uint32 _StartPos = 7;
+	required uint32 _DataLen = 8;
+	required SKBuiltinBuffer_t _Data = 9;
+	optional uint32 _Type = 10;
+	optional string _MD5 = 11;
+}

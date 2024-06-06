@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message SnsADObjectOpDeleteComment {
+	required uint64 _CommentId = 1;
+}

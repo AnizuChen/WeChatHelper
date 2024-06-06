@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "Mobile.proto";
+import "MEmail.proto";
+
+message UploadMContactRequest {
+	required BaseRequest _BaseRequest = 1;
+	optional string _UserName = 2;
+	required int32 _Opcode = 3;
+	optional string _Mobile = 4;
+	required int32 _MobileListSize = 5;
+	repeated Mobile _MobileList = 6;
+	required int32 _EmailListSize = 7;
+	repeated MEmail _EmailList = 8;
+}

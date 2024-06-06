@@ -1,0 +1,26 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message EmotionSummary {
+	optional string _ProductID = 1;
+	optional string _IconUrl = 2;
+	optional string _PackName = 3;
+	optional string _PackDesc = 4;
+	optional string _PackAuthInfo = 5;
+	optional string _PackPrice = 6;
+	required uint32 _PackType = 7;
+	required uint32 _PackFlag = 8;
+	optional string _CoverUrl = 9;
+	required uint32 _PackExpire = 10;
+	optional string _PackCopyright = 11;
+	optional uint32 _Timestamp = 12;
+	optional string _PanelUrl = 13;
+	optional string _PriceNum = 14;
+	optional string _PriceType = 15;
+	optional string _SendInfo = 16;
+	optional string _TimeLimitStr = 17;
+	optional string _Introduce = 18;
+	optional string _TagUri = 19;
+}

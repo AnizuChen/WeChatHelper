@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message OCRTranslationRequest {
+	required BaseRequest _BaseRequest = 1;
+	required uint32 _ClientScanID = 2;
+	required SKBuiltinBuffer_t _ImageBuffer = 3;
+	required uint32 _ImageType = 4;
+	optional string _FromLanguage = 5;
+	optional string _ToLanguage = 6;
+	optional uint32 _SessionID = 7;
+}

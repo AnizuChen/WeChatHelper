@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message LangDesc {
+	optional string _Lang = 1;
+	optional string _Desc = 2;
+}

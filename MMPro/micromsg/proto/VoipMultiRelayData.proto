@@ -1,0 +1,34 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "VoipRelayData.proto";
+import "VoipAddrSet.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message VoipMultiRelayData {
+	required VoipRelayData _PeerId = 1;
+	required VoipRelayData _CapInfo = 2;
+	required int32 _SendingType = 3;
+	optional VoipAddrSet _VoipSvrAddr = 4;
+	optional VoipAddrSet _PunchSvrAddr = 5;
+	optional int32 _VoipNetQuality = 6;
+	optional int32 _LinkDisconnectHbInterval = 7;
+	optional int32 _LinkDisconnectHbCnt = 8;
+	optional uint32 _ProtocolEncryptLength = 9;
+	optional SKBuiltinBuffer_t _ClientHeadSigns = 10;
+	optional uint32 _OppositeClientVersion = 11;
+	optional VoipAddrSet _TcpSvrAddr = 12;
+	optional int32 _ARQStrategy = 13;
+	optional int32 _ARQCacheLen = 14;
+	optional int32 _ARQRttThreshold = 15;
+	optional int32 _ARQUsedRateThreshold = 16;
+	optional int32 _ARQRespRateThreshold = 17;
+	optional int32 _EncryptStrategy = 18;
+	optional int32 _FECSvrCtr = 19;
+	optional SKBuiltinBuffer_t _FECKeyPara1 = 20;
+	optional SKBuiltinBuffer_t _FECKeyPara2 = 21;
+	optional int32 _QosStrategy = 22;
+	optional SKBuiltinBuffer_t _EncryptKeyBuf = 23;
+	optional uint32 _OppositeDeviceType = 24;
+}

@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message BizBottleInfo {
+	optional string _BottleID = 1;
+	required uint32 _MsgType = 2;
+	optional string _FromUserName = 3;
+}

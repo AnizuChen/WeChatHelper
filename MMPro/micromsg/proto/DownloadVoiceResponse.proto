@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SKBuiltinBuffer_t.proto";
+import "BaseResponse.proto";
+
+message DownloadVoiceResponse {
+	required uint32 _MsgId = 1;
+	required uint32 _Offset = 2;
+	required uint32 _Length = 3;
+	required uint32 _VoiceLength = 5;
+	optional string _ClientMsgId = 6;
+	required SKBuiltinBuffer_t _Data = 7;
+	required uint32 _EndFlag = 8;
+	required BaseResponse _BaseResponse = 9;
+	optional uint32 _CancelFlag = 10;
+	optional uint64 _NewMsgId = 11;
+}

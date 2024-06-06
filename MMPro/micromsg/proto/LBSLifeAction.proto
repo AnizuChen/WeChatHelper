@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "LBSLifeActionBooking.proto";
+import "LBSLifeActionBargain.proto";
+
+message LBSLifeAction {
+	required uint32 _Type = 1;
+	optional string _Name = 2;
+	optional string _Desc = 3;
+	optional string _Link = 4;
+	required uint32 _BookingCount = 5;
+	repeated LBSLifeActionBooking _BookingList = 6;
+	required uint32 _BargainCount = 7;
+	repeated LBSLifeActionBargain _BargainList = 8;
+}

@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message GetSuggestAliasRequest {
+	required BaseRequest _BaseRequest = 1;
+	required SKBuiltinBuffer_t _RandomEncryKey = 2;
+	optional string _RegBindName = 3;
+	optional string _RegTicket = 4;
+	optional string _NickName = 5;
+	optional string _InputAlias = 6;
+	optional string _VerifySignature = 7;
+	optional string _VerifyContent = 8;
+	required uint32 _RegMode = 9;
+	optional string _Language = 10;
+	optional string _ClientSeqID = 11;
+}

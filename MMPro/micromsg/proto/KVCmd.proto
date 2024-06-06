@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SKBuiltinBuffer_t.proto";
+
+message KVCmd {
+	required uint32 _Key = 1;
+	required SKBuiltinBuffer_t _Value = 2;
+}

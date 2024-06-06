@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message SnsADObjectDetailRequest {
+	required BaseRequest _BaseRequest = 1;
+	required uint64 _Id = 2;
+	optional uint32 _Scene = 3;
+	optional SKBuiltinBuffer_t _Session = 4;
+}

@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message FacingCreateChatRoomRequest {
+	required BaseRequest _BaseRequest = 1;
+	required uint32 _OpCode = 2;
+	optional string _PassWord = 3;
+	required float _Longitude = 4;
+	required float _Latitude = 5;
+	required int32 _Precision = 6;
+	optional string _MacAddr = 7;
+	optional string _CellId = 8;
+	optional int32 _GPSSource = 9;
+	optional string _Ticket = 10;
+}

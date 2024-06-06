@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message DownLoadPackageResponse {
+	required BaseResponse _BaseResponse = 1;
+	required SKBuiltinBuffer_t _PackageBuf = 2;
+	optional uint32 _Type = 3;
+	optional uint32 _TotalSize = 4;
+}

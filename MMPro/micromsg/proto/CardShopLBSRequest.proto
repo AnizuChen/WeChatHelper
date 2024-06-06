@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message CardShopLBSRequest {
+	required BaseRequest _BaseRequest = 1;
+	optional string _CardTpId = 2;
+	required float _Longitude = 3;
+	required float _Latitude = 4;
+}

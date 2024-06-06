@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "HardDevice.proto";
+import "HardDeviceAttr.proto";
+
+message ModHardDevice {
+	required HardDevice _HardDevice = 1;
+	required HardDeviceAttr _HardDeviceAttr = 2;
+	required uint32 _BindFlag = 3;
+}

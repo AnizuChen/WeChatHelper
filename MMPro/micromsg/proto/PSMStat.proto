@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message PSMStat {
+	required uint32 _MType = 1;
+	optional string _AType = 2;
+}

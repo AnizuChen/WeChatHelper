@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message HWParamBuffer {
+	required uint32 _HeaderLen = 1;
+	required bytes _SPSBuf = 2;
+	required bytes _PPSBuf = 3;
+}

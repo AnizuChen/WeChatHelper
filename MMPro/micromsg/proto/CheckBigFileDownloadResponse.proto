@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+
+message CheckBigFileDownloadResponse {
+	required BaseResponse _BaseResponse = 1;
+	optional string _Signature = 2;
+	optional uint32 _Fakeuin = 3;
+	optional string _FakeAESKey = 4;
+	optional string _FakeSignature = 5;
+}

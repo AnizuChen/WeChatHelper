@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "EmotionDesc.proto";
+
+message GetEmotionDescResponse {
+	required BaseResponse _BaseResponse = 1;
+	required uint32 _Count = 2;
+	repeated EmotionDesc _List = 3;
+	required uint32 _ClickFlag = 4;
+	optional string _ButtonDesc = 5;
+	optional uint32 _DownLoadFlag = 6;
+}

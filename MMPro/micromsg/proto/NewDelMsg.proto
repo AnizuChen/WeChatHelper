@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message NewDelMsg {
+	optional string _FromUserName = 1;
+	optional string _ToUserName = 2;
+	required int32 _MsgId = 3;
+	required uint32 _MsgType = 4;
+	optional int64 _NewMsgId = 5;
+}

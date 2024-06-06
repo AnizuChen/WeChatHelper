@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message KVCommReportReq {
+	required BaseRequest _BaseRequest = 1;
+	required uint32 _Bin = 2;
+	required SKBuiltinBuffer_t _KVBuffer = 3;
+	optional SKBuiltinBuffer_t _RandomEncryKey = 4;
+	optional SKBuiltinBuffer_t _UUID = 5;
+}

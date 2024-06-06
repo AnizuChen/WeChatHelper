@@ -1,0 +1,25 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message HardDeviceAttr {
+	optional string _BrandName = 1;
+	optional string _AuthKey = 2;
+	optional string _Mac = 3;
+	optional string _ConnProto = 4;
+	optional uint32 _ConnStrategy = 5;
+	optional uint32 _CloseStrategy = 6;
+	optional int32 _ManuMacPos = 7;
+	optional int32 _SerMacPos = 8;
+	optional string _HardDeviceAttrDesc = 9;
+	optional string _Alias = 10;
+	optional string _IconUrl = 11;
+	optional string _JumpUrl = 12;
+	optional string _DeviceTitle = 13;
+	optional string _DeviceDesc = 14;
+	optional string _Category = 15;
+	optional uint32 _DeviceTypeMainDevice = 16;
+	optional uint32 _IsEnterMyDevice = 17;
+	optional int64 _BleSimpleProtocol = 18;
+}

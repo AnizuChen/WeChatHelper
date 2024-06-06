@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "HostList.proto";
+import "NetworkControl.proto";
+import "BuiltinIPList.proto";
+
+message NetworkSectResp {
+	optional HostList _NewHostList = 1;
+	optional NetworkControl _NetworkControl = 2;
+	optional BuiltinIPList _BuiltinIPList = 3;
+}

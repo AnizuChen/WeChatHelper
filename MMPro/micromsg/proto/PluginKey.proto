@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message PluginKey {
+	optional string _Key = 1;
+	optional uint32 _Id = 2;
+}

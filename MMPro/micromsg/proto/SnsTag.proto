@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SKBuiltinString_t.proto";
+
+message SnsTag {
+	required uint64 _TagId = 1;
+	optional string _TagName = 2;
+	required uint32 _Count = 3;
+	repeated SKBuiltinString_t _List = 4;
+}

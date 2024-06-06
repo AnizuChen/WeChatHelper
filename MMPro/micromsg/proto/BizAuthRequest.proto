@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message BizAuthRequest {
+	required uint32 _QQUin = 1;
+	optional string _Pwd = 2;
+	optional string _Pwd2 = 3;
+	optional string _ImgSid = 4;
+	optional string _ImgCode = 5;
+}

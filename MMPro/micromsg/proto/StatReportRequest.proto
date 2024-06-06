@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "StatReportInfo.proto";
+import "StatReportExtInfo.proto";
+
+message StatReportRequest {
+	required BaseRequest _BaseRequest = 1;
+	required StatReportInfo _Info = 2;
+	required StatReportExtInfo _ExtInfo = 3;
+}

@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message LockStockRequest {
+	required BaseRequest _BaseRequest = 1;
+	optional string _Pid = 2;
+	optional string _SkuId = 3;
+	optional uint32 _Count = 4;
+	optional string _Url = 5;
+}

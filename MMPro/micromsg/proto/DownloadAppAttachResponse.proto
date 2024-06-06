@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message DownloadAppAttachResponse {
+	required BaseResponse _BaseResponse = 1;
+	optional string _AppId = 2;
+	optional string _MediaId = 3;
+	optional string _UserName = 4;
+	required uint32 _TotalLen = 5;
+	required uint32 _StartPos = 6;
+	required uint32 _DataLen = 7;
+	required SKBuiltinBuffer_t _Data = 8;
+}

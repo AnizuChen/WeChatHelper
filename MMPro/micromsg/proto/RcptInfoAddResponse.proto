@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "RcptInfoList.proto";
+import "BaseResponse.proto";
+
+message RcptInfoAddResponse {
+	required RcptInfoList _Rcptinfolist = 1;
+	required BaseResponse _BaseResponse = 2;
+}

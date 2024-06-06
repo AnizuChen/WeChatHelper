@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "ModUserInfo.proto";
+import "UserInfoExt.proto";
+
+message GetProfileResponse {
+	required BaseResponse _BaseResponse = 1;
+	required ModUserInfo _UserInfo = 2;
+	required UserInfoExt _UserInfoExt = 3;
+}

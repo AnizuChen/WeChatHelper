@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message ResetPawInfo {
+	required uint32 _CreateTime = 1;
+	required uint32 _IsReset = 2;
+	required uint32 _ID = 3;
+}

@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SKBuiltinString_t.proto";
+
+message GameWishReq {
+	required BaseRequest _BaseRequest = 1;
+	optional string _AppID = 2;
+	required int32 _Count = 3;
+	repeated SKBuiltinString_t _UserNameList = 4;
+}

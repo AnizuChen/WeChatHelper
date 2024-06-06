@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "RemindMember.proto";
+
+message RemindItem {
+	required uint32 _RemindID = 1;
+	required uint32 _CreateTime = 2;
+	required uint64 _RemindTime = 3;
+	optional string _FromUser = 4;
+	required uint32 _ToUserCount = 5;
+	repeated RemindMember _ToUserList = 6;
+	required uint32 _Flag = 7;
+	optional string _Content = 8;
+}

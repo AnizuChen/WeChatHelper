@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "DelMemberReq.proto";
+
+message DelChatRoomMemberRequest {
+	required BaseRequest _BaseRequest = 1;
+	required uint32 _MemberCount = 2;
+	repeated DelMemberReq _MemberList = 3;
+	optional string _ChatRoomName = 4;
+	optional uint32 _Scene = 5;
+}

@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "HWTimeInfo.proto";
+
+message HWFrameBuffer {
+	required bytes _RawBuf = 1;
+	required int32 _SamplesCount = 2;
+	repeated HWTimeInfo _TimeInfo = 3;
+	repeated int32 _SampleSize = 4;
+}

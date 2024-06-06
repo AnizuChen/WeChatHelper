@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message GeneralShareContent {
+	required uint32 _ContentType = 1;
+	optional string _Title = 2;
+	optional string _Content = 3;
+	optional string _Description = 4;
+	optional string _ImageUrl = 5;
+	optional string _LinkUrl = 6;
+	optional string _DataUrl = 7;
+	optional string _ExtInfo = 8;
+}

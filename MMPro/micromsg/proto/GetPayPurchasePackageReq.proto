@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message GetPayPurchasePackageReq {
+	required BaseRequest _BaseRequest = 1;
+	required uint32 _Type = 2;
+	required uint32 _Price = 3;
+	optional string _PriceType = 4;
+	optional string _ExtInfo = 5;
+}

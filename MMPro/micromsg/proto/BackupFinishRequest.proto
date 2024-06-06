@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BackupReportList.proto";
+
+message BackupFinishRequest {
+	required string _ID = 1;
+	optional BackupReportList _Data = 2;
+	optional uint32 _ServerSessionCount = 3;
+	optional uint32 _ServerMessageCount = 4;
+	optional uint32 _ServerFileCount = 5;
+	optional uint32 _CalculateSize = 6;
+	optional uint32 _ServerDataPushSize = 7;
+	optional uint32 _ServerReadDBTotalTime = 8;
+	optional uint32 _ServerReadFileTotalTime = 9;
+	optional uint32 _ServerCostTotalTime = 10;
+	optional uint32 _ServerVersion = 11;
+}

@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message GetVoiceprintTicketRsaRequest {
+	required BaseRequest _BaseRequest = 1;
+	optional string _UserName = 2;
+	required uint32 _GetScence = 3;
+	required SKBuiltinBuffer_t _RandomEncryKey = 4;
+}

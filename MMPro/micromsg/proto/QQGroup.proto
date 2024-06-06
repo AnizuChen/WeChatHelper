@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message QQGroup {
+	required uint32 _GroupID = 1;
+	optional string _GroupName = 2;
+	optional string _MD5 = 3;
+	required uint32 _MemberNum = 4;
+	required uint32 _WeixinNum = 5;
+}

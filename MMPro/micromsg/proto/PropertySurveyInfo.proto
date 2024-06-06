@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "PropertySurveyItem.proto";
+
+message PropertySurveyInfo {
+	required uint32 _Count = 1;
+	repeated PropertySurveyItem _List = 2;
+}

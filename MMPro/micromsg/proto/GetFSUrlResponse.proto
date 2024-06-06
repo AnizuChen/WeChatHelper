@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message GetFSUrlResponse {
+	optional string _FSURL = 1;
+}

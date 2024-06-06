@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message SendInviteEmailRequest {
+	required BaseRequest _BaseRequest = 1;
+	required uint32 _UinCount = 2;
+	repeated uint32 _UinList = 3;
+}

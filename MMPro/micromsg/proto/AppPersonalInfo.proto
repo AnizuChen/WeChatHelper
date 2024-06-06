@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message AppPersonalInfo {
+	optional string _AppID = 1;
+	optional string _PersonalSettingXml = 2;
+}

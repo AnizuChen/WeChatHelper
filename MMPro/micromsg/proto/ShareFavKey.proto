@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message ShareFavKey {
+	required uint32 _FromUin = 1;
+	optional string _ToUser = 2;
+	required uint32 _ShareTime = 3;
+	required uint32 _Scene = 4;
+	required uint32 _FavId = 5;
+	optional string _ParamCheck = 6;
+	optional string _FavItemCheck = 7;
+}

@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message EmotionReward {
+	required string _BegWord = 1;
+	required string _BegPicUrl = 2;
+	required string _ThanksPicUrl = 3;
+	optional string _MagicUrl = 4;
+	optional string _MagicWord = 5;
+	optional uint32 _MagicExpire = 6;
+	optional uint32 _MagicLimit = 7;
+	optional string _MagicMd5 = 8;
+}

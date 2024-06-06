@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "LbsRoomMember.proto";
+
+message LbsRoomMemberResponse {
+	required BaseResponse _BaseResponse = 1;
+	required uint32 _MemberCount = 2;
+	repeated LbsRoomMember _MemberList = 3;
+}

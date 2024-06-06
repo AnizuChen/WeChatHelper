@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+
+message GetTVInfoResponse {
+	required BaseResponse _BaseResponse = 1;
+	required uint32 _Type = 2;
+	optional string _DescriptionXML = 3;
+	optional string _TVID = 4;
+}

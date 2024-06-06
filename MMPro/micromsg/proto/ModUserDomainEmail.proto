@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SKBuiltinString_t.proto";
+
+message ModUserDomainEmail {
+	required uint32 _Status = 1;
+	required SKBuiltinString_t _Email = 2;
+}

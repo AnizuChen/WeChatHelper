@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "TranslateOrgMsg.proto";
+
+message GetTransTextRequest {
+	required BaseRequest _BaseRequest = 1;
+	required uint32 _MsgCount = 2;
+	repeated TranslateOrgMsg _MsgList = 3;
+}

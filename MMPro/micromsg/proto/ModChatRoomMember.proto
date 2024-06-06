@@ -1,0 +1,42 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SKBuiltinString_t.proto";
+import "SKBuiltinBuffer_t.proto";
+import "SnsUserInfo.proto";
+import "CustomizedInfo.proto";
+
+message ModChatRoomMember {
+	required SKBuiltinString_t _UserName = 1;
+	required SKBuiltinString_t _NickName = 2;
+	required SKBuiltinString_t _PYInitial = 3;
+	required SKBuiltinString_t _QuanPin = 4;
+	required int32 _Sex = 5;
+	required SKBuiltinBuffer_t _ImgBuf = 6;
+	required uint32 _ImgFlag = 7;
+	required SKBuiltinString_t _Remark = 8;
+	required SKBuiltinString_t _RemarkPYInitial = 9;
+	required SKBuiltinString_t _RemarkQuanPin = 10;
+	required uint32 _ContactType = 11;
+	optional string _Province = 12;
+	optional string _City = 13;
+	optional string _Signature = 14;
+	optional uint32 _PersonalCard = 15;
+	optional uint32 _VerifyFlag = 16;
+	optional string _VerifyInfo = 17;
+	optional string _Weibo = 18;
+	optional string _VerifyContent = 19;
+	optional string _WeiboNickname = 20;
+	optional uint32 _WeiboFlag = 21;
+	optional int32 _AlbumStyle = 22;
+	optional int32 _AlbumFlag = 23;
+	optional string _AlbumBGImgID = 24;
+	optional string _Alias = 25;
+	optional SnsUserInfo _SnsUserInfo = 26;
+	optional string _Country = 27;
+	optional string _BigHeadImgUrl = 28;
+	optional string _SmallHeadImgUrl = 29;
+	optional string _MyBrandList = 30;
+	optional CustomizedInfo _CustomizedInfo = 31;
+}

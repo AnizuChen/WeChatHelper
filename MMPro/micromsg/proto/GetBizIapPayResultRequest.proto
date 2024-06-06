@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message GetBizIapPayResultRequest {
+	required BaseRequest _BaseRequest = 1;
+	optional string _SerialId = 2;
+}

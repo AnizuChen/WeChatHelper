@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message GiftCardItemRequest {
+	required BaseRequest _BaseRequest = 1;
+	required string _CardId = 2;
+	required string _ToUsername = 3;
+}

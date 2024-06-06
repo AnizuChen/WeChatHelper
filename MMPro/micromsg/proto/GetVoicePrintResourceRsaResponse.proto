@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "ResourceCtx.proto";
+
+message GetVoicePrintResourceRsaResponse {
+	required BaseResponse _BaseResponse = 1;
+	required ResourceCtx _ResourceData = 2;
+}

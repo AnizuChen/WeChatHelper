@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message TranslatedMsg {
+	required uint32 _ClientMsgID = 1;
+	optional string _TranslatedText = 2;
+	required int32 _Ret = 3;
+	optional string _BrandWording = 4;
+}

@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+
+message OCRTranslationResponse {
+	required BaseResponse _BaseResponse = 1;
+	required uint32 _ClientScanID = 2;
+	optional string _Source = 3;
+	optional string _Translation = 4;
+	required uint32 _ImageType = 5;
+}

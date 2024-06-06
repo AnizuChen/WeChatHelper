@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SKBuiltinString_t.proto";
+
+message ModNotifyStatus {
+	required SKBuiltinString_t _UserName = 1;
+	required uint32 _Status = 2;
+}

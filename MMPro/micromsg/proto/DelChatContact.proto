@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SKBuiltinString_t.proto";
+
+message DelChatContact {
+	required SKBuiltinString_t _UserName = 1;
+}

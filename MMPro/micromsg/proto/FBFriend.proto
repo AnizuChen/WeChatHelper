@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message FBFriend {
+	required uint64 _ID = 1;
+	optional string _Name = 2;
+	required uint32 _ImgKey = 3;
+}

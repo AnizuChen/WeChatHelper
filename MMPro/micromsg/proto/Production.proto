@@ -1,0 +1,25 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "KVItem.proto";
+import "Discount.proto";
+
+message Production {
+	required uint32 _SkuCount = 1;
+	repeated KVItem _Skus = 2;
+	required uint32 _Count = 3;
+	required uint32 _RealPrice = 4;
+	optional string _PriceType = 5;
+	optional string _Pid = 6;
+	optional string _SafeUrl = 7;
+	optional string _SkuId = 8;
+	optional uint32 _Type = 9;
+	optional string _Name = 10;
+	optional string _ThumbUrl = 11;
+	optional uint32 _SubType = 12;
+	optional uint32 _Scene = 13;
+	optional string _PreferentialPrice = 14;
+	optional uint32 _DiscountCount = 15;
+	repeated Discount _Discounts = 16;
+}

@@ -1,0 +1,30 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "HostList.proto";
+import "BuiltinIPList.proto";
+import "NetworkControl.proto";
+import "SafeDeviceList.proto";
+import "ShowStyleKey.proto";
+
+message BindOpMobileResponse {
+	required BaseResponse _BaseResponse = 1;
+	optional string _Ticket = 2;
+	optional string _SmsNo = 3;
+	optional uint32 _NeedSetPwd = 4;
+	optional string _Pwd = 5;
+	optional string _Username = 6;
+	optional HostList _NewHostList = 7;
+	optional BuiltinIPList _BuiltinIPList = 8;
+	optional NetworkControl _NetworkControl = 9;
+	optional string _AuthTicket = 10;
+	optional uint32 _SafeDevice = 11;
+	optional string _CC = 12;
+	optional uint32 _ObsoleteItem1 = 13;
+	optional SafeDeviceList _SafeDeviceList = 14;
+	optional string _PureMobile = 15;
+	optional string _FormatedMobile = 16;
+	optional ShowStyleKey _ShowStyle = 17;
+}

@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "MFriend.proto";
+
+message GetMFriendResponse {
+	required BaseResponse _BaseResponse = 1;
+	required int32 _Count = 2;
+	repeated MFriend _FriendList = 3;
+	optional string _MD5 = 4;
+}

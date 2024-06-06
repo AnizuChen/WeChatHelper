@@ -1,0 +1,40 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SKBuiltinString_t.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message UploadMsgImgRequest {
+	required BaseRequest _BaseRequest = 1;
+	required SKBuiltinString_t _ClientImgId = 2;
+	required SKBuiltinString_t _FromUserName = 3;
+	required SKBuiltinString_t _ToUserName = 4;
+	required uint32 _TotalLen = 5;
+	required uint32 _StartPos = 6;
+	required uint32 _DataLen = 7;
+	required SKBuiltinBuffer_t _Data = 8;
+	optional uint32 _MsgType = 9;
+	optional string _MsgSource = 10;
+	optional uint32 _CompressType = 11;
+	optional int32 _NetType = 12;
+	optional int32 _PhotoFrom = 13;
+	optional string _MediaId = 14;
+	optional string _CDNBigImgUrl = 15;
+	optional string _CDNMidImgUrl = 16;
+	optional string _AESKey = 17;
+	optional int32 _EncryVer = 18;
+	optional int32 _CDNBigImgSize = 19;
+	optional int32 _CDNMidImgSize = 20;
+	optional string _CDNThumbImgUrl = 21;
+	optional int32 _CDNThumbImgSize = 22;
+	optional int32 _CDNThumbImgHeight = 23;
+	optional int32 _CDNThumbImgWidth = 24;
+	optional string _CDNThumbAESKey = 25;
+	optional uint32 _ReqTime = 26;
+	optional string _Md5 = 27;
+	optional uint32 _CRC32 = 28;
+	optional uint32 _MsgForwardType = 29;
+	optional uint32 _HitMd5 = 30;
+}

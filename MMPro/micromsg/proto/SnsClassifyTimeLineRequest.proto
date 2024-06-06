@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message SnsClassifyTimeLineRequest {
+	required BaseRequest _BaseRequest = 1;
+	optional string _FirstPageMd5 = 2;
+	required uint64 _MaxId = 3;
+	optional string _ClassifyId = 4;
+	required uint32 _ClassifyType = 5;
+}

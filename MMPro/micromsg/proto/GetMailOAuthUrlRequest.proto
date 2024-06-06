@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message GetMailOAuthUrlRequest {
+	required BaseRequest _BaseRequest = 1;
+	optional string _MailAccount = 2;
+}

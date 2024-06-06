@@ -1,0 +1,47 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "BuiltinIPList.proto";
+import "NetworkControl.proto";
+import "PluginKeyList.proto";
+import "HostList.proto";
+import "CDNDnsInfo.proto";
+import "SKBuiltinBuffer_t.proto";
+import "ShowStyleKey.proto";
+import "SecAuthRegKeySect.proto";
+
+message NewRegResponse {
+	required BaseResponse _BaseResponse = 1;
+	required uint32 _Uin = 2;
+	optional string _SessionKey = 3;
+	optional string _OfficialUserName = 4;
+	optional string _OfficialNickName = 5;
+	optional string _QQMicroBlogUserName = 6;
+	optional string _BindEmail = 7;
+	required uint32 _PushMailStatus = 8;
+	optional uint32 _SendCardBitFlag = 9;
+	optional string _PushMailSettingTicket = 10;
+	optional BuiltinIPList _BuiltinIPList = 14;
+	optional string _FSURL = 15;
+	optional string _UserName = 16;
+	optional uint32 _Status = 17;
+	optional NetworkControl _NetworkControl = 18;
+	optional uint32 _ReturnFlag = 19;
+	optional uint32 _RegType = 20;
+	optional string _AuthKey = 21;
+	optional PluginKeyList _PluginKeyList = 22;
+	optional string _Password = 23;
+	optional uint32 _ProfileFlag = 24;
+	optional HostList _NewHostList = 25;
+	optional string _AutoAuthTicket = 26;
+	optional CDNDnsInfo _DnsInfo = 27;
+	optional string _StepTicket = 28;
+	optional string _VerifySignature = 29;
+	optional SKBuiltinBuffer_t _VerifyBuff = 30;
+	optional ShowStyleKey _ShowStyle = 31;
+	optional CDNDnsInfo _SnsDnsInfo = 32;
+	optional CDNDnsInfo _AppDnsInfo = 33;
+	optional SecAuthRegKeySect _SecAuthRegKeySect = 34;
+}

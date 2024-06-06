@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+
+message GenBizIapPrepayResponse {
+	required BaseResponse _BaseResponse = 1;
+	optional string _ProductId = 2;
+	optional string _ExtInfo = 4;
+}

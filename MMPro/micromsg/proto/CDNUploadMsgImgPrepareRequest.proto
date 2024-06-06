@@ -1,0 +1,27 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SKBuiltinBuffer_t.proto";
+
+message CDNUploadMsgImgPrepareRequest {
+	optional string _ClientImgId = 1;
+	optional string _FromUserName = 2;
+	optional string _ToUserName = 3;
+	required int32 _ThumbHeight = 4;
+	required int32 _ThumbWidth = 5;
+	optional string _MsgSource = 6;
+	optional SKBuiltinBuffer_t _ClientStat = 7;
+	optional int32 _Scene = 8;
+	optional float _Longitude = 9;
+	optional float _Latitude = 10;
+	optional string _AttachedContent = 11;
+	optional int32 _MidHeight = 12;
+	optional int32 _MidWidth = 13;
+	optional int32 _HDHeight = 14;
+	optional int32 _HDWidth = 15;
+	optional string _AESKey = 16;
+	optional int32 _EncryVer = 17;
+	optional uint32 _CRC32 = 18;
+	optional uint32 _MsgForwardType = 19;
+}

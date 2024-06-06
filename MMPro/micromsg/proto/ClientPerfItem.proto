@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message ClientPerfItem {
+	required uint32 _EventID = 1;
+	required uint32 _AvgElapseTime = 2;
+	required uint32 _MaxElapseTime = 3;
+	required uint32 _MinElapseTime = 4;
+	required uint32 _Cnt = 5;
+	required uint32 _StartTime = 6;
+	required uint32 _EndTime = 7;
+}

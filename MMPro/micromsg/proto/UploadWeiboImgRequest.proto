@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message UploadWeiboImgRequest {
+	required BaseRequest _BaseRequest = 1;
+	optional string _ClientImgId = 2;
+	required uint32 _TotalLen = 3;
+	required uint32 _StartPos = 4;
+	required uint32 _DataLen = 5;
+	optional bytes _Data = 6;
+	optional string _Content = 7;
+	required uint32 _FilterType = 8;
+	optional uint32 _Flag = 9;
+}

@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SKBuiltinString_t.proto";
+
+message CommVerifyUserTicket {
+	required uint32 _TicketType = 1;
+	required uint32 _Source = 2;
+	required uint32 _FromUin = 3;
+	required uint32 _ToUin = 4;
+	required SKBuiltinString_t _ExtInfo = 5;
+	required uint32 _TimeStamp = 6;
+	optional uint32 _FriendFlag = 7;
+}

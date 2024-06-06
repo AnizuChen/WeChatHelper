@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message JSAPIPermissionBitSet {
+	required uint32 _BitValue = 1;
+	optional uint32 _BitValue2 = 2;
+	optional uint32 _BitValue3 = 3;
+	optional uint32 _BitValue4 = 4;
+}

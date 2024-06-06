@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SKBuiltinBuffer_t.proto";
+import "VoipCmdList.proto";
+
+message VoipSyncReq {
+	required BaseRequest _BaseRequest = 1;
+	optional string _FromUsername = 2;
+	required int32 _RoomId = 3;
+	required SKBuiltinBuffer_t _KeyBuf = 4;
+	required VoipCmdList _OpLog = 5;
+	required int64 _RoomKey = 6;
+	required int32 _Selector = 7;
+	optional uint64 _Timestamp64 = 8;
+}

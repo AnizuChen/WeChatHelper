@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message AddFavItemRequest {
+	required BaseRequest _BaseRequest = 1;
+	optional string _ClientId = 2;
+	required uint32 _Type = 3;
+	required uint32 _SourceType = 4;
+	optional string _SourceId = 5;
+	optional string _Object = 6;
+}

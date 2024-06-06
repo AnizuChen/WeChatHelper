@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "StatusNotifyUnreadChat.proto";
+import "StatusNotifyFunction.proto";
+
+message StatusNotifyRequest {
+	required BaseRequest _BaseRequest = 1;
+	required uint32 _Code = 2;
+	optional string _FromUserName = 3;
+	optional string _ToUserName = 4;
+	optional string _ClientMsgId = 5;
+	optional uint32 _UnreadChatListCount = 6;
+	repeated StatusNotifyUnreadChat _UnreadChatList = 7;
+	optional StatusNotifyFunction _Function = 8;
+	optional uint32 _UnreadFunctionCount = 9;
+	repeated StatusNotifyFunction _UnreadFunctionList = 10;
+}

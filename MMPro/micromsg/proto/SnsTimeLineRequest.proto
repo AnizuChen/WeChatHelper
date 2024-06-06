@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message SnsTimeLineRequest {
+	required BaseRequest _BaseRequest = 1;
+	optional string _FirstPageMd5 = 2;
+	required uint64 _MaxId = 3;
+	optional uint64 _MinFilterId = 4;
+	optional uint32 _LastRequestTime = 5;
+	optional uint64 _ClientLatestId = 6;
+	optional SKBuiltinBuffer_t _Session = 7;
+}

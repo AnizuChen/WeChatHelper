@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "OpenAppInfo.proto";
+
+message GetRecommendAppListResponse {
+	required uint32 _Total = 1;
+	required BaseResponse _BaseResponse = 2;
+	required uint32 _Count = 3;
+	repeated OpenAppInfo _AppList = 4;
+}

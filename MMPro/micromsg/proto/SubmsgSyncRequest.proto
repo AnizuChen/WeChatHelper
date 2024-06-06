@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message SubmsgSyncRequest {
+	required BaseRequest _BaseRequest = 1;
+	required uint32 _Selector = 2;
+	required SKBuiltinBuffer_t _KeyBuf = 3;
+}

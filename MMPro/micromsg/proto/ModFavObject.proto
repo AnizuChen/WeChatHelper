@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message ModFavObject {
+	optional string _TagName = 1;
+	optional string _AttrName = 2;
+	optional string _Value = 3;
+	optional uint32 _Type = 4;
+}

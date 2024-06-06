@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message BackupRequestSession {
+	repeated string _SessionName = 1;
+	repeated int64 _TimeInterval = 2;
+}

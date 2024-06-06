@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "Donor.proto";
+
+message GetChatRoomDonateHistoryResp {
+	required BaseResponse _BaseResponse = 1;
+	required uint32 _TotalCount = 2;
+	repeated Donor _List = 3;
+}

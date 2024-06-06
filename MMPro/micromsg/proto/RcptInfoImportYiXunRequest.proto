@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message RcptInfoImportYiXunRequest {
+	required BaseRequest _BaseRequest = 1;
+	required uint32 _Qq = 2;
+	optional SKBuiltinBuffer_t _A2Key = 3;
+	optional SKBuiltinBuffer_t _NewA2Key = 4;
+}

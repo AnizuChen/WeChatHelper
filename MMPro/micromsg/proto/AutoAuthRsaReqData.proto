@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SKBuiltinBuffer_t.proto";
+import "ECDHKey.proto";
+
+message AutoAuthRsaReqData {
+	required SKBuiltinBuffer_t _AesEncryptKey = 2;
+	optional ECDHKey _CliPubECDHKey = 3;
+}

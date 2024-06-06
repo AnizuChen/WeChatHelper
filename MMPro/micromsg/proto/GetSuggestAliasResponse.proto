@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "SKBuiltinString_t.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message GetSuggestAliasResponse {
+	required BaseResponse _BaseResponse = 1;
+	required uint32 _Count = 2;
+	repeated SKBuiltinString_t _List = 3;
+	optional string _VerifySignature = 4;
+	optional SKBuiltinBuffer_t _VerifyBuff = 5;
+	optional int32 _UserNameRet = 6;
+}

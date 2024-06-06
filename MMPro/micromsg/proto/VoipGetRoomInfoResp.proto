@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "VoipStatusItem.proto";
+
+message VoipGetRoomInfoResp {
+	required BaseResponse _BaseResponse = 1;
+	required int32 _RoomId = 2;
+	required int64 _RoomKey = 3;
+	required uint32 _CreateTime = 4;
+	required int32 _MemberCount = 6;
+	repeated VoipStatusItem _MemberStatus = 7;
+	optional string _CallerUserName = 8;
+	optional uint32 _InviteType = 9;
+}

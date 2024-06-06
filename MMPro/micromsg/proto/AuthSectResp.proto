@@ -1,0 +1,31 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "ECDHKey.proto";
+import "SKBuiltinBuffer_t.proto";
+import "WTLoginImgRespInfo.proto";
+import "WxVerifyCodeRespInfo.proto";
+import "ShowStyleKey.proto";
+
+message AuthSectResp {
+	required uint32 _Uin = 1;
+	required ECDHKey _SvrPubECDHKey = 2;
+	required SKBuiltinBuffer_t _SessionKey = 3;
+	required SKBuiltinBuffer_t _AutoAuthKey = 4;
+	required uint32 _WTLoginRspBuffFlag = 5;
+	optional SKBuiltinBuffer_t _WTLoginRspBuff = 6;
+	optional WTLoginImgRespInfo _WTLoginImgRespInfo = 7;
+	optional WxVerifyCodeRespInfo _WxVerifyCodeRespInfo = 8;
+	optional SKBuiltinBuffer_t _CliDBEncryptKey = 9;
+	optional SKBuiltinBuffer_t _CliDBEncryptInfo = 10;
+	optional string _AuthKey = 11;
+	optional SKBuiltinBuffer_t _A2Key = 12;
+	optional string _ApplyBetaUrl = 14;
+	optional ShowStyleKey _ShowStyle = 15;
+	optional string _AuthTicket = 16;
+	optional uint32 _NewVersion = 17;
+	optional uint32 _UpdateFlag = 18;
+	optional uint32 _AuthResultFlag = 19;
+	optional string _FSURL = 20;
+}

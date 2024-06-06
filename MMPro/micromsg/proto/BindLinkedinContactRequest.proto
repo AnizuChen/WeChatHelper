@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message BindLinkedinContactRequest {
+	required BaseRequest _BaseRequest = 1;
+	required uint32 _Opcode = 2;
+	required uint32 _Visible = 3;
+	optional string _LinkedinMemberID = 4;
+	optional string _LinkedinName = 5;
+	optional string _LinkedinPublicUrl = 6;
+	optional string _Timestamp = 7;
+	optional string _Nounce = 8;
+	optional string _LinkedinSignature = 9;
+	optional string _LinkedinReturnSignature = 10;
+}

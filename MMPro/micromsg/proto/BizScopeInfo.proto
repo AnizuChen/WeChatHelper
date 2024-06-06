@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BizApiInfo.proto";
+
+message BizScopeInfo {
+	optional string _Scope = 1;
+	required uint32 _ScopeStatus = 2;
+	optional string _ScopeDesc = 3;
+	required uint32 _ApiCount = 4;
+	repeated BizApiInfo _ApiList = 5;
+}

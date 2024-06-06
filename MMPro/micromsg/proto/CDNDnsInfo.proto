@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SKBuiltinString_t.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message CDNDnsInfo {
+	required uint32 _Ver = 1;
+	required uint32 _Uin = 2;
+	required uint32 _ExpireTime = 3;
+	required int32 _FrontID = 4;
+	required int32 _FrontIPCount = 5;
+	repeated SKBuiltinString_t _FrontIPList = 6;
+	optional string _ZoneDomain = 7;
+	required SKBuiltinBuffer_t _AuthKey = 8;
+	required int32 _ZoneID = 9;
+	required int32 _ZoneIPCount = 10;
+	repeated SKBuiltinString_t _ZoneIPList = 11;
+}

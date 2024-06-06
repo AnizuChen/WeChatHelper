@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "GamePropsInfo.proto";
+
+message GameResourceResp {
+	required BaseResponse _BaseResponse = 1;
+	required int32 _PropsCount = 2;
+	repeated GamePropsInfo _PropsList = 3;
+}

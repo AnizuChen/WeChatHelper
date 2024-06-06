@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message BBMContactItem {
+	optional string _BBPPID = 1;
+	optional string _UserName = 2;
+	optional string _BigHeadUrl = 3;
+	optional string _SmallHeadUrl = 4;
+	optional string _BBPIN = 5;
+	optional string _BBMNickName = 6;
+	required int32 _Ret = 7;
+	optional string _NickName = 8;
+	optional string _AntispamTicket = 9;
+}

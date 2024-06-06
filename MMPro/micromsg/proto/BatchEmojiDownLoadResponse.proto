@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "EmojiInfo.proto";
+
+message BatchEmojiDownLoadResponse {
+	required BaseResponse _BaseResponse = 1;
+	required uint32 _Index = 2;
+	repeated string _Md5List = 3;
+	required uint32 _EndFlag = 4;
+	repeated EmojiInfo _EmojiList = 5;
+}

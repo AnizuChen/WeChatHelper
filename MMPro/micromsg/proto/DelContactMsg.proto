@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SKBuiltinString_t.proto";
+
+message DelContactMsg {
+	required SKBuiltinString_t _UserName = 1;
+	required int32 _MaxMsgId = 2;
+	optional int64 _NewMsgId = 3;
+}

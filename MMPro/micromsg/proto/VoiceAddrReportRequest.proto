@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message VoiceAddrReportRequest {
+	required BaseRequest _BaseRequest = 1;
+	required uint32 _HitPos = 2;
+	optional string _HitUserName = 3;
+}

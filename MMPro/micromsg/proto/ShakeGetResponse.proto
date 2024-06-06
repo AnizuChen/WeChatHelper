@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "ShakeGetItem.proto";
+
+message ShakeGetResponse {
+	required BaseResponse _BaseResponse = 1;
+	required uint32 _Count = 2;
+	repeated ShakeGetItem _ShakeGetList = 3;
+	optional string _Tips = 4;
+	required uint32 _Scence = 5;
+	required int32 _Ret = 6;
+}

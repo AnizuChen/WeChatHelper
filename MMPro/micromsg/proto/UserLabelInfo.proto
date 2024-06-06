@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message UserLabelInfo {
+	optional string _UserName = 1;
+	optional string _LabelIDList = 2;
+}

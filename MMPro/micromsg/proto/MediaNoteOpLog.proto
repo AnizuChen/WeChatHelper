@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message MediaNoteOpLog {
+	required uint32 _WriteCount = 1;
+	required int32 _NoteType = 2;
+}

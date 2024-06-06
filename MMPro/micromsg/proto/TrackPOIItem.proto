@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message TrackPOIItem {
+	required double _Latitude = 1;
+	required double _Longitude = 2;
+	optional string _Name = 3;
+	optional string _Addr = 4;
+}

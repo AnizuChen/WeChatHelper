@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message DelGameMsgRsp {
+	required int32 _Ret = 1;
+	required uint32 _MsgId = 2;
+}

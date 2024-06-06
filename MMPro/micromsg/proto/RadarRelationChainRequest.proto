@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "RadarChatRoomMember.proto";
+
+message RadarRelationChainRequest {
+	required BaseRequest _BaseRequest = 1;
+	required uint32 _MemberCount = 2;
+	repeated RadarChatRoomMember _MemberList = 3;
+}

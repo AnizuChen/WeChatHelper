@@ -1,0 +1,31 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SnsUserInfo.proto";
+import "CustomizedInfo.proto";
+
+message QQFriendInGroup {
+	required uint32 _QQUin = 1;
+	optional string _UserName = 2;
+	optional string _NickName = 3;
+	optional string _QQNickName = 4;
+	required uint32 _WeixinStatus = 5;
+	optional string _QQRemarkName = 6;
+	optional int32 _Sex = 7;
+	optional string _Province = 8;
+	optional string _City = 9;
+	optional string _Signature = 10;
+	optional uint32 _PersonalCard = 11;
+	optional string _Alias = 12;
+	optional uint32 _AlbumFlag = 13;
+	optional uint32 _AlbumStyle = 14;
+	optional string _AlbumBGImgID = 15;
+	optional SnsUserInfo _SnsUserInfo = 16;
+	optional string _Country = 17;
+	optional string _MyBrandList = 18;
+	optional CustomizedInfo _CustomizedInfo = 19;
+	optional string _BigHeadImgUrl = 20;
+	optional string _SmallHeadImgUrl = 21;
+	optional string _AntispamTicket = 22;
+}

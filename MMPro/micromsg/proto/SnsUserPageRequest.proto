@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message SnsUserPageRequest {
+	required BaseRequest _BaseRequest = 1;
+	optional string _FirstPageMd5 = 2;
+	optional string _Username = 3;
+	required uint64 _MaxId = 4;
+	optional uint32 _Source = 5;
+	optional uint64 _MinFilterId = 6;
+	optional uint32 _LastRequestTime = 7;
+}

@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "GeneralShareBaseInfo.proto";
+import "GeneralShareContent.proto";
+
+message GeneralShareRequest {
+	required BaseRequest _BaseRequest = 1;
+	required GeneralShareBaseInfo _BaseInfo = 2;
+	required GeneralShareContent _Content = 3;
+}

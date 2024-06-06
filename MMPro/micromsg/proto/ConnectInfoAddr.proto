@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message ConnectInfoAddr {
+	optional string _IP = 1;
+	repeated uint32 _Port = 2;
+	optional uint32 _PortCount = 3;
+}

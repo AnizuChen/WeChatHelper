@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SKBuiltinBuffer_t.proto";
+
+message GetEmotionDonorListRequest {
+	required string _ProductID = 1;
+	required SKBuiltinBuffer_t _ReqBuf = 2;
+}

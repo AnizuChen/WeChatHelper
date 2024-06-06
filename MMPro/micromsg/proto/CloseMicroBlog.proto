@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SKBuiltinString_t.proto";
+
+message CloseMicroBlog {
+	required SKBuiltinString_t _MicroBlogUserName = 1;
+}

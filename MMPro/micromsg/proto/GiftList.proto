@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message GiftList {
+	optional string _GiftID = 1;
+	optional string _IconUrl = 2;
+	optional string _Title = 3;
+	optional string _Desc = 4;
+	optional string _GiftUrl = 5;
+}

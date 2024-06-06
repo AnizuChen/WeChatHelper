@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message PacketBackupDataTag {
+	required string _BakChatName = 1;
+	required int64 _StartTime = 2;
+	required int64 _EndTime = 3;
+	required string _MsgDataID = 4;
+	required string _NickName = 5;
+	repeated string _MediaIDList = 6;
+}

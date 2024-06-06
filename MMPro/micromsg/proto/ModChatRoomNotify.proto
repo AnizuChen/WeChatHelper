@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SKBuiltinString_t.proto";
+
+message ModChatRoomNotify {
+	required SKBuiltinString_t _ChatRoomName = 1;
+	required uint32 _Status = 2;
+}

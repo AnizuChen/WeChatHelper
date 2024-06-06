@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message Express {
+	optional string _Name = 1;
+	optional uint32 _Price = 2;
+	optional string _PriceType = 3;
+	optional uint32 _Id = 4;
+}

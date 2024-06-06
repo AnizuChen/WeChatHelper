@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message GetAvailableCardRequest {
+	required BaseRequest _BaseRequest = 1;
+	optional string _AppId = 2;
+	optional uint32 _ShopId = 3;
+	optional string _SignType = 4;
+	optional string _CardSign = 5;
+	optional uint32 _TimeStamp = 6;
+	optional string _NonceStr = 7;
+	optional string _CardTpId = 8;
+	optional string _CardType = 9;
+}

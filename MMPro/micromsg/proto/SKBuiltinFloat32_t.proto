@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message SKBuiltinFloat32_t {
+	required float _fVal = 1;
+}

@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BuiltinIP.proto";
+
+message BuiltinIPList {
+	required uint32 _LongConnectIPCount = 1;
+	required uint32 _ShortConnectIPCount = 2;
+	required uint32 _Seq = 5;
+	repeated BuiltinIP _LongConnectIPList = 3;
+	repeated BuiltinIP _ShortConnectIPList = 4;
+}

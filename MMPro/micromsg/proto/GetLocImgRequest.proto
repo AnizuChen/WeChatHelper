@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message GetLocImgRequest {
+	required BaseRequest _BaseRequest = 1;
+	required float _Longitude = 2;
+	required float _Latitude = 3;
+	required uint32 _Width = 4;
+	required uint32 _Height = 5;
+	optional string _Language = 6;
+	required uint32 _MapType = 7;
+	required uint32 _ZoomLevel = 8;
+}

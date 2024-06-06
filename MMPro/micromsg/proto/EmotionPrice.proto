@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message EmotionPrice {
+	required string _Label = 1;
+	required string _Number = 2;
+	required string _Type = 3;
+}

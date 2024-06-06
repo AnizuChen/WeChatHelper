@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "SnsObject.proto";
+import "SnsServerConfig.proto";
+
+message SnsClassifyTimeLineResponse {
+	required BaseResponse _BaseResponse = 1;
+	optional string _FirstPageMd5 = 2;
+	required uint32 _ObjectCount = 3;
+	repeated SnsObject _ObjectList = 4;
+	required uint32 _ObjectCountForSameMd5 = 5;
+	optional string _Description = 6;
+	required uint32 _ControlFlag = 7;
+	required SnsServerConfig _ServerConfig = 8;
+}

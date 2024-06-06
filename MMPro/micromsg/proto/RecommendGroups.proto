@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "RecommendGroup.proto";
+
+message RecommendGroups {
+	required uint32 _GroupCount = 1;
+	repeated RecommendGroup _Groups = 2;
+}

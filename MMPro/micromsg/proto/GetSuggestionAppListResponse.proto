@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "RcAppList.proto";
+import "AdAppList.proto";
+import "GiftList.proto";
+import "GiftEntranceItem.proto";
+
+message GetSuggestionAppListResponse {
+	required BaseResponse _BaseResponse = 1;
+	required uint32 _RcCount = 2;
+	repeated RcAppList _RcList = 3;
+	optional uint32 _IsInternalDownload = 4;
+	optional uint32 _AdCount = 5;
+	repeated AdAppList _AdList = 6;
+	optional uint32 _GiftCount = 7;
+	repeated GiftList _GiftList = 8;
+	optional GiftEntranceItem _GiftEntranceItem = 9;
+}

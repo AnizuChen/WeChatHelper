@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message FriendInfo {
+	optional string _DisplayUserName = 1;
+	optional string _DisplayNickName = 2;
+	optional string _DisplayRemark = 3;
+	optional string _WXUserName = 4;
+	optional string _WXNickName = 5;
+	optional string _WXRemark = 6;
+	required uint32 _Type = 7;
+	required uint32 _Status = 8;
+	optional string _Source = 9;
+	optional uint32 _MatchField = 10;
+	optional string _Alias = 11;
+}

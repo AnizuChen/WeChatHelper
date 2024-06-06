@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "ListMFriendMobileInfo.proto";
+
+message ListMFriendResp {
+	required BaseResponse _BaseResponse = 1;
+	optional string _Ticket = 2;
+	required uint32 _MobileCount = 3;
+	repeated ListMFriendMobileInfo _MobileInfo = 4;
+	required uint32 _EMailCount = 5;
+	repeated ListMFriendMobileInfo _EMailInfo = 6;
+}

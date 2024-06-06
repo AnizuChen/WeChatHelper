@@ -1,0 +1,30 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "FBFriend.proto";
+import "SnsUserInfo.proto";
+import "CustomizedInfo.proto";
+
+message MFriend {
+	optional string _Username = 1;
+	optional string _Nickname = 2;
+	optional string _MobileMD5 = 3;
+	optional int32 _Sex = 4;
+	optional string _Province = 5;
+	optional string _City = 6;
+	optional string _Signature = 7;
+	optional uint32 _PersonalCard = 8;
+	optional string _Alias = 9;
+	optional FBFriend _FBInfo = 10;
+	optional uint32 _AlbumFlag = 11;
+	optional uint32 _AlbumStyle = 12;
+	optional string _AlbumBGImgID = 13;
+	optional SnsUserInfo _SnsUserInfo = 14;
+	optional string _Country = 15;
+	optional string _MyBrandList = 16;
+	optional CustomizedInfo _CustomizedInfo = 17;
+	optional string _BigHeadImgUrl = 20;
+	optional string _SmallHeadImgUrl = 21;
+	optional string _AntispamTicket = 22;
+}

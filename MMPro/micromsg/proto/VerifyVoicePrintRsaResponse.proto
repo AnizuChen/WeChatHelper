@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "VoicePieceCtx.proto";
+
+message VerifyVoicePrintRsaResponse {
+	required BaseResponse _BaseResponse = 1;
+	required VoicePieceCtx _NextPiece = 2;
+	required uint32 _Result = 3;
+	required uint32 _VoiceTicket = 4;
+	optional string _AuthPwd = 5;
+}

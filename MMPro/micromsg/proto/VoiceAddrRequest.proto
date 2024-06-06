@@ -1,0 +1,24 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SKBuiltinBuffer_t.proto";
+import "SKBuiltinString_t.proto";
+
+message VoiceAddrRequest {
+	required BaseRequest _BaseRequest = 1;
+	optional string _UserName = 2;
+	required SKBuiltinBuffer_t _Data = 3;
+	required uint32 _Offset = 4;
+	optional string _ClientVoiceId = 5;
+	required uint32 _EndFlag = 6;
+	required uint32 _SamplePerSec = 7;
+	required uint32 _BitsPerSample = 8;
+	required uint32 _VoiceEncodeType = 9;
+	required uint32 _FileType = 10;
+	optional uint32 _SearchType = 11;
+	optional uint32 _ExtraNameCount = 12;
+	repeated SKBuiltinString_t _ExtraNameUserNameList = 13;
+	repeated SKBuiltinBuffer_t _ExtraNameRemarkNameList = 14;
+}

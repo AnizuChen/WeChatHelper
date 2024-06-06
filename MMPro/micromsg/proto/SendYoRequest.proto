@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message SendYoRequest {
+	optional string _ToUserName = 1;
+	required uint32 _Type = 2;
+	required uint32 _Count = 3;
+	required uint32 _CreateTime = 4;
+	required uint32 _ClientMsgId = 5;
+	optional string _MsgSource = 6;
+	optional uint32 _YoType = 7;
+}

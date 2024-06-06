@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message DelFavItemRsp {
+	required int32 _Ret = 1;
+	required uint32 _FavId = 2;
+}

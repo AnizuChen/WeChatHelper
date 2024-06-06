@@ -1,0 +1,22 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message VoipSpeedTestReq {
+	required BaseRequest _BaseRequest = 1;
+	required int32 _RoomId = 2;
+	required uint32 _CallType = 3;
+	required uint32 _NetType = 4;
+	required uint32 _IsConnecting = 5;
+	required uint32 _IsConnected = 6;
+	required uint32 _C2CLossrate = 7;
+	required uint32 _C2CRttCnt = 8;
+	repeated uint32 _C2CRtt = 9;
+	required uint32 _C2SDownLossRate = 10;
+	required uint32 _C2SRttCnt = 11;
+	repeated uint32 _C2SRtt = 12;
+	required uint32 _SendPkts = 13;
+	required uint32 _RcvPkts = 14;
+}

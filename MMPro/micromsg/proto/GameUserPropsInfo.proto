@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message GameUserPropsInfo {
+	required uint32 _PropsId = 1;
+	required uint32 _Count = 2;
+}

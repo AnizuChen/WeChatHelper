@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message UnBindLinkedinContactRequest {
+	required BaseRequest _BaseRequest = 1;
+	required uint32 _Opcode = 2;
+}

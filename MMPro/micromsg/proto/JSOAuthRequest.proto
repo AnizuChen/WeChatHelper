@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message JSOAuthRequest {
+	required BaseRequest _BaseRequest = 1;
+	optional string _AppID = 2;
+	optional string _Url = 3;
+	optional string _Scope = 4;
+	optional string _Signature = 5;
+	optional string _SignatureMethod = 6;
+	optional string _TimeStamp = 7;
+	optional string _Nonce = 8;
+}

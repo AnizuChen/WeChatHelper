@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "AppMsg.proto";
+
+message SendAppMsgRequest {
+	required BaseRequest _BaseRequest = 1;
+	required AppMsg _Msg = 2;
+	optional string _CommentUrl = 3;
+	optional uint32 _ReqTime = 4;
+	optional string _Md5 = 5;
+	optional uint32 _FileType = 6;
+	optional string _Signature = 7;
+	optional string _FromSence = 8;
+	optional uint32 _HitMd5 = 9;
+	optional uint32 _CRC32 = 10;
+	optional uint32 _MsgForwardType = 11;
+}

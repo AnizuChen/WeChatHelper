@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SnsAction.proto";
+
+message SnsActionGroup {
+	required uint64 _Id = 1;
+	optional uint64 _ParentId = 2;
+	required SnsAction _CurrentAction = 3;
+	optional SnsAction _ReferAction = 4;
+	optional string _ClientId = 5;
+}

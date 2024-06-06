@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message EmojiInfo {
+	required string _Md5 = 1;
+	optional string _Url = 2;
+}

@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message ModDescription {
+	optional string _ContactUsername = 1;
+	optional string _Desc = 2;
+}

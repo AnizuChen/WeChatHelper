@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "VerifyUser.proto";
+import "VerifyUserInfo.proto";
+
+message VerifyUserRequest {
+	required BaseRequest _BaseRequest = 1;
+	required uint32 _Opcode = 2;
+	required uint32 _VerifyUserListSize = 3;
+	repeated VerifyUser _VerifyUserList = 4;
+	optional string _VerifyContent = 5;
+	optional uint32 _SceneListCount = 6;
+	repeated uint32 _SceneList = 7;
+	optional uint32 _VerifyInfoListCount = 8;
+	repeated VerifyUserInfo _VerifyInfoList = 9;
+}

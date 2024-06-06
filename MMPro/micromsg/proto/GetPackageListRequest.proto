@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "Package.proto";
+
+message GetPackageListRequest {
+	required BaseRequest _BaseRequest = 1;
+	required uint32 _Count = 2;
+	repeated Package _List = 3;
+	optional uint32 _Type = 4;
+	optional uint32 _Flag = 5;
+}

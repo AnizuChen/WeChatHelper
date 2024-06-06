@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message IphoneRegRequest {
+	required BaseRequest _BaseRequest = 1;
+	optional string _Token = 2;
+	optional string _Sound = 3;
+	optional uint32 _Status = 4;
+	optional string _VoipSound = 5;
+	optional uint32 _TokenCert = 6;
+	optional uint32 _TokenEnv = 7;
+	optional uint32 _TokenScene = 8;
+}

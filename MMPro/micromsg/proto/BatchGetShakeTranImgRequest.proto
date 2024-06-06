@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SKBuiltinString_t.proto";
+
+message BatchGetShakeTranImgRequest {
+	required BaseRequest _BaseRequest = 1;
+	required uint32 _Count = 2;
+	repeated SKBuiltinString_t _WebUrlList = 3;
+}

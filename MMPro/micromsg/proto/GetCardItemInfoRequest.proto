@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message GetCardItemInfoRequest {
+	required BaseRequest _BaseRequest = 1;
+	required string _CardId = 2;
+	required uint32 _FromScene = 3;
+	optional string _FromUsername = 4;
+	optional string _CardExt = 5;
+	optional string _JsCheckinfoUrl = 6;
+	optional string _JsCheckinfoSessionUsername = 7;
+}

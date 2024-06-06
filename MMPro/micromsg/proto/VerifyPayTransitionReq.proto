@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message VerifyPayTransitionReq {
+	required BaseRequest _BaseRequest = 1;
+	required uint32 _Type = 2;
+	optional string _OutTradeNo = 3;
+	optional string _ExtInfo = 4;
+}

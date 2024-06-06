@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "SKBuiltinString_t.proto";
+
+message UploadMsgImgResponse {
+	required BaseResponse _BaseResponse = 1;
+	required uint32 _MsgId = 2;
+	required SKBuiltinString_t _ClientImgId = 3;
+	required SKBuiltinString_t _FromUserName = 4;
+	required SKBuiltinString_t _ToUserName = 5;
+	required uint32 _TotalLen = 6;
+	required uint32 _StartPos = 7;
+	required uint32 _DataLen = 8;
+	required uint32 _CreateTime = 9;
+	optional uint64 _NewMsgId = 10;
+	optional string _AESKey = 11;
+	optional string _FileId = 12;
+}

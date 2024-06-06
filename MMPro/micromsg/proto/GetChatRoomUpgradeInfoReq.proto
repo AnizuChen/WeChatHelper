@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message GetChatRoomUpgradeInfoReq {
+	required BaseRequest _BaseRequest = 1;
+	optional string _ChatRoomName = 2;
+	optional uint32 _Scene = 3;
+}

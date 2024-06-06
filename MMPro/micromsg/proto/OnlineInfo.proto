@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SKBuiltinBuffer_t.proto";
+
+message OnlineInfo {
+	required uint32 _DeviceType = 1;
+	optional bytes _DeviceID = 2;
+	optional string _WordingXML = 3;
+	required SKBuiltinBuffer_t _ClientKey = 4;
+	required uint32 _OnlineStatus = 5;
+	required uint32 _DeviceHelperType = 6;
+}

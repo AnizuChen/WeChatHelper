@@ -1,0 +1,32 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SKBuiltinString_t.proto";
+import "PackThumbExt.proto";
+
+message EmotionDetail {
+	optional string _ProductID = 1;
+	optional string _IconUrl = 2;
+	optional string _PackName = 3;
+	optional string _PackDesc = 4;
+	optional string _PackAuthInfo = 5;
+	optional string _PackPrice = 6;
+	required uint32 _PackType = 7;
+	required uint32 _PackFlag = 8;
+	required uint32 _PackThumbCnt = 9;
+	repeated SKBuiltinString_t _PackThumbList = 10;
+	optional string _CoverUrl = 11;
+	required uint32 _PackExpire = 12;
+	optional string _PackCopyright = 13;
+	optional string _PriceNum = 14;
+	optional string _PriceType = 15;
+	optional string _PanelUrl = 16;
+	optional string _ConsumeProductID = 17;
+	optional uint32 _ThumbExtCount = 18;
+	repeated PackThumbExt _ThumbExtList = 19;
+	optional int32 _Version = 20;
+	optional string _TimeLimitStr = 21;
+	optional string _ShareDesc = 22;
+	optional string _OldRedirectUrl = 23;
+}

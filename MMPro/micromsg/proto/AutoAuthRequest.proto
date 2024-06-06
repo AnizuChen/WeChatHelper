@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "AutoAuthRsaReqData.proto";
+import "AutoAuthAesReqData.proto";
+
+message AutoAuthRequest {
+	required AutoAuthRsaReqData _RsaReqData = 1;
+	required AutoAuthAesReqData _AesReqData = 2;
+}

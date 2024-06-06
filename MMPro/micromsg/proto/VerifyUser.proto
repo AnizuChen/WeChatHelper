@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message VerifyUser {
+	optional string _Value = 1;
+	optional string _VerifyUserTicket = 2;
+	optional string _AntispamTicket = 3;
+	optional uint32 _FriendFlag = 4;
+	optional string _ChatRoomUserName = 5;
+	optional string _SourceUserName = 6;
+	optional string _SourceNickName = 7;
+}

@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message GetRegStyleRequest {
+	required BaseRequest _BaseRequest = 1;
+	optional string _ClientSeqID = 2;
+	required SKBuiltinBuffer_t _RandomEncryKey = 3;
+}

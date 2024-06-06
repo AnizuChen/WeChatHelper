@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SKBuiltinString_t.proto";
+
+message DelMsg {
+	required SKBuiltinString_t _UserName = 1;
+	required uint32 _Count = 2;
+	repeated int32 _MsgIdList = 3;
+}

@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message GetLocationRequest {
+	required BaseRequest _BaseRequest = 1;
+	required int32 _Longitude = 3;
+	required int32 _Latitude = 4;
+	required int32 _Precision = 5;
+	optional string _MacAddr = 6;
+	optional string _CellId = 7;
+	optional int32 _GPSSource = 8;
+}

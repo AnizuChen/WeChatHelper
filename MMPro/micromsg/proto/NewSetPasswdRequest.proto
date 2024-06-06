@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message NewSetPasswdRequest {
+	required BaseRequest _BaseRequest = 1;
+	optional string _Password = 2;
+	optional string _Ticket = 3;
+	optional SKBuiltinBuffer_t _AutoAuthKey = 4;
+	optional uint32 _TicketType = 5;
+}

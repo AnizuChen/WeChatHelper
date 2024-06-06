@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "RcptInfoNode.proto";
+
+message RcptInfoList {
+	required uint32 _Count = 1;
+	repeated RcptInfoNode _Rcptinfolist = 2;
+	required uint32 _Timestamp = 3;
+}

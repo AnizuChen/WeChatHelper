@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message CDNUploadMsgImgCommitRequest {
+	optional string _Ticket = 1;
+	optional string _ImgUrl = 2;
+	optional string _AESKey = 3;
+	required int32 _EncryVer = 4;
+	required int32 _MidSize = 5;
+	required int32 _ThumbSize = 6;
+	optional int32 _BigSize = 9;
+	optional string _Md5Sum = 10;
+	optional int32 _SafeProto = 11;
+	optional int32 _Hit = 12;
+	optional string _FileInfo = 13;
+}

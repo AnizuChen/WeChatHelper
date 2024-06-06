@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message GetEmotionRewardRequest {
+	required string _ProductID = 1;
+	required uint32 _OpCode = 2;
+}

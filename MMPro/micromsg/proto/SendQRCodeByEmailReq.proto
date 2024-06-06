@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SKBuiltinString_t.proto";
+
+message SendQRCodeByEmailReq {
+	required BaseRequest _BaseRequest = 1;
+	optional string _QRCodeUserName = 2;
+	required uint32 _ToCount = 3;
+	repeated SKBuiltinString_t _ToList = 4;
+	optional string _Tittle = 5;
+	optional string _Content = 6;
+}

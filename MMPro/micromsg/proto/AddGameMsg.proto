@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message AddGameMsg {
+	required int32 _MsgId = 1;
+	optional string _FromUserName = 2;
+	optional string _ToUserName = 3;
+	required int32 _Type = 4;
+	required uint32 _Flag = 5;
+	required uint32 _Status = 6;
+	required uint32 _UpdateTime = 7;
+	required uint32 _UpdateSeq = 8;
+}

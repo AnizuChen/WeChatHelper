@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message LbsLocation {
+	required float _Longitude = 1;
+	required float _Latitude = 2;
+	required int32 _Precision = 3;
+	optional string _MacAddr = 4;
+	optional string _CellId = 5;
+	optional int32 _GPSSource = 6;
+}

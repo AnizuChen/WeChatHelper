@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message ShakeGetRequest {
+	required BaseRequest _BaseRequest = 1;
+	required SKBuiltinBuffer_t _Buffer = 2;
+	optional int32 _IsNewVerson = 3;
+}

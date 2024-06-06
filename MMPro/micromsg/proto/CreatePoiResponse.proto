@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+
+message CreatePoiResponse {
+	required BaseResponse _BaseResponse = 1;
+	optional string _PoiId = 2;
+}

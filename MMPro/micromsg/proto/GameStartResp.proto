@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "UserGameAchieveInfo.proto";
+import "GameUserPropsInfo.proto";
+
+message GameStartResp {
+	required BaseResponse _BaseResponse = 1;
+	required uint32 _LifeNum = 2;
+	required uint32 _CheckLeftTime = 3;
+	optional string _Token = 4;
+	required int32 _Count = 5;
+	repeated UserGameAchieveInfo _RankList = 6;
+	optional int32 _GamePropsCount = 7;
+	repeated GameUserPropsInfo _GamePropsList = 8;
+	optional uint32 _GameCoinCount = 9;
+}

@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "TalkRoomMember.proto";
+
+message GetTalkRoomMemberResp {
+	required BaseResponse _BaseResponse = 1;
+	required int32 _MicSeq = 2;
+	required int32 _MemberNum = 3;
+	repeated TalkRoomMember _MemberList = 4;
+}

@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message BackupReportItem {
+	required string _BakChatName = 1;
+	required uint32 _MsgCount = 2;
+}

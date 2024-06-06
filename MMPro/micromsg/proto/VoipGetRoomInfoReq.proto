@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message VoipGetRoomInfoReq {
+	required BaseRequest _BaseRequest = 1;
+	required int32 _RoomId = 2;
+	required int64 _RoomKey = 3;
+	optional string _CallerUserName = 4;
+	optional uint32 _Type = 5;
+	optional uint64 _Timestamp64 = 6;
+}

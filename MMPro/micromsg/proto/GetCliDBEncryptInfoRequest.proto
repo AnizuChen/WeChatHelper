@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message GetCliDBEncryptInfoRequest {
+	required BaseRequest _BaseRequest = 1;
+	required uint32 _CertVersion = 2;
+	required SKBuiltinBuffer_t _CliDBEncryptKey = 3;
+	required SKBuiltinBuffer_t _CliDBEncryptInfo = 4;
+}

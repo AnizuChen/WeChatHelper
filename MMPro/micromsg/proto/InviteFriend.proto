@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SKBuiltinString_t.proto";
+
+message InviteFriend {
+	required uint32 _Uin = 1;
+	required SKBuiltinString_t _NickName = 2;
+	optional string _Email = 3;
+	optional string _Remark = 4;
+	optional string _UserName = 5;
+	optional uint32 _FriendType = 6;
+}

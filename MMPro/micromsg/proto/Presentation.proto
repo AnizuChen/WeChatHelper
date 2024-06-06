@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message Presentation {
+	required uint32 _Time = 1;
+	optional string _UserName = 2;
+	optional string _NickName = 3;
+	optional string _Title = 4;
+	required uint32 _Price = 5;
+	optional string _WebUrl = 6;
+	required uint32 _Num = 7;
+}

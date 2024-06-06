@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+
+message GetChatRoomUpgradeStatusResp {
+	required BaseResponse _BaseResponse = 1;
+	required uint32 _Status = 2;
+	required uint32 _MobileQuota = 3;
+	required uint32 _CardQuota = 4;
+	required uint32 _DonateQuota = 5;
+	required uint32 _MaxCount = 6;
+	optional string _ResultMsg = 7;
+	optional uint32 _TotalQuota = 8;
+}

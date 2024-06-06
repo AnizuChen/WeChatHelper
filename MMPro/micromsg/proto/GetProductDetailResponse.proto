@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+
+message GetProductDetailResponse {
+	required BaseResponse _BaseResponse = 1;
+	optional string _ProductInfo = 2;
+	optional int32 _RetCode = 3;
+	optional string _RetMsg = 4;
+	optional string _RecommendInfo = 5;
+}

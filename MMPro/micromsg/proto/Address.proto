@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message Address {
+	optional string _Country = 1;
+	optional string _Province = 2;
+	optional string _City = 3;
+	optional string _Detail = 4;
+	optional string _UserName = 5;
+	optional string _Tel = 6;
+	optional string _ZipCode = 7;
+}

@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "TalkRoomMember.proto";
+import "TalkRelayAddr.proto";
+
+message EnterTalkRoomResp {
+	required BaseResponse _BaseResponse = 1;
+	required int32 _RoomId = 2;
+	required int64 _RoomKey = 3;
+	required int32 _MicSeq = 4;
+	required int32 _MemberNum = 5;
+	repeated TalkRoomMember _MemberList = 6;
+	required int32 _MyRoomMemberId = 7;
+	optional int32 _AddrCount = 8;
+	repeated TalkRelayAddr _AddrList = 9;
+}

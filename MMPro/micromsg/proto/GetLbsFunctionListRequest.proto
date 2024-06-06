@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "LbsLocation.proto";
+
+message GetLbsFunctionListRequest {
+	required BaseRequest _BaseRequest = 1;
+	required LbsLocation _Loc = 2;
+}

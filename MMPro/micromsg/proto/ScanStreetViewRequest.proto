@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "PositionInfo.proto";
+
+message ScanStreetViewRequest {
+	required BaseRequest _BaseRequest = 1;
+	required PositionInfo _UserPos = 2;
+	optional uint32 _Scene = 3;
+	optional float _Heading = 4;
+	optional float _Pitch = 5;
+}

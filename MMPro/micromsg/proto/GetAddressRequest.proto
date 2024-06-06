@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message GetAddressRequest {
+	required BaseRequest _BaseRequest = 1;
+	required double _Longitude = 2;
+	required double _Latitude = 3;
+}

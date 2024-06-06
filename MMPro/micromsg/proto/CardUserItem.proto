@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message CardUserItem {
+	optional string _CardId = 1;
+	optional uint64 _UpdateSequence = 2;
+	optional uint32 _StateFlag = 3;
+	optional uint32 _UpdateTime = 4;
+	optional uint32 _Status = 5;
+}

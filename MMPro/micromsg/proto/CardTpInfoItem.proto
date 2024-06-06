@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message CardTpInfoItem {
+	optional string _CardTpId = 1;
+	optional string _Code = 2;
+}

@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message TalkRoomMember {
+	required int32 _MemberID = 1;
+	optional string _UserName = 2;
+}

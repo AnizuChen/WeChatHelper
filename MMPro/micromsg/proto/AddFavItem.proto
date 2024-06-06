@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message AddFavItem {
+	required int32 _FavId = 1;
+	required int32 _Type = 2;
+	required uint32 _Flag = 3;
+	required uint32 _UpdateTime = 4;
+	required uint32 _UpdateSeq = 5;
+}

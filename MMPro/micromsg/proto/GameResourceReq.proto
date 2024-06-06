@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message GameResourceReq {
+	required BaseRequest _BaseRequest = 1;
+	required int32 _PropsCount = 2;
+	repeated uint32 _PropsIdList = 3;
+}

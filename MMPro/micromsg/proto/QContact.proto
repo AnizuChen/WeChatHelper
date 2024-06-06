@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message QContact {
+	optional string _UserName = 1;
+	optional string _DisplayName = 2;
+	required uint32 _ExtInfoSeq = 3;
+	required uint32 _ImgUpdateSeq = 4;
+}

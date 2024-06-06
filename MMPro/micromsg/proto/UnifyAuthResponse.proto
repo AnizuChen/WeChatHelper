@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "AuthSectResp.proto";
+import "AcctSectResp.proto";
+import "NetworkSectResp.proto";
+
+message UnifyAuthResponse {
+	required BaseResponse _BaseResponse = 1;
+	optional uint32 _UnifyAuthSectFlag = 2;
+	optional AuthSectResp _AuthSectResp = 3;
+	optional AcctSectResp _AcctSectResp = 4;
+	optional NetworkSectResp _NetworkSectResp = 5;
+}

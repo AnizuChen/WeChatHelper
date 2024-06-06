@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "SnsTag.proto";
+
+message SnsTagListResponse {
+	required BaseResponse _BaseResponse = 1;
+	required uint32 _OpCode = 2;
+	optional string _TagListMd5 = 3;
+	required uint32 _Count = 4;
+	repeated SnsTag _List = 5;
+}

@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message RadarCreateChatRoomRequest {
+	required BaseRequest _BaseRequest = 1;
+	required float _Longitude = 2;
+	required float _Latitude = 3;
+	required int32 _Precision = 4;
+	optional string _MacAddr = 5;
+	optional string _CellId = 6;
+	optional int32 _GPSSource = 7;
+	optional string _PassWord = 8;
+}

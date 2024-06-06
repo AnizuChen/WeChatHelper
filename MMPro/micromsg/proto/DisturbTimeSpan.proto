@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message DisturbTimeSpan {
+	required uint32 _BeginTime = 1;
+	required uint32 _EndTime = 2;
+}

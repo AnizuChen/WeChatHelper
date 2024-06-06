@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message AddChatRoomDonateRecordReq {
+	required BaseRequest _BaseRequest = 1;
+	optional string _ChatRoomName = 2;
+	optional string _TransID = 3;
+	optional string _Title = 4;
+	optional string _WebUrl = 5;
+}

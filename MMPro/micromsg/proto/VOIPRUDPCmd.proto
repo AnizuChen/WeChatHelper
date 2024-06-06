@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message VOIPRUDPCmd {
+	required int32 _CmdType = 1;
+	optional bytes _CmdBuffer = 2;
+}

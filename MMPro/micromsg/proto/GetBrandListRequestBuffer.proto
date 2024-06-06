@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message GetBrandListRequestBuffer {
+	required uint32 _Count = 1;
+	required uint32 _HiddenCount = 2;
+}

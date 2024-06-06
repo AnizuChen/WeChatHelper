@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message PropertySurveyItem {
+	optional string _DeviceModel = 1;
+	optional string _OsType = 2;
+	optional string _Module = 3;
+	optional string _SubModule = 4;
+	required uint32 _AvgElapsedTime = 5;
+	required uint32 _MaxElapsedTime = 6;
+	required uint32 _MinElapsedTime = 7;
+	required uint32 _UseModuleCount = 8;
+	optional string _Expand = 9;
+	required uint32 _BeginTime = 10;
+	required uint32 _EndTime = 11;
+}

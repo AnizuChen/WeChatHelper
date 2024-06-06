@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SafeDevice.proto";
+
+message SafeDeviceList {
+	required uint32 _Count = 1;
+	repeated SafeDevice _List = 2;
+}

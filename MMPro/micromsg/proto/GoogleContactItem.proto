@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message GoogleContactItem {
+	optional string _GoogleContactName = 1;
+	optional string _UserName = 2;
+	optional string _BigHeadUrl = 3;
+	optional string _SmallHeadUrl = 4;
+	required int32 _Ret = 5;
+	optional string _NickName = 6;
+	optional string _AntispamTicket = 7;
+}

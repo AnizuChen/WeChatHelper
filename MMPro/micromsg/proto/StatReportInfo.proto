@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "StatReportItem.proto";
+
+message StatReportInfo {
+	required int32 _Count = 1;
+	repeated StatReportItem _List = 2;
+}

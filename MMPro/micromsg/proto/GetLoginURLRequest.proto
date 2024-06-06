@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message GetLoginURLRequest {
+	required BaseRequest _BaseRequest = 1;
+	optional string _UUID = 2;
+	optional bytes _FromDeviceID = 3;
+}

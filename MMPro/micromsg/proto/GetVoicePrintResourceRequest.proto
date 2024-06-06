@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message GetVoicePrintResourceRequest {
+	required BaseRequest _BaseRequest = 1;
+	required uint32 _ResScence = 2;
+	optional string _VerifyTicket = 3;
+}

@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "SKBuiltinString_t.proto";
+
+message ShareFavResponse {
+	required BaseResponse _BaseResponse = 1;
+	required uint32 _UrlCount = 2;
+	repeated SKBuiltinString_t _UrlList = 3;
+}

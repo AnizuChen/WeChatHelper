@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "EmotionSummary.proto";
+import "EmotionBannerImg.proto";
+
+message EmotionBanner {
+	required EmotionSummary _BannerSummary = 1;
+	required EmotionBannerImg _BannerImg = 2;
+}

@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SKBuiltinBuffer_t.proto";
+import "SKBuiltinString_t.proto";
+
+message ImgPair {
+	required SKBuiltinBuffer_t _ImgBuf = 1;
+	required SKBuiltinString_t _Username = 2;
+}

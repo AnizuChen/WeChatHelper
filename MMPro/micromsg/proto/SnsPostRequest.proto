@@ -1,0 +1,31 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SKBuiltinBuffer_t.proto";
+import "SKBuiltinString_t.proto";
+import "SnsGroup.proto";
+import "TwitterInfo.proto";
+import "SnsPostCtocUploadInfo.proto";
+
+message SnsPostRequest {
+	required BaseRequest _BaseRequest = 1;
+	required SKBuiltinBuffer_t _ObjectDesc = 2;
+	optional uint32 _WithUserListCount = 3;
+	repeated SKBuiltinString_t _WithUserList = 4;
+	optional uint32 _Privacy = 5;
+	optional uint32 _SyncFlag = 6;
+	optional string _ClientId = 7;
+	optional uint32 _PostBGImgType = 8;
+	optional uint32 _GroupCount = 9;
+	repeated SnsGroup _GroupIds = 10;
+	optional uint32 _ObjectSource = 11;
+	optional uint64 _ReferId = 12;
+	optional uint32 _BlackListCount = 13;
+	repeated SKBuiltinString_t _BlackList = 14;
+	optional TwitterInfo _TwitterInfo = 15;
+	optional uint32 _GroupUserCount = 16;
+	repeated SKBuiltinString_t _GroupUser = 17;
+	optional SnsPostCtocUploadInfo _CtocUploadInfo = 18;
+}

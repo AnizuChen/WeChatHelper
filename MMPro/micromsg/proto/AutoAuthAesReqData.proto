@@ -1,0 +1,22 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "BaseAuthReqInfo.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message AutoAuthAesReqData {
+	required BaseRequest _BaseRequest = 1;
+	optional BaseAuthReqInfo _BaseReqInfo = 2;
+	required SKBuiltinBuffer_t _AutoAuthKey = 3;
+	optional string _IMEI = 4;
+	optional string _SoftType = 5;
+	required uint32 _BuiltinIPSeq = 6;
+	optional string _ClientSeqID = 7;
+	optional string _Signature = 8;
+	optional string _DeviceName = 9;
+	optional string _DeviceType = 10;
+	optional string _Language = 11;
+	optional string _TimeZone = 12;
+}

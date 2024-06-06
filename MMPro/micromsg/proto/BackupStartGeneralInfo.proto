@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message BackupStartGeneralInfo {
+	required string _DeviceID = 1;
+	required string _DeviceName = 2;
+	required string _Model = 3;
+	required string _SystemName = 4;
+	required string _SystemVersion = 5;
+	required uint32 _WechatVersion = 6;
+	required uint64 _DeviceFreeSpace = 7;
+}

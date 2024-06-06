@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message SnsBufferUrl {
+	optional string _Url = 1;
+	required uint32 _Type = 2;
+}

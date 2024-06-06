@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message UploadMyPanelListRequest {
+	required uint32 _OpCode = 1;
+	repeated string _ProductIDList = 2;
+}

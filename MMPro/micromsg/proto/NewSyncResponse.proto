@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "CmdList.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message NewSyncResponse {
+	required int32 _Ret = 1;
+	required CmdList _CmdList = 2;
+	required uint32 _ContinueFlag = 3;
+	required SKBuiltinBuffer_t _KeyBuf = 4;
+	optional uint32 _Status = 5;
+	optional uint32 _OnlineVersion = 6;
+}

@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "ModContact.proto";
+import "HardDevice.proto";
+import "HardDeviceAttr.proto";
+
+message SearchHardDeviceResponse {
+	required BaseResponse _BaseResponse = 1;
+	required ModContact _Contact = 2;
+	required HardDevice _HardDevice = 3;
+	required HardDeviceAttr _HardDeviceAttr = 4;
+	optional string _BindTicket = 5;
+}

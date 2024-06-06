@@ -1,0 +1,32 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "VoipAddr.proto";
+import "VoipMultiRelayData.proto";
+import "VoipNetQuality.proto";
+
+message VoipInviteResp {
+	required BaseResponse _BaseResponse = 1;
+	required int32 _RoomId = 2;
+	required int32 _AddrCount = 3;
+	repeated VoipAddr _AddrList = 4;
+	required int64 _RoomKey = 5;
+	required int32 _RoomMemberId = 6;
+	optional VoipMultiRelayData _RelayData = 7;
+	optional int32 _NetQualityCnt = 8;
+	repeated VoipNetQuality _NetQualityList = 9;
+	optional int32 _AudioTsdfBeyond3G = 10;
+	optional int32 _AudioTsdfEdge = 11;
+	optional int32 _PassthroughQosAlgorithm = 12;
+	optional int32 _FastPlayRepair = 13;
+	optional int32 _VoipSyncInterval = 14;
+	optional int32 _NewP2S = 15;
+	optional int32 _AudioDTX = 16;
+	optional uint32 _TcpCnt = 17;
+	optional uint32 _SwitchInterval = 18;
+	optional int32 _Hw264SvrCfg = 19;
+	optional int32 _AudioEnableRmioAndS3A = 20;
+	optional int32 _AudioEnableSpkec = 21;
+}

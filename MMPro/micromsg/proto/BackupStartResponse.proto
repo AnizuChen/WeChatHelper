@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BackupStartGeneralInfo.proto";
+
+message BackupStartResponse {
+	required string _ID = 1;
+	required uint64 _TotalCount = 2;
+	required uint64 _TotalSize = 3;
+	required int32 _Status = 4;
+	optional uint32 _NetworkState = 5;
+	optional uint64 _BigDataSize = 6;
+	optional BackupStartGeneralInfo _GeneralInfo = 7;
+}

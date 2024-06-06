@@ -1,0 +1,48 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SKBuiltinString_t.proto";
+import "DisturbSetting.proto";
+import "GmailList.proto";
+
+message ModUserInfo {
+	required uint32 _BitFlag = 1;
+	required SKBuiltinString_t _UserName = 2;
+	required SKBuiltinString_t _NickName = 3;
+	required uint32 _BindUin = 4;
+	required SKBuiltinString_t _BindEmail = 5;
+	required SKBuiltinString_t _BindMobile = 6;
+	required uint32 _Status = 7;
+	required uint32 _ImgLen = 8;
+	optional bytes _ImgBuf = 9;
+	optional int32 _Sex = 10;
+	optional string _Province = 11;
+	optional string _City = 12;
+	optional string _Signature = 13;
+	optional uint32 _PersonalCard = 14;
+	optional DisturbSetting _DisturbSetting = 15;
+	optional uint32 _PluginFlag = 16;
+	optional uint32 _VerifyFlag = 17;
+	optional string _VerifyInfo = 18;
+	optional int32 _Point = 19;
+	optional int32 _Experience = 20;
+	optional int32 _Level = 21;
+	optional int32 _LevelLowExp = 22;
+	optional int32 _LevelHighExp = 23;
+	optional string _Weibo = 24;
+	optional uint32 _PluginSwitch = 25;
+	optional GmailList _GmailList = 26;
+	optional string _Alias = 27;
+	optional string _WeiboNickname = 28;
+	optional uint32 _WeiboFlag = 29;
+	optional uint32 _FaceBookFlag = 30;
+	optional uint64 _FBUserID = 31;
+	optional string _FBUserName = 32;
+	optional int32 _AlbumStyle = 33;
+	optional int32 _AlbumFlag = 34;
+	optional string _AlbumBGImgID = 35;
+	optional uint32 _TXNewsCategory = 36;
+	optional string _FBToken = 37;
+	optional string _Country = 38;
+}

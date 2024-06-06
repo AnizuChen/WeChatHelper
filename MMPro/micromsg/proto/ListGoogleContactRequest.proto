@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "GoogleContactUploadItem.proto";
+
+message ListGoogleContactRequest {
+	required BaseRequest _BaseRequest = 1;
+	required uint32 _Count = 2;
+	repeated GoogleContactUploadItem _List = 3;
+	required uint32 _ContinueFlag = 4;
+	required uint32 _ClickSource = 5;
+}

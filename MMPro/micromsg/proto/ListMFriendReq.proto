@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SKBuiltinString_t.proto";
+
+message ListMFriendReq {
+	required BaseRequest _BaseRequest = 1;
+	optional string _Ticket = 2;
+	required uint32 _MobileCount = 3;
+	repeated SKBuiltinString_t _MobileList = 4;
+	required uint32 _EMailCount = 5;
+	repeated SKBuiltinString_t _EMailList = 6;
+}

@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message RSACert {
+	optional string _KeyN = 1;
+	optional string _KeyE = 2;
+}

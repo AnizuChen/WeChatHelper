@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message BaseResponseErrMsg {
+	required int32 _ShowType = 1;
+	optional string _Content = 2;
+	optional string _Url = 3;
+	required int32 _DispSec = 4;
+	optional string _Title = 5;
+	required int32 _Action = 6;
+	optional int32 _DelayConnSec = 7;
+	optional uint32 _Countdown = 8;
+	optional string _Ok = 9;
+	optional string _Cancel = 10;
+}

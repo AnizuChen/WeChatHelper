@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message EmailRegRequest {
+	required BaseRequest _BaseRequest = 1;
+	required SKBuiltinBuffer_t _RandomEncryKey = 2;
+	required uint32 _Opcode = 3;
+	optional string _Email = 4;
+	optional string _Language = 5;
+	optional string _Pwd = 6;
+	optional string _VerifyCode = 7;
+	optional string _ClientSeqID = 8;
+	optional string _RealCountry = 9;
+	optional uint32 _VerifyScene = 10;
+}

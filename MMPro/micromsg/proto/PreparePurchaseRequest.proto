@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message PreparePurchaseRequest {
+	required BaseRequest _BaseRequest = 1;
+	optional string _ProductID = 2;
+	optional string _Price = 3;
+	optional string _CurrencyType = 4;
+	required uint32 _PayType = 5;
+	optional string _ExtInfo = 7;
+	optional uint32 _Quantity = 8;
+}

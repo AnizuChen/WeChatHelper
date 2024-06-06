@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "RoomInfo.proto";
+
+message GroupCardRequest {
+	required BaseRequest _BaseRequest = 1;
+	required uint32 _OpCode = 2;
+	optional string _GroupNickName = 3;
+	required uint32 _MemberCount = 4;
+	repeated RoomInfo _MemberList = 5;
+	optional string _GroupUserName = 6;
+}

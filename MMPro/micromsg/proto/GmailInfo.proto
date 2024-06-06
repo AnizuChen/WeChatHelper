@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message GmailInfo {
+	optional string _GmailAcct = 1;
+	required uint32 _GmailSwitch = 2;
+	required uint32 _GmailErrCode = 3;
+}

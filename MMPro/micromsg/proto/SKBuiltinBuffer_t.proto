@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message SKBuiltinBuffer_t {
+	required uint32 _iLen = 1;
+	optional bytes _Buffer = 2;
+}

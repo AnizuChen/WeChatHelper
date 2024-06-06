@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+
+message VerifyPurchaseResponse {
+	required BaseResponse _BaseResponse = 1;
+	optional string _SeriesID = 2;
+	required uint32 _BizType = 3;
+}

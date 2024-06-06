@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "BuiltinIPList.proto";
+import "HostList.proto";
+import "NetworkControl.proto";
+
+message GetVoiceprintTicketRsaResponse {
+	required BaseResponse _BaseResponse = 1;
+	optional string _VoiceprintTicket = 2;
+	optional BuiltinIPList _BuiltinIPList = 3;
+	optional HostList _NewHostList = 4;
+	optional NetworkControl _NetworkControl = 5;
+}

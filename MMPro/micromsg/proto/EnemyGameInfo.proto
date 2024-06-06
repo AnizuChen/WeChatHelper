@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message EnemyGameInfo {
+	required uint32 _Type = 1;
+	required uint32 _Score = 2;
+}

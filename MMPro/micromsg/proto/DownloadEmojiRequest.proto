@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "EmojiDownloadInfoReq.proto";
+
+message DownloadEmojiRequest {
+	required BaseRequest _BaseRequest = 1;
+	required int32 _EmojiItemCount = 2;
+	repeated EmojiDownloadInfoReq _EmojiItem = 3;
+}

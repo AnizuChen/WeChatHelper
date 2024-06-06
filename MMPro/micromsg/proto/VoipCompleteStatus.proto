@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SKBuiltinBuffer_t.proto";
+
+message VoipCompleteStatus {
+	required int32 _CmdId = 1;
+	required uint32 _Uin = 2;
+	required uint32 _Key = 3;
+	required SKBuiltinBuffer_t _Buffer = 4;
+}

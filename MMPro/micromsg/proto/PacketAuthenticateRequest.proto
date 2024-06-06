@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message PacketAuthenticateRequest {
+	required int32 _Step = 1;
+	required string _ID = 2;
+	optional bytes _Data = 3;
+	optional int32 _Version = 4;
+	optional int32 _Type = 5;
+	optional int32 _SupportExt = 6;
+}

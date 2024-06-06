@@ -1,0 +1,23 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SKBuiltinString_t.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message BindQQRequest {
+	required BaseRequest _BaseRequest = 1;
+	required uint32 _QQ = 2;
+	optional string _Pwd = 3;
+	optional string _Pwd2 = 4;
+	optional string _ImgSid = 5;
+	optional string _ImgCode = 6;
+	required uint32 _OPCode = 7;
+	optional SKBuiltinString_t _ImgEncryptKey = 8;
+	optional SKBuiltinBuffer_t _KSid = 9;
+	optional uint32 _SetAsMainAcct = 10;
+	optional string _SafeDeviceName = 11;
+	optional string _SafeDeviceType = 12;
+	optional SKBuiltinBuffer_t _WTLoginReqBuff = 13;
+}

@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message GetIosExtensionKeyRequest {
+	required BaseRequest _BaseRequest = 1;
+	optional uint32 _ExtensionSessionType = 2;
+	optional bytes _ExtensionDeviceId = 3;
+}

@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message SendPhoto2FBWallRequest {
+	required BaseRequest _BaseRequest = 1;
+	optional string _Message = 2;
+	optional string _Picture = 3;
+	optional string _Link = 5;
+	optional string _Name = 4;
+	optional string _Description = 6;
+	optional string _Caption = 7;
+}

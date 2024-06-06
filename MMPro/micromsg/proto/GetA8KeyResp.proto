@@ -1,0 +1,33 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "JSAPIPermissionBitSet.proto";
+import "GeneralControlBitSet.proto";
+import "BizScopeInfo.proto";
+import "DeepLinkBitSet.proto";
+import "SKBuiltinBuffer_t.proto";
+import "HTTPHeader.proto";
+
+message GetA8KeyResp {
+	required BaseResponse _BaseResponse = 1;
+	optional string _FullURL = 2;
+	optional string _A8Key = 3;
+	optional uint32 _ActionCode = 4;
+	optional string _Title = 5;
+	optional string _Content = 6;
+	optional JSAPIPermissionBitSet _JSAPIPermission = 7;
+	optional GeneralControlBitSet _GeneralControlBitSet = 8;
+	optional string _UserName = 9;
+	optional string _ShareURL = 15;
+	optional uint32 _ScopeCount = 16;
+	repeated BizScopeInfo _ScopeList = 17;
+	optional string _AntispamTicket = 18;
+	optional string _SSID = 20;
+	optional string _MID = 21;
+	optional DeepLinkBitSet _DeepLinkBitSet = 22;
+	optional SKBuiltinBuffer_t _JSAPIControlBytes = 23;
+	optional int32 _HttpHeaderNumb = 24;
+	repeated HTTPHeader _HttpHeader = 25;
+}

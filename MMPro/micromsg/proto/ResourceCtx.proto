@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SKBuiltinBuffer_t.proto";
+
+message ResourceCtx {
+	required uint32 _ResId = 1;
+	required SKBuiltinBuffer_t _ResData = 2;
+}

@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+
+message WinphoneRegResponse {
+	required BaseResponse _BaseResponse = 1;
+}

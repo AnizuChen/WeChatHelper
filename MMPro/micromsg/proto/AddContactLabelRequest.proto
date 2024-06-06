@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "LabelPair.proto";
+
+message AddContactLabelRequest {
+	required BaseRequest _BaseRequest = 1;
+	required uint32 _LabelCount = 2;
+	repeated LabelPair _LabelPairList = 3;
+}

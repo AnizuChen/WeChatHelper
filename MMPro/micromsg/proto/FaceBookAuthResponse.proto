@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+
+message FaceBookAuthResponse {
+	required BaseResponse _BaseResponse = 1;
+	required uint64 _FBUserID = 2;
+	optional string _FBUserName = 3;
+}

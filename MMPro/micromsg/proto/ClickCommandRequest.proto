@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message ClickCommandRequest {
+	required BaseRequest _BaseRequest = 1;
+	required uint32 _ClickType = 2;
+	optional string _ClickInfo = 3;
+	optional string _BizUserName = 4;
+}

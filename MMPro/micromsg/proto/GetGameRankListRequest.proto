@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message GetGameRankListRequest {
+	required BaseRequest _BaseRequest = 1;
+	optional string _AppID = 2;
+}

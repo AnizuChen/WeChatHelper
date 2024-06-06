@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message GetAPPListRequest {
+	required BaseRequest _BaseRequest = 1;
+	required uint32 _Hash = 2;
+}

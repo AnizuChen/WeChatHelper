@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SKBuiltinBuffer_t.proto";
+
+message EmojiDownloadInfoResp {
+	required int32 _Ret = 1;
+	required int32 _StartPos = 2;
+	required int32 _TotalLen = 3;
+	required SKBuiltinBuffer_t _EmojiBuffer = 4;
+	optional string _MD5 = 5;
+	optional string _ID = 6;
+}

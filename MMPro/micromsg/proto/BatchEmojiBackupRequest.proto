@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message BatchEmojiBackupRequest {
+	repeated string _Md5List = 1;
+}

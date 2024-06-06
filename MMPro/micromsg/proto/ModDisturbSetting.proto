@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "DisturbSetting.proto";
+
+message ModDisturbSetting {
+	required DisturbSetting _DisturbSetting = 1;
+}

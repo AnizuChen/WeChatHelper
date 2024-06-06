@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+
+message UploadCardImgResponse {
+	required BaseResponse _BaseResponse = 1;
+	required uint32 _StartPos = 2;
+	required uint32 _TotalLen = 3;
+	optional string _ClientId = 4;
+	optional string _CardImgUrl = 5;
+}

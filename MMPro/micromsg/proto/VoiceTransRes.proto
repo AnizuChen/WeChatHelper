@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message VoiceTransRes {
+	required uint32 _Sequence = 1;
+	required uint32 _EndFlag = 2;
+	optional string _Result = 3;
+}

@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message ShakeTVRequest {
+	required BaseRequest _BaseRequest = 1;
+	required SKBuiltinBuffer_t _Data = 2;
+	required uint32 _DataId = 3;
+	required uint32 _EndFlag = 4;
+	required float _VoiceLen = 5;
+	required uint32 _NetType = 6;
+	required uint32 _SdkVersion = 7;
+}

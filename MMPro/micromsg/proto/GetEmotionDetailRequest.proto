@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message GetEmotionDetailRequest {
+	required BaseRequest _BaseRequest = 1;
+	optional string _ProductID = 2;
+	optional uint32 _Scene = 3;
+	optional int32 _Version = 4;
+}

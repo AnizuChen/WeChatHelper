@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message EmojiDownloadInfoReq {
+	optional string _ID = 1;
+	required int32 _StartPos = 2;
+	required int32 _TotalLen = 3;
+	optional string _MD5 = 4;
+}

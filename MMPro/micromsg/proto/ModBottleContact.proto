@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message ModBottleContact {
+	optional string _UserName = 1;
+	required uint32 _Type = 2;
+	required uint32 _Sex = 3;
+	optional string _City = 4;
+	optional string _Province = 5;
+	optional string _Signature = 6;
+	required uint32 _ImgFlag = 7;
+	required uint32 _HDImgFlag = 8;
+	optional string _Country = 9;
+	optional string _BigHeadImgUrl = 10;
+	optional string _SmallHeadImgUrl = 11;
+}

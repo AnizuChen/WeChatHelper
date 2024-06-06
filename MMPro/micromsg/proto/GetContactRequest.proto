@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SKBuiltinString_t.proto";
+
+message GetContactRequest {
+	required BaseRequest _BaseRequest = 1;
+	required uint32 _UserCount = 2;
+	repeated SKBuiltinString_t _UserNameList = 3;
+	optional uint32 _AntispamTicketCount = 4;
+	repeated SKBuiltinString_t _AntispamTicket = 5;
+	optional uint32 _FromChatRoomCount = 6;
+	repeated SKBuiltinString_t _FromChatRoom = 7;
+}

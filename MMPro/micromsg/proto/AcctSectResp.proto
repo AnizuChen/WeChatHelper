@@ -1,0 +1,22 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message AcctSectResp {
+	optional string _UserName = 1;
+	optional string _NickName = 2;
+	required uint32 _BindUin = 3;
+	optional string _BindEmail = 4;
+	optional string _BindMobile = 5;
+	optional string _Alias = 6;
+	required uint32 _Status = 8;
+	optional uint32 _PluginFlag = 9;
+	optional uint32 _RegType = 10;
+	optional string _DeviceInfoXml = 11;
+	optional uint32 _SafeDevice = 12;
+	optional string _OfficialUserName = 13;
+	optional string _OfficialNickName = 14;
+	optional uint32 _PushMailStatus = 15;
+	optional string _FSURL = 16;
+}

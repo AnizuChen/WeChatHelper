@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "EmotionCDNUrl.proto";
+
+message ExchangeEmotionPackResponse {
+	required BaseResponse _BaseResponse = 1;
+	required EmotionCDNUrl _DownloadInfo = 2;
+}

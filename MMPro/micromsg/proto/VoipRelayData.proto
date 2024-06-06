@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SKBuiltinBuffer_t.proto";
+
+message VoipRelayData {
+	required int32 _Type = 1;
+	required SKBuiltinBuffer_t _Buffer = 2;
+}

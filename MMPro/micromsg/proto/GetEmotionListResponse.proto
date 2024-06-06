@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "SKBuiltinBuffer_t.proto";
+import "EmotionSummary.proto";
+import "EmotionBanner.proto";
+import "EmotionCell.proto";
+
+message GetEmotionListResponse {
+	required BaseResponse _BaseResponse = 1;
+	required SKBuiltinBuffer_t _ReqBuf = 2;
+	required uint32 _EmotionCount = 3;
+	repeated EmotionSummary _EmotionList = 4;
+	optional EmotionBanner _Banner = 5;
+	optional uint32 _NewBannerCount = 6;
+	repeated EmotionBanner _NewBannerList = 7;
+	optional uint32 _CellCount = 8;
+	repeated EmotionCell _CellList = 9;
+}

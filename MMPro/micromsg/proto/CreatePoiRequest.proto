@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "LbsLocation.proto";
+import "SKBuiltinString_t.proto";
+
+message CreatePoiRequest {
+	required BaseRequest _BaseRequest = 1;
+	optional string _Name = 2;
+	optional string _District = 3;
+	optional string _Street = 4;
+	required LbsLocation _Loc = 5;
+	required uint32 _Count = 6;
+	repeated SKBuiltinString_t _Categories = 7;
+	optional string _Telephone = 8;
+	optional string _PhotoUrl = 9;
+}

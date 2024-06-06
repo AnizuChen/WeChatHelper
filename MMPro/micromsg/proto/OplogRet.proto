@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message OplogRet {
+	required uint32 _Count = 1;
+	repeated int32 _Ret = 2;
+}

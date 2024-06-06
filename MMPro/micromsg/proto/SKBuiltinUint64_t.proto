@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message SKBuiltinUint64_t {
+	required uint64 _ullVal = 1;
+}

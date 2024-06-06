@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "CmdItem.proto";
+
+message CmdList {
+	required uint32 _Count = 1;
+	repeated CmdItem _List = 2;
+}

@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message SnsPostCtocUploadInfo {
+	required uint32 _Flag = 1;
+	required uint32 _PhotoCount = 2;
+}

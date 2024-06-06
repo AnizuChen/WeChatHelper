@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message SetPwdResponse {
+	required BaseResponse _BaseResponse = 1;
+	optional SKBuiltinBuffer_t _AutoAuthKey = 2;
+}

@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message GetPOIListRequest {
+	required BaseRequest _BaseRequest = 1;
+	required uint32 _Scene = 2;
+	required uint32 _OpCode = 3;
+	optional string _Keyword = 4;
+	required SKBuiltinBuffer_t _Buff = 5;
+	required double _Longitude = 6;
+	required double _Latitude = 7;
+}

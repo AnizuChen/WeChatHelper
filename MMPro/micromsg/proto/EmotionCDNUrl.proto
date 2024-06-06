@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message EmotionCDNUrl {
+	optional string _Url = 1;
+	optional string _AesKey = 2;
+	required uint32 _FileSize = 3;
+}

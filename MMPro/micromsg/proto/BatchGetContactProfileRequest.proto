@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "SKBuiltinString_t.proto";
+
+message BatchGetContactProfileRequest {
+	required BaseRequest _BaseRequest = 1;
+	required uint32 _Mode = 2;
+	required uint32 _Count = 3;
+	repeated SKBuiltinString_t _UserNameList = 4;
+}

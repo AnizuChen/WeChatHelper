@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message BBMContactUploadItem {
+	optional string _BBPPID = 1;
+	optional string _BBPIN = 2;
+	optional string _BBMNickName = 3;
+}

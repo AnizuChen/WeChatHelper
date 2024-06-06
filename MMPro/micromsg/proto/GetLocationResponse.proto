@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+
+message GetLocationResponse {
+	required BaseResponse _BaseResponse = 1;
+	required int32 _Longitude = 2;
+	required int32 _Latitude = 3;
+}

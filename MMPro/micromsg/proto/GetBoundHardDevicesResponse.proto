@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "ModHardDevice.proto";
+
+message GetBoundHardDevicesResponse {
+	required BaseResponse _BaseResponse = 1;
+	required uint32 _Count = 2;
+	repeated ModHardDevice _DeviceList = 5;
+	required uint32 _Version = 6;
+	required uint32 _ContinueFlag = 7;
+}

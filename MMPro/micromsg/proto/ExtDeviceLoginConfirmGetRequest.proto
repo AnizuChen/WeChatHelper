@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message ExtDeviceLoginConfirmGetRequest {
+	required string _LoginUrl = 1;
+}

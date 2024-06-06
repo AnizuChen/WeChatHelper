@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message IBeaconBoardcastRequest {
+	required BaseRequest _BaseRequest = 1;
+	optional string _BizUsername = 2;
+	optional string _Content = 3;
+}

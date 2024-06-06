@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+
+message CheckCanSubscribeBizResponse {
+	required BaseResponse _BaseResponse = 1;
+	optional string _CheckTicket = 2;
+	optional string _ToUserName = 3;
+	optional string _WebViewUrl = 4;
+	optional string _ShowWord = 5;
+}

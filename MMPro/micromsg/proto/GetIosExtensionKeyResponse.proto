@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "SKBuiltinBuffer_t.proto";
+import "ExtSession.proto";
+
+message GetIosExtensionKeyResponse {
+	required BaseResponse _BaseResponse = 1;
+	required SKBuiltinBuffer_t _Key = 2;
+	optional ExtSession _ExtensionSession = 3;
+}

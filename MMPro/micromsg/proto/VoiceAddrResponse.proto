@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "SKBuiltinString_t.proto";
+
+message VoiceAddrResponse {
+	required BaseResponse _BaseResponse = 1;
+	required uint32 _EndFlag = 2;
+	required int32 _UserCount = 3;
+	repeated SKBuiltinString_t _UserNameList = 4;
+	optional string _ReportFiled = 5;
+}

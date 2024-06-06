@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseResponse.proto";
+import "LbsLifeDetail.proto";
+
+message GetLbsLifeDetailResponse {
+	required BaseResponse _BaseResponse = 1;
+	required LbsLifeDetail _LifeDetail = 2;
+}

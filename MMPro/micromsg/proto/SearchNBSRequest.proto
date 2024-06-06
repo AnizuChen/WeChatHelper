@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+import "PositionInfo.proto";
+import "SKBuiltinBuffer_t.proto";
+
+message SearchNBSRequest {
+	required BaseRequest _BaseRequest = 1;
+	optional string _KeyWord = 2;
+	optional string _Tags = 3;
+	optional string _BizMarkets = 4;
+	required PositionInfo _UserPos = 5;
+	required SKBuiltinBuffer_t _PageBuff = 6;
+}

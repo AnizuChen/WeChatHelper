@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message FunctionSwitch {
+	required uint32 _FunctionId = 1;
+	required uint32 _SwitchValue = 2;
+}

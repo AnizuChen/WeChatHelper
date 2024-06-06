@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "SKBuiltinBuffer_t.proto";
+import "ECDHKey.proto";
+
+message SecAuthRegKeySect {
+	required SKBuiltinBuffer_t _AutoAuthKey = 1;
+	required ECDHKey _SvrPubECDHKey = 2;
+	required SKBuiltinBuffer_t _SessionKey = 3;
+	required uint32 _AuthResultFlag = 4;
+}

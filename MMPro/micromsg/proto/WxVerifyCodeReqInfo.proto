@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message WxVerifyCodeReqInfo {
+	optional string _VerifySignature = 1;
+	optional string _VerifyContent = 2;
+}

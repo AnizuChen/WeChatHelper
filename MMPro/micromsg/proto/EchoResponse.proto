@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+
+message EchoResponse {
+	optional string _EchoStr = 1;
+}

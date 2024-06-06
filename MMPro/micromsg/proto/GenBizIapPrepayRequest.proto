@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+package MMPro.micromsg;
+
+import "BaseRequest.proto";
+
+message GenBizIapPrepayRequest {
+	required BaseRequest _BaseRequest = 1;
+	optional string _AppId = 2;
+	optional string _NonceStr = 3;
+	optional string _TimeStamp = 4;
+	optional string _Package = 5;
+	optional string _PaySign = 6;
+	optional string _SignType = 7;
+	optional string _StepInUrl = 8;
+}
