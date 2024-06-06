@@ -90,7 +90,9 @@ wechat路径协议不带协议返回
 欢迎贡献！请提出issue或提交pull request。
 
 ## 捐赠 （USDT-TRC20）
+```
 TB7ReYEVZcNLDcKL71gu7aqMQ3h8CyYkMM
+```
 
 ## 许可证
 
